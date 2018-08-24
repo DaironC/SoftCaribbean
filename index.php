@@ -21,7 +21,7 @@
                <div class="col-4 col-6-medium col-12-small">
                   <!-- post -->
                   <section class="box">
-                     <a href="#" class="image featured">
+                     <a href="<?php the_permalink();?>" class="image featured">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
                         if (has_post_thumbnail()) {
@@ -74,7 +74,7 @@
 <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
 <div class="col-6 col-12-small">
 <section class="box">
-<a href="#" class="image featured">
+<a href="<?php the_permalink(); ?>" class="image featured">
 <?php
    // check if the post has a Post Thumbnail assigned to it.
    if (has_post_thumbnail()) {

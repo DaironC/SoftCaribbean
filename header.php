@@ -11,25 +11,24 @@
       <!--[if lte IE 8]><script src ="<?php  Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
       <?php wp_head();?>
       <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo ( ' stylesheet_directory ' ); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
-
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
    </head>
    <body class="homepage is-preload">
       <div id="page-wrapper">
-      <!-- <?php bloginfo('description'); ?> -->
-      <!-- Header -->
-      <section id="header">
-         <div >
+       <?php bloginfo('description'); ?> 
+        <!-- Header -->
+          <section id="header">
+           <div >
                <ul class="social">
-                  
-                <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
-                <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                 <li><a  class="fab fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"></a></li>
+                 <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
                  <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
-                  
-               </ul>
-        </div>     
+                </ul>
+           </div>    
+
       <!-- Logo -->
-      <!-- codigo para poner dinamico la puesta deuna imagen en el encabezado -->
+      <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
       <?php if ( get_header_image() ) : ?>
       <div id="site-header">
          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -37,6 +36,7 @@
          </a>
       </div>
       <?php endif; ?>
+      
       <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
       <?php  
          wp_nav_menu( array(
@@ -49,6 +49,7 @@
          ) );	
          
          ?>
+         <!--Fin Logo -->
       <!-- Banner -->
       <section id="banners">
          <?php echo do_shortcode('[masterslider id="1"]'); ?>

@@ -160,7 +160,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #d52349;
+		
 		text-decoration: underline;
 	}
 
@@ -1731,7 +1731,7 @@ input, select, textarea {
 /* List */
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		padding-left: 1em;
 	}
 
@@ -1898,12 +1898,15 @@ input, select, textarea {
 
 /* Social */
 
+
+
 	ul.social {
 		list-style: none;
 		padding-left: 0;
 		overflow: hidden;
 		cursor: default;
 		margin: 0 0 0em 0;
+		float: right;
 	}
 
 		ul.social li {
@@ -1938,7 +1941,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-facebook {
-					background: #3c5a98;
+					background: #030303;
 				}
 
 					ul.social li a.fa-facebook:hover {
