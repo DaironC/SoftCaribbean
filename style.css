@@ -113,9 +113,6 @@ input, select, textarea {
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
-    
-
-
 
 	strong, b {
 		color: #252122;
@@ -183,7 +180,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 /* Container */
@@ -1538,7 +1535,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section, article {
-		margin-bottom: 2.5em;
+		margin-bottom: 0em;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -1906,13 +1903,14 @@ input, select, textarea {
 		padding-left: 0;
 		overflow: hidden;
 		cursor: default;
-		margin: 0 0 3.25em 0;
+		margin: 0 0 0em 0;
 	}
 
 		ul.social li {
 			display: inline-block;
-			padding-left: 0;
+			padding-right: 0;
 			margin-left: 0.75em;
+			
 		}
 
 			ul.social li:first-child {
@@ -1936,6 +1934,7 @@ input, select, textarea {
 					color: #fff;
 					font-size: 2em;
 					line-height: 1.5em;
+					
 				}
 
 				ul.social li a.fa-facebook {
@@ -2288,17 +2287,7 @@ input, select, textarea {
 		padding: 4em 0;
 	}
 
-		#footer:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			background: url("assets/css/images/bg.jpg");
-			background-size: 100% 100%;
-			z-index: 0;
-			opacity: 0.5;
-		}
+		
 
 		#footer a {
 			color: #c5c4c4;
@@ -2325,7 +2314,7 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
-/* Copyright */
+/*/* Copyright */
 
 	/*#copyright {
 		text-align: center;
@@ -2382,7 +2371,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 0em 0 3em 0;
 			}
 
 		/* Banner */
@@ -2729,7 +2718,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			section, article {
-				margin-bottom: 20px;
+				margin-bottom: 0px;
 			}
 
 			header {
@@ -2829,7 +2818,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0;
+				padding: 0em 0;
 			}
 
 				#header h1 {
@@ -2886,7 +2875,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 40px 0 20px 0;
+				padding: 0px 0 20px 0;
 			}
 
 	}

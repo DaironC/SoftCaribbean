@@ -19,7 +19,7 @@
       <!-- <?php bloginfo('description'); ?> -->
       <!-- Header -->
       <section id="header">
-         <div>
+         <div >
                <ul class="social">
                   
                 <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
@@ -27,7 +27,7 @@
                  <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
                   
                </ul>
-          </div>     
+        </div>     
       <!-- Logo -->
       <!-- codigo para poner dinamico la puesta deuna imagen en el encabezado -->
       <?php if ( get_header_image() ) : ?>
@@ -84,13 +84,9 @@
                </section>
             </div>
          </div>
-         <style>
-            .ct-chart-pie .ct-series .ct-slice-pie{
-               fill: #eeefff;
-            }
-         </style>
-
-         <div class="ct-chart ct-perfect-fourth"></div>
+        
+<!--grafica -->
+         <!-- <div class="ct-chart ct-perfect-fourth"></div>
          
          <script>
               var data = {
@@ -109,7 +105,18 @@
                   }
                   
             }, 1);
-       </script>
+       </script> -->
 
-         
+<!--  segunda Grafica 
+        <div class="ct-major-sexto">
+       <script>
+       
+       new Chartist.Bar('.ct-chart', {
+        labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
+        series: [20, 60, 120, 200, 180, 20, 10]
+        }, {
+        distributeSeries: true
+        });
+       </script>
+       </div> -->
       </section>

@@ -14,7 +14,7 @@
       ?>
    <div class="container">
       <div class="row">
-         <div class="col-4 col-12-md">
+         <div class="col-4 col-12-medium">
             <div class="col-12">
               <h2>Direccion</h2>
                  <ul class="contact">
@@ -34,11 +34,11 @@
                   
                </ul>
             </div>
-              <div class="col-12">
+              <div class="col-12 ">
                  
               </div>
             </div>
-                     <div class="col-4 col-12-md">
+                     <div class="col-4 col-12-medium">
             <section>
                <h2>Llamanos</h2>
                  <ul class="contact">
@@ -53,7 +53,7 @@
             </section>
          </div>
 
-         <div class="col-4 col-12-md">
+         <div class="col-4 col-12-medium">
             
             <a href="#" class="image featured img-fluid"><img src="<?php bloginfo('template_directory') ?>/images/nosotros.jpg" alt="" /></a>
            
