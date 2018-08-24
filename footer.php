@@ -45,7 +45,7 @@
 
          <div class="col-4 col-12-medium">
             
-            <a href="#" class="image featured img-fluid"><img src="<?php bloginfo('template_directory') ?>/images/nosotros.jpg" alt="" /></a>
+            <a href="#" class="image featured img-fluid"><img src="<?php bloginfo('template_directory') ?>/images/cmmilogo.png" alt="" /></a>
            
          </div>
       </div>

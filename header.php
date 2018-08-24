@@ -65,6 +65,11 @@
                   </header>
                   <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
                </section>
+  
+								<ul class="actions">
+									<li><a href="#" class="button large">+ Informacion</a></li>
+								</ul>
+						
             </div>
             <div class="col-4 col-12-medium">
                <section class="middle">

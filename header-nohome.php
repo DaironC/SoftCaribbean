@@ -9,6 +9,7 @@
    </head>
    <body class="no-sidebar is-preload">
       <div id="page-wrapper">
+            
       <!-- Header -->
       <section id="header">
          <!-- Logo -->
@@ -32,3 +33,4 @@
             
             ?> 
       </section>
+      

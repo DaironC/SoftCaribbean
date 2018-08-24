@@ -62,7 +62,7 @@
 <!-- Blog -->
 <section>
 <header class="major">
-<h2>The Blog</h2>
+<h2>Blog Softca</h2>
 </header>
 <div class="row">
 <?php
