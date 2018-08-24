@@ -1,3 +1,4 @@
+//prueba
 <?php get_header( 'nohome' );?><!--header-->
 </section>
 <!-- Main -->
