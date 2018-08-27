@@ -5,7 +5,7 @@
       <div class="row">
          <div class="col-4 col-12-medium">
             <div class="col-12">
-              <h2>Direccion</h2>
+              <h2>Dirección</h2>
                  <ul class="contact">
                     <p>
                        Softcaribbean
@@ -14,14 +14,14 @@
                     </p>
                  </ul>
 
-               <h2>Visitanos</h2>
+               <h2>Visítanos</h2>
                <ul class="social-footer">
                   
-                      <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
-                      <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-                      <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
+                  <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
+                  <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
+                  <li><a class="icon fa-whatsapp" href="https://api.whatsapp.com/send?phone=573014080340&text=Hola%2C%20deseo%20adquirir%20un%20soporte%20con%20ustedes"><span class="label">Twitter</span></a></li>
                   
-               </ul>
+           </ul>
             </div>
               <div class="col-12 ">
                  
@@ -29,7 +29,7 @@
             </div>
                      <div class="col-4 col-12-medium">
             <section>
-               <h2>Llamanos</h2>
+               <h2>Llámanos</h2>
                  <ul class="contact">
                      <p>
                         Medellín - Antioquia - Colombia

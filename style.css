@@ -1574,6 +1574,9 @@ input, select, textarea {
 		margin: 2.25em 0 0 0;
 	}
 
+
+	/*Sticky*/
+
 /* Box */
 
 	.box {
@@ -1908,6 +1911,7 @@ input, select, textarea {
 		margin: 0 0 0em 0;
 		position: absolute;
 		right: 0;
+		margin: 15px;
 	}
 
 		ul.social li {
@@ -1942,7 +1946,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-facebook {
-					background: #4267b2;
+					background: #5756567c;
 				}
 
 					ul.social li a.fa-facebook:hover {
@@ -1966,7 +1970,7 @@ input, select, textarea {
 					}
 
 				ul.social li a.fa-linkedin {
-					background: #006599;
+					background: #5756567c;
 				}
 
 					ul.social li a.fa-linkedin:hover {
@@ -1988,6 +1992,13 @@ input, select, textarea {
 					ul.social li a.fa-google-plus:hover {
 						background: #ea3723;
 					}
+					ul.social li a.fa-whatsapp {
+						background: #5756567c;
+					}
+	
+						ul.social li a.fa-whatsapp:hover {
+							background: #075e54;
+						}
 
 
 
@@ -2070,6 +2081,14 @@ input, select, textarea {
 								ul.social-footer li a.fa-google-plus:hover {
 									background: #ea3723;
 								}
+
+								ul.social-footer li a.fa-whatsapp {
+									background: #075e54;
+								}
+				
+									ul.social-footer li a.fa-whatsapp:hover {
+										background: #075e54;
+									}
 
 /* Icons */
 
@@ -2882,8 +2901,17 @@ input, select, textarea {
 		/* Social */
 
 			ul.social li {
-				margin: 0 0em 0.75em 0;
 				display: block;
+			}
+
+			ul.social li a{
+				width: 35px;
+				height: 40px;
+			}
+			ul.social li{
+				margin: 0 0em 0.75em 0;
+				display: inline-block;
+			
 			}
 
 		/* Icons */
@@ -2960,21 +2988,6 @@ input, select, textarea {
 
 			#footer {
 				padding: 0px 0 20px 0;
-			}
-
-			@media screen and (max-width: 400px){
-				ul.social li a{
-					width: 35px;
-					height: 40px;
-				
-					
-					  
-				}
-				ul.social li{
-					display: inline-block;
-				
-				}
-
 			}
 
 	}

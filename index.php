@@ -37,7 +37,7 @@
                      <p><?php the_excerpt();?></p>
                      <footer>
                         <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
+                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información</a></li>
                         </ul>
                      </footer>
                   </section>
@@ -55,7 +55,7 @@
 <br>
 <section>	
 <center><ul class="actions">
-<li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Informacion</a></li>
+<li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Información</a></li>
 </ul>
 </footer>
 </section>	</center>
@@ -92,7 +92,7 @@
     </a>
     <footer>
         <ul class="actions">
-            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Informacion</a></li>
+            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
        </ul>
     </footer>
     </section>
