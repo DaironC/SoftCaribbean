@@ -58,7 +58,7 @@
       <section id="intro" class="container">
          <div class="row">
             <div class="col-4 col-12-medium">
-               <section class="first">
+               <section class="medium">
                   <i class="icon featured fa-cog"></i>
                   <header>
                      <h2>TECNOLOGIAS</h2>
@@ -67,7 +67,7 @@
                </section>
   
 								<ul class="actions">
-									<li><a href="youtube.com" class="button large">+ Informacion</a></li>
+									<li><a href="http://localhost:81/softca/producto/tecnologia/" class="button large">+ Informacion</a></li>
 								</ul>
 						
             </div>
@@ -77,8 +77,11 @@
                   <header>
                      <h2>VALORACION</h2>
                   </header>
-                  <p>Obtuvimos la valoración CMMI Nivel 5 un logro más en nuestro compromiso hacia la mejora continua.</p>
+                  <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
                </section>
+               <ul class="actions">
+									<li><a href="http://localhost:81/softca/nosotros/calificacion/" class="button large">CMMI Nivel 5</a></li>
+								</ul>
             </div>
             <div class="col-4 col-12-medium">
                <section class="last">
@@ -86,11 +89,10 @@
                   <header>
                      <h2>TESTIMONIOS</h2>
                   </header>
-                  <p>Experiencias de nuestros clientes.</p>
+                  <p> Testimonios sobre las experiencias de nuestros clientes </p>
                </section>
-
-               <ul class="actions">
-									<li><a href="youtube.com" class="button large">+ Informacion</a></li>
+                  <ul class="actions">
+									<li><a href="http://localhost:81/softca/visual/testimonios/" class="button large">+ Informacion</a></li>
 								</ul>
             </div>
          </div>
