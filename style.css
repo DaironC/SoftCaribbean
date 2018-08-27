@@ -2962,4 +2962,13 @@ input, select, textarea {
 				padding: 0px 0 20px 0;
 			}
 
+			@media screen and (max-width: 400px){
+				ul.social li a{
+					width: 35px;
+					height: 40px;
+					  
+				}
+
+			}
+
 	}

@@ -21,10 +21,10 @@
           <section id="header">
            <div >
                <ul class="social">
-                 <li><a  class="fab fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"></a></li>
-                 <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-                 <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
-                </ul>
+                <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
+                <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
+              </ul>
            </div>    
 
       <!-- Logo -->
