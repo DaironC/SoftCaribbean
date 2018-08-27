@@ -1906,7 +1906,8 @@ input, select, textarea {
 		overflow: hidden;
 		cursor: default;
 		margin: 0 0 0em 0;
-		float: right;
+		position: absolute;
+		right: 0;
 	}
 
 		ul.social li {
