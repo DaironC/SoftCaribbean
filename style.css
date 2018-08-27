@@ -2249,7 +2249,7 @@ input, select, textarea {
 				border-bottom: solid 10px #252122;
 				border-bottom-color: rgba(34, 30, 31, 0.98);
 			}
-
+			
 /* Banner */
 
 	#banner {
@@ -2554,10 +2554,6 @@ input, select, textarea {
 			}
 
 		/* Nav */
-
-			#nav {
-				display: none;
-			}
 
 		/* Intro */
 
@@ -2887,6 +2883,7 @@ input, select, textarea {
 
 			ul.social li {
 				margin: 0 0.5em 0.75em 0;
+				display: block;
 			}
 
 		/* Icons */
