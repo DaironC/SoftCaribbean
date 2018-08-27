@@ -67,7 +67,7 @@
                </section>
   
 								<ul class="actions">
-									<li><a href="#" class="button large">+ Informacion</a></li>
+									<li><a href="youtube.com" class="button large">+ Informacion</a></li>
 								</ul>
 						
             </div>
@@ -88,6 +88,10 @@
                   </header>
                   <p>Experiencias de nuestros clientes.</p>
                </section>
+
+               <ul class="actions">
+									<li><a href="youtube.com" class="button large">+ Informacion</a></li>
+								</ul>
             </div>
          </div>
         
