@@ -2882,7 +2882,7 @@ input, select, textarea {
 		/* Social */
 
 			ul.social li {
-				margin: 0 0.5em 0.75em 0;
+				margin: 0 0em 0.75em 0;
 				display: block;
 			}
 
@@ -2966,7 +2966,13 @@ input, select, textarea {
 				ul.social li a{
 					width: 35px;
 					height: 40px;
+				
+					
 					  
+				}
+				ul.social li{
+					display: inline-block;
+				
 				}
 
 			}
