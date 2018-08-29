@@ -56,11 +56,11 @@
 </div>
 <br>
 <section>	
-<center><ul class="actions">
+<ul class="actions">
 <li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Información</a></li>
 </ul>
 </footer>
-</section>	</center>
+</section>
 <!-- Blog -->
 <section>
     <header class="major">
