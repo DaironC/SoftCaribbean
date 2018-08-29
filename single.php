@@ -52,7 +52,7 @@
 
 			
 				<ul class="divided">
-				   <li><a>  <?php get_sidebar(''); ?>   </a> </li>
+				   <li><a><?php the_permalink();?>" class="button alt">+ Informacion</a> </li>
 				</ul> 
 					
 			</section>
@@ -66,3 +66,4 @@
 
 	<!-- Footer -->
 <?php get_footer();?>
+<li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
