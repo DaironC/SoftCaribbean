@@ -1582,7 +1582,8 @@ input, select, textarea {
 	.box {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 2.75em 1.75em 2.75em 1.75em;
+		border-radius: 10px;
+		padding: 1.75em 1.75em 1.75em 1.75em;
 	}
 
 		.box .image.featured {
@@ -2180,28 +2181,44 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
-		margin: 0.5em 0 0 0;
-		margin-bottom: 20;
-	}
 
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
+
+
+	#nav {
+		margin:  0.5em 3 10 3;
+		
+		
+		background-color: rgba(245, 133, 28, 0.747);
+		-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	
+	}
 		#nav > ul {
 			margin: 0;
+			padding: 10px;
+			
 		}
 
 			#nav > ul > li {
 				display: inline-block;
-				font-style: italic;
 				margin: 0 0.35em 0 0.35em;
+				font-family: 'Francois One', sans-serif;
+				font-size: 125%;
+				
+				
 			}
 
 				#nav > ul > li > ul {
 					display: none;
+
 				}
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #000;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2212,11 +2229,12 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					
+					background: rgb(187, 135, 38);
 				}
 
 				#nav > ul > li.current > a {
-					background: #d52349;
+					background: #fd8700ce;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2938,6 +2956,12 @@ input, select, textarea {
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
+				}
+
+
+				#nav > ul > li{
+					display: block;
+					border-bottom: solid 1px rgb(216, 132, 23);
 				}
 
 		/* Intro */
