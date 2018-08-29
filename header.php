@@ -44,14 +44,14 @@
       <?php endif; ?>
       
       <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-      <?php  
+<?php  
          wp_nav_menu( array(
          	'theme_location'  => 'principal',
          	
-         	'container'       => 'nav',
-         	
-         	'container_id'    => 'nav',
-         	
+         	'container'       => 'div',
+     
+           'container_id'    => 'nav',
+       
          ) );	
          
          ?>

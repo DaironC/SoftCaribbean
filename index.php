@@ -67,7 +67,7 @@
 <div class="row">
 <?php query_posts(array(
    "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-   "cat"       => 5,//id del canal donde se va mostrar portafolio
+   "cat"       => 3,//id del canal donde se va mostrar portafolio
 
    ));
    ?>
