@@ -33,7 +33,7 @@
                      </div>
                      <header>
                         <h3>
-                           <center><?php the_title();?></center>
+                           <?= the_title();?>
                         </h3>
                      </header>
                      <p><?php the_excerpt();?></p>
@@ -66,48 +66,49 @@
     <header class="major">
         <h2>Blog Softca</h2>
     </header>
-<div class="row">
-<?php query_posts(array(
-   "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-   "cat"       => 5,//id del canal donde se va mostrar portafolio
+    <div class="container">
+        <div class="row">
+        <?php query_posts(array(
+        "showposts" => 2,//cantidad de entradas en portafolio para mostrar
+        "cat"       => 5,//id del canal donde se va mostrar portafolio
 
-   ));
-   ?>
-<?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
+        ));
+        ?>
+        <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
 
-<div class="col-6 col-6-medium col-12-small">
-    <section class="box">
-       <a href="<?php the_permalink(); ?>" class="image featured">
-       <?php
-         // check if the post has a Post Thumbnail assigned to it.
-         if (has_post_thumbnail()) {
-        the_post_thumbnail('category-thumb');
-    }
-    ?> 
-    </a>
-    <header>
-     <h3>
-        <?php the_title();?>
-     </h3>
-    </header>
-    <?php the_excerpt(); ?>
-    </a>
-    <footer>
-        <ul class="actions">
-            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-       </ul>
-    </footer>
-    </section>
+            <div class="col-6 col-6-medium col-12-small">
+                <section class="box">
+                <a href="<?php the_permalink(); ?>" class="image featured">
+                <?php
+                    // check if the post has a Post Thumbnail assigned to it.
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('category-thumb');
+                    }?> 
+                    </a>
+                    <header>
+                    <h3>
+                        <?php the_title();?>
+                    </h3>
+                    </header>
+                    <?php the_excerpt(); ?>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                    </ul>
+                    </footer>
+                </section>
+            </div>
+            <?php endwhile;?>
+            <!-- post navigation -->
+            <?php else: ?>
+            <!-- no posts found -->
+            <h3>No hay nada</h3>
+            <?php endif;?>
+            <!-- revisar  -->
+        
+        </div>
     </div>
-    <?php endwhile;?>
-    <!-- post navigation -->
-    <?php else: ?>
-    <!-- no posts found -->
-    <h3>No hay nada</h3>
-    <?php endif;?>
-<!-- revisar  -->
-  
-</div>
+
 </section>
 </div>
 </div>

@@ -58,7 +58,7 @@
          <!--Fin Logo -->
       <!-- Banner -->
       <section id="banners">
-         <?php echo do_shortcode('[masterslider id="2"]'); ?>
+         <?php echo do_shortcode('[masterslider id="1"]'); ?>
       </section>
       <!-- Intro -->
       <section id="intro" class="container">
