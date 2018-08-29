@@ -13,7 +13,7 @@
             <div class="row">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 4,//id del canal donde se va mostrar portafilio
                   
                   ));
                   ?>
@@ -21,6 +21,7 @@
                <div class="col-4 col-6-medium col-12-small">
                   <!-- post -->
                   <section class="box">
+                     <div class="col-12" >
                      <a href="<?php the_permalink();?>" class="image featured">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
@@ -29,6 +30,7 @@
                         }
                         ?>
                      </a>
+                     </div>
                      <header>
                         <h3>
                            <center><?php the_title();?></center>
@@ -37,7 +39,7 @@
                      <p><?php the_excerpt();?></p>
                      <footer>
                         <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información</a></li>
+                           <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
                         </ul>
                      </footer>
                   </section>
