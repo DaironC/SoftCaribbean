@@ -1677,7 +1677,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background: #151112;
+				background: #0101DF;
 			}
 
 		input[type="button"].icon:before,
