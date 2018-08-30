@@ -1626,7 +1626,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #1D5AFF;
+		background: #0101DF;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1644,7 +1644,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #f77824;
+			background: #1C1C1C;
 		}
 
 		input[type="button"]:active,
@@ -1652,7 +1652,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #c51349;
+			background: #0101DF;
 		}
 
 		input[type="button"].alt,
@@ -1660,7 +1660,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: rgba(255, 91, 31, 0.856);
+			background: #0101DF;
 		}
 
 			input[type="button"].alt:hover,
@@ -2148,11 +2148,11 @@ input, select, textarea {
 				}
 
 			.icon.featured.alt2 {
-				background-color: #827a7c;
+				background-color: #FE642E;
 			}
 
 				.icon.featured.alt2:after {
-					border-top-color: #827a7c;
+					border-top-color: #FE642E;
 				}
 
 /* Page Wrapper */
@@ -2165,7 +2165,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #b7deed;
+		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 0em 0 0em 0;
 		text-align: center;
@@ -2181,19 +2181,12 @@ input, select, textarea {
 
 /* Nav */
 
-
 @import url("https://fonts.googleapis.com/css?family=Francois+One");
-
-
-
 	#nav {
 		margin:  0.5em 3 10 3;
 		
 		
-		background-color: rgb(255, 102, 0);
-
-
-		
+		background-color: rgba(245, 133, 28, 0.747);
 		-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -2237,7 +2230,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.current > a {
-					background: #fd8700ce;
+					background: #fd8700;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2705,6 +2698,11 @@ input, select, textarea {
 						background-color: #969696;
 					}
 
+					#nav > ul > li{
+						display: block;
+						border-bottom: solid 1px rgb(216, 132, 23);
+					}
+
 			#navPanel {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -2961,11 +2959,6 @@ input, select, textarea {
 					letter-spacing: -0.035em;
 				}
 
-
-				#nav > ul > li{
-					display: block;
-					border-bottom: solid 1px rgb(216, 132, 23);
-				}
 
 		/* Intro */
 

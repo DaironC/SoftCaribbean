@@ -1,4 +1,3 @@
-//prueba
 <?php get_header( 'nohome' );?><!--header-->
 </section>
 <!-- Main -->
@@ -23,7 +22,7 @@
                         <div class="col-4 col-6-medium col-12-small">
                          <!-- post -->
                      <section class="box">
-                     <a href="#"  class="img-fluid" alt="Responsive image">
+                        <a href="#" class="image featured">
                         <?php
                            // check if the post has a Post Thumbnail assigned to it.
                            if (has_post_thumbnail()) {

@@ -1,4 +1,5 @@
-<?php get_header();?><!--header-->
+<?php get_header();?>
+
 </section>
 <!-- Main -->
 <section id="main">
@@ -13,7 +14,7 @@
             <div class="row">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 4,//id del canal donde se va mostrar portafilio
+                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
@@ -21,7 +22,6 @@
                <div class="col-4 col-6-medium col-12-small">
                   <!-- post -->
                   <section class="box">
-                     <div class="col-12" >
                      <a href="<?php the_permalink();?>" class="image featured">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
@@ -30,16 +30,15 @@
                         }
                         ?>
                      </a>
-                     </div>
                      <header>
                         <h3>
-                           <?= the_title();?>
+                           <center><?php the_title();?></center>
                         </h3>
                      </header>
                      <p><?php the_excerpt();?></p>
                      <footer>
                         <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
+                           <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
                         </ul>
                      </footer>
                   </section>
@@ -56,11 +55,11 @@
 </div>
 <br>
 <section>	
-<ul class="actions">
+<center><ul class="actions">
 <li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Información</a></li>
 </ul>
 </footer>
-</section>
+</section>	</center>
 <!-- Blog -->
 <section>
     <header class="major">
@@ -70,7 +69,7 @@
         <div class="row">
         <?php query_posts(array(
         "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 5,//id del canal donde se va mostrar portafolio
+        "cat"       => 2,//id del canal donde se va mostrar portafolio
 
         ));
         ?>
@@ -114,4 +113,15 @@
 </div>
 </div>
 </section>
-<?php get_footer();?>
+         
+<!-- Código de instalación Cliengo para http://54.242.192.75/ -->
+ <script type="text/javascript">(function () {
+ var ldk = document.createElement('script');
+ ldk.type = 'text/javascript';
+ ldk.async = true;
+ ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(ldk, s);
+ })();</script>
+ 
+    <?php get_footer();?>
