@@ -1,3 +1,4 @@
+<!-- Este script contiene el footer de la pagina principal y de mas Sub paginas -->
 <!-- Footer -->
 <section id="footer">
    <div class="menu--prueba" ></div>

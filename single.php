@@ -1,4 +1,6 @@
-
+<!-- En single.php encontramos que tambien llamamos la estructura de 
+header-nohome pero no son para paginas si no las ENTRADAS que son para Portafolio y Blog Softca 
+en wordpres que ya se encuentra en forma dinamica y en la parte inferior encontramos la sidebar que tambien se puede cambiar desde wordpress  -->
 <?php get_header( 'nohome' ); ?>
 
 	<!-- Main -->
@@ -63,6 +65,7 @@
 	</div>
 </div>
 	</section>
+	<!-- Fin Sidebar -->
 
 	<!-- Footer -->
 <?php get_footer();?>

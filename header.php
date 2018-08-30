@@ -1,4 +1,7 @@
-<html <?php language_attributes() ?> >
+
+ <!-- en este script se encuentra el encabezado que de el hace parte logo,nav,masterslider,la seccion intro 
+ que sus cambios deben hacerse desde codigo ya que no se encuentra dinamico en wordpress en la parte inferior se encuentra comentada unas graficas una posible actualizacion en el futuro  -->
+ <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
 
@@ -56,8 +59,9 @@
          <!--Fin Logo -->
       <!-- Banner -->
       <section id="banners">
-         <?php echo do_shortcode('[masterslider id="1"]'); ?>
+         <?php echo do_shortcode('[masterslider id="1"]'); ?> <!--carrusel -->
       </section>
+       <!--Fin Banner -->
       <!-- Intro -->
       <section id="intro" class="container">
          <div class="row">
@@ -81,7 +85,7 @@
                   <header>
                      <h2>VALORACION</h2>
                   </header>
-                  <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
+                  <p>Obtuvimos la valoracion CMMI Nivel 5 un logro mas hacia la mejora continua.</p>
                </section>
                <ul class="actions">
 									<li><a href="http://localhost:81/softca/nosotros/calificacion/" class="button large">CMMI Nivel 5</a></li>
@@ -100,6 +104,7 @@
 								</ul>
             </div>
          </div>
+         <!--Fin Intro -->
         
 <!--grafica -->
          <!-- <div class="ct-chart ct-perfect-fourth"></div>

@@ -1,4 +1,6 @@
+<!-- En functions encontramos las funciones de worpress para hacer dinamica la pagina y hacer los cambios desde wordpress y no de codigo -->
 <?php
+
 //activando el soporte para los sidebar
 if (function_exists('register_sidebar')) {
 /**
@@ -22,6 +24,8 @@ register_sidebar(array(
 register_sidebar(array(
 'name'=>'Ultimas Categorias Footer'
 ));
+
+/*Activando soporte para las imagenes en el encabezado ejemplo el logo */
 $header_info = array(
 'width'         => 288,
 'height'        => 123,
@@ -37,7 +41,9 @@ $header_images = array(
 );
 register_default_headers( $header_images );
 }
-/*Activando soporte para las imagenes */
+
+
+/*Activando soporte para las imagenes destacadas */
 if (function_exists('add_theme_support')) {
 add_theme_support('post-thumbnails');}
 // set_post_thumbnail_size(150, 150, true); // default Post Thumbnail dimensions (cropped)

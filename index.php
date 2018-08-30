@@ -1,3 +1,5 @@
+ <!-- en este script se encuentra el contenido que muestra portafolio y blogs Softca en la pagina Principal teniendo encuenta que esta en codigo dinamico 
+ (query_Post) para wordpress  -->
 <?php get_header();?><!--header-->
 </section>
 <!-- Main -->
@@ -61,6 +63,9 @@
 </ul>
 </footer>
 </section>
+
+<!-- Fin Portafolio -->
+
 <!-- Blog -->
 <section>
     <header class="major">
@@ -70,7 +75,7 @@
         <div class="row">
         <?php query_posts(array(
         "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 5,//id del canal donde se va mostrar portafolio
+        "cat"       => 5,//id del canal donde se va mostrar blogs
 
         ));
         ?>

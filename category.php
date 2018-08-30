@@ -1,4 +1,5 @@
-//prueba
+<!-- Este script  es una invocacion de get_header para las paginas principales de las categorias portafolio y blog-->
+
 <?php get_header( 'nohome' );?><!--header-->
 </section>
 <!-- Main -->

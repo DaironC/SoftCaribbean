@@ -1,3 +1,5 @@
+<!-- Page.php es el contenido de las paginas como header-nohome nos da la estructura page daria el contenido pero aqui ya se encuentra en codigo dinamico
+para que sea crea o modifique desde wordpress las paginas-->
 <?php get_header( 'nohome' ); ?>
 <?php get_custom_header()?>
 <!-- Main -->
