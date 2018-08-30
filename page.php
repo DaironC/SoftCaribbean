@@ -9,7 +9,7 @@ para que sea crea o modifique desde wordpress las paginas-->
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <!-- post -->
       <article class="box post">
-
+      <a href="<?php the_permalink();?>" class="image featured">
      <?php
         // check if the post has a Post Thumbnail assigned to it.
         if (has_post_thumbnail()) {

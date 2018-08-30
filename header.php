@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-<html <?php language_attributes() ?> >
-    <head>
-        <title><?php bloginfo('name'); ?></title>
-=======
 
  <!-- en este script se encuentra el encabezado que de el hace parte logo,nav,masterslider,la seccion intro 
  que sus cambios deben hacerse desde codigo ya que no se encuentra dinamico en wordpress en la parte inferior se encuentra comentada unas graficas una posible actualizacion en el futuro  -->
  <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 
 
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
@@ -46,7 +40,6 @@
                     </div>
                 <?php endif; ?>
 
-<<<<<<< HEAD
                 <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 <?php
                 wp_nav_menu(array(
@@ -71,84 +64,6 @@
                                 </header>
                                 <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
                             </section>
-=======
-         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-         <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-         </a>
-      </div>
-      <?php endif; ?>
-      
-      <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-<?php  
-         wp_nav_menu( array(
-         	'theme_location'  => 'principal',
-         	
-         	'container'       => 'div',
-     
-           'container_id'    => 'nav',
-       
-         ) );	
-         
-         ?>
-         <!--Fin Logo -->
-      <!-- Banner -->
-      <section id="banners">
-         <?php echo do_shortcode('[masterslider id="1"]'); ?> <!--carrusel -->
-      </section>
-       <!--Fin Banner -->
-      <!-- Intro -->
-      <section id="intro" class="container">
-         <div class="row">
-            <div class="col-4 col-12-medium">
-               <section class="medium">
-                  <i class="icon featured fa-cog"></i>
-                  <header>
-                     <h2>TECNOLOGIAS</h2>
-                  </header>
-                  <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
-               </section>
-  
-								<ul class="actions">
-									<li><a href="http://localhost:81/softca/producto/tecnologia/" class="button large">+ Informacion</a></li>
-								</ul>
-						
-            </div>
-            <div class="col-4 col-12-medium">
-               <section class="middle">
-                  <i class="icon featured alt fa-flash"></i>
-                  <header>
-                     <h2>VALORACION</h2>
-                  </header>
-                  <p>Obtuvimos la valoracion CMMI Nivel 5 un logro mas hacia la mejora continua.</p>
-               </section>
-               <ul class="actions">
-									<li><a href="http://localhost:81/softca/nosotros/calificacion/" class="button large">CMMI Nivel 5</a></li>
-								</ul>
-            </div>
-            <div class="col-4 col-12-medium">
-               <section class="last">
-                  <i class="icon featured alt2 fa-star"></i> 
-                  <header>
-                     <h2>TESTIMONIOS</h2>
-                  </header>
-                  <p> Testimonios sobre las experiencias de nuestros clientes </p>
-               </section>
-                  <ul class="actions">
-									<li><a href="http://localhost:81/softca/visual/testimonios/" class="button large">+ Informacion</a></li>
-								</ul>
-            </div>
-         </div>
-         <!--Fin Intro -->
-        
-<!--grafica -->
-         <!-- <div class="ct-chart ct-perfect-fourth"></div>
-         
-         <script>
-              var data = {
-                 labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                 series: [8, 2, 4, 2, 0]
-              };
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 
                             <ul class="actions">
                                 <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>

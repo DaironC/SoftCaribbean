@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-<?php get_header();?>
-
-=======
  <!-- en este script se encuentra el contenido que muestra portafolio y blogs Softca en la pagina Principal teniendo encuenta que esta en codigo dinamico 
  (query_Post) para wordpress  -->
 <?php get_header();?><!--header-->
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 </section>
 <!-- Main -->
 <section id="main">
@@ -20,7 +15,7 @@
             <div class="row">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
@@ -65,14 +60,7 @@
 <li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Información</a></li>
 </ul>
 </footer>
-<<<<<<< HEAD
 </section>	</center>
-=======
-</section>
-
-<!-- Fin Portafolio -->
-
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 <!-- Blog -->
 <section>
     <header class="major">
@@ -82,11 +70,7 @@
         <div class="row">
         <?php query_posts(array(
         "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-<<<<<<< HEAD
-        "cat"       => 2,//id del canal donde se va mostrar portafolio
-=======
-        "cat"       => 5,//id del canal donde se va mostrar blogs
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
+        "cat"       => 5,//id del canal donde se va mostrar portafolio
 
         ));
         ?>
