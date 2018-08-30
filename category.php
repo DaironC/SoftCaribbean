@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<!-- Este script  es una invocacion de get_header para las paginas principales de las categorias portafolio y blog-->
+
+>>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 <?php get_header( 'nohome' );?><!--header-->
 </section>
 <!-- Main -->

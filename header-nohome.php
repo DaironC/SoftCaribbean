@@ -1,3 +1,5 @@
+
+<!-- header-nohome es la copia de header pero sin el masterslider para las paginas del menu principal  -->
 <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
@@ -25,7 +27,7 @@
             wp_nav_menu( array(
                'theme_location'  => 'principal',
                
-               'container'       => 'nav',
+               'container'       => 'div',
                
                'container_id'    => 'nav',
                
