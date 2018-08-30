@@ -1633,6 +1633,7 @@ input, select, textarea {
 		font-size: 1.1em;
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
+		width: 100%;
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -1757,12 +1758,14 @@ input, select, textarea {
 	ul.actions {
 		list-style: none;
 		padding-left: 0;
+		text-align: center
 	}
 
 		ul.actions li {
 			display: inline-block;
 			margin-left: 1em;
 			padding-left: 0;
+			
 		}
 
 			ul.actions li:first-child {
