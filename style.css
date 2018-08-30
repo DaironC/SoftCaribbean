@@ -1626,7 +1626,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #0101DF;
+		background:#1A119B;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1653,7 +1653,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #0101DF;
+			background: #1A119B;
 		}
 
 		input[type="button"].alt,
@@ -1661,7 +1661,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #0101DF;
+			background: #1A119B;
 		}
 
 			input[type="button"].alt:hover,
@@ -1669,7 +1669,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #353132;
+				background: #0101DF;
 			}
 
 			input[type="button"].alt:active,
@@ -2119,7 +2119,7 @@ input, select, textarea {
 		.icon.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #FE642E;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -2139,17 +2139,17 @@ input, select, textarea {
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #FE642E;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
 
 			.icon.featured.alt {
-				background-color: #252122;
+				background-color: #FE642E;
 			}
 
 				.icon.featured.alt:after {
-					border-top-color: #252122;
+					border-top-color: #FE642E;
 				}
 
 			.icon.featured.alt2 {
@@ -2189,8 +2189,6 @@ input, select, textarea {
 @import url("https://fonts.googleapis.com/css?family=Francois+One");
 	#nav {
 		margin:  0.5em 3 10 3;
-		
-		
 		background-color: rgba(245, 133, 28, 0.747);
 		-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -2219,7 +2217,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #000;
+					color: #fff;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
