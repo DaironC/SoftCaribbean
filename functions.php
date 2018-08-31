@@ -22,6 +22,7 @@ register_sidebar(array(
 register_sidebar(array(
 'name'=>'Ultimas Categorias Footer'
 ));
+
 $header_info = array(
 'width'         => 288,
 'height'        => 123,
