@@ -50,14 +50,14 @@
                <!-- no posts found -->
                <h3>No hay nada</h3>
                <?php endif;?>
-            </div>
+            </div> 
       </div>
    </div>
 </div>
 <br>
 <section>	
 <center><ul class="actions">
-<li><a href="http://localhost:81/softca/category/portafolio/" class="button large">Mas Información</a></li>
+<li ><a href="http://localhost:81/softca/category/portafolio/" class="button">Mas Información</a></li>
 </ul>
 </footer>
 </section>	</center>
