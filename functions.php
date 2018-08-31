@@ -48,7 +48,7 @@ add_theme_support('post-thumbnails');}
 // }
 register_nav_menus(array(
 'principal' => 'Menu Principal',
-'footer'    => 'Menu footer',
+
 ));
 /**
 * Enqueue scripts

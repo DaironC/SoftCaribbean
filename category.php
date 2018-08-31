@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<!-- Este script  es una invocacion de get_header para las paginas principales de las categorias portafolio y blog-->
-
->>>>>>> 4b570434d6e0019b0d7d70e58efd638b3af9ead9
 <?php get_header( 'nohome' );?><!--header-->
 </section>
 <!-- Main -->
@@ -27,7 +22,7 @@
                         <div class="col-4 col-6-medium col-12-small">
                          <!-- post -->
                      <section class="box">
-                        <a href="#" class="image featured">
+                        <a href="<?php the_permalink();?>" class="image featured">
                         <?php
                            // check if the post has a Post Thumbnail assigned to it.
                            if (has_post_thumbnail()) {
@@ -41,7 +36,7 @@
                         <p><?php the_excerpt();?></p>
                         <footer>
                            <ul class="actions">
-                              <li><a href="<?php the_permalink();?>" class="button alt">Find out more</a></li>
+                              <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
                            </ul>
                         </footer>
                      </section>

@@ -27,7 +27,7 @@
             wp_nav_menu( array(
                'theme_location'  => 'principal',
                
-               'container'       => 'div',
+               'container'       => 'nav',
                
                'container_id'    => 'nav',
                
