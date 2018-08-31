@@ -23,13 +23,18 @@
             <!-- Header -->
             <section id="header">
 
-                <ul class="social col-12">
-                    <li><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
+
+                
+
+
+                <nav class="top-bar">
+                    <div class="container-fluid">
+                <ul id="top" class="social">
+                    <li ><a class="icon fa-facebook" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
                     <li><a class="icon fa-whatsapp" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">Twitter</span></a></li>               
                 </ul>
-
-
+                </div>    
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
                 <?php if (get_header_image()) : ?>
@@ -48,6 +53,9 @@
                     'container_id' => 'nav',
                 ));
                 ?>
+
+
+                 
                 <!--Fin Logo -->
                 <!-- Banner -->
                 <section id="banners">
