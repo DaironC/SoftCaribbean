@@ -39,7 +39,7 @@
                      <p><?php the_excerpt();?></p>
                      <footer>
                         <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
+                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información </a></li>
                         </ul>
                      </footer>
                   </section>
