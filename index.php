@@ -38,13 +38,9 @@
 
                     <div class="box-container panel">
                         
-<<<<<<< HEAD
 
                         <?= the_excerpt() ?>
 
-=======
-                        <?= the_excerpt() ?>
->>>>>>> f8ed175a8474a7bad39ca9011699fd3918e8f009
                         <footer>
                             <ul class="actions">
                             <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
@@ -65,11 +61,7 @@
                     var i;
 
                     for (i = 0; i < acc.length; i++) {
-<<<<<<< HEAD
                         acc[i].addEventListener("click", function() {
-=======
-                        acc[i].addEventListener("click", ()=> {
->>>>>>> f8ed175a8474a7bad39ca9011699fd3918e8f009
                             /* Toggle between adding and removing the "active" class,
                             to highlight the button that controls the panel */
                             this.classList.toggle("active");
