@@ -2691,26 +2691,22 @@ input, select, textarea {
 						content: '\f0c9';
 						display: block;
 						position: absolute;
-						left: 10px;
-						top: 10px;
+						left: 2px;
+						top: 2px;
 						width: 50px;
 						height: 40px;
 						line-height: 40px;
 						font-size: 18px;
 						color: #fff;
 						text-align: center;
-						background: rgba(150, 150, 150, 0.75);
+						background: rgba(255, 126, 6, 0.747);
 						border-radius: 5px;
 					}
 
 					#titleBar .toggle:active:before {
 						background-color: #969696;
 					}
-
-					#nav > ul > li{
-						display: block;
-						border-bottom: solid 1px rgb(216, 132, 23);
-					}
+				
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2733,9 +2729,10 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
+				background-color: rgba(245, 133, 28, 0.9);
 				color: #858484;
-				background-image: url("assets/css/images/bg.jpg");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
+				
 			}
 
 				#navPanel .link {
@@ -2744,9 +2741,9 @@ input, select, textarea {
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
-					border-top: solid 1px rgba(255, 255, 255, 0.05);
+					border-top: solid 5px rgba(255, 255, 255, 0.05);
 					padding: 0 1em 0 1em;
-					font-style: italic;
+					
 				}
 
 					#navPanel .link:first-child {
@@ -2985,6 +2982,12 @@ input, select, textarea {
 				#intro h2 {
 					font-size: 1.25em;
 				}
+
+				#nav > ul {
+					display:none;
+						
+					}
+
 
 		/* Banner */
 
