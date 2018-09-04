@@ -59,10 +59,12 @@
 
                  
                 <!--Fin Logo -->
+                
                 <!-- Banner -->
                 <section id="banners">
-                <?php echo do_shortcode('[masterslider id="1"]'); ?>
+                <?php masterslider(1); ?>
                 </section>
+
                 <!-- Intro -->
                 <section id="intro" class="container">
                     <div class="row">

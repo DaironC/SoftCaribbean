@@ -12,17 +12,17 @@
             <header class="major">
                <h2>My Portafolio</h2>
             </header>
-            <div class="row">
+            <div class="row img-fluid">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
                <?php if (have_posts()): while (have_posts()): the_post();?>
                <div class="col-4 col-6-medium col-12-small">
                   <!-- post -->
-                  <section class="box portafolio">
+                  <section class="box portafolio img-fluid ">
                     <a href="<?php the_permalink();?>" class="image featured">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
@@ -61,19 +61,37 @@
                     var i;
 
                     for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
+                        acc[i].addEventListener("mouseover", function() {
                             /* Toggle between adding and removing the "active" class,
                             to highlight the button that controls the panel */
                             this.classList.toggle("active");
 
                             /* Toggle between hiding and showing the active panel */
                             var panel = this.nextElementSibling;
-                            if (panel.style.display === "block") {
-                                panel.style.display = "none";
-                            } else {
-                                panel.style.display = "block";
-                            }
+
+                            if (panel.style.display === ""||panel.style.display === "none") panel.style.display = "block";
+                            
                         });
+                    }
+
+
+                    for (let index = 0; index < acc.length; index++) {
+                        acc[index].addEventListener("mouseout", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            console.log(this.classList);
+                            
+                            this.classList.remove("active");
+                            
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+
+                            console.log(panel.style.display);
+                            
+                            if (panel.style.display === "block") panel.style.display = "none";
+                            
+                        });
+                        
                     }
                 </script>
 
