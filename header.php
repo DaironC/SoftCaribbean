@@ -70,7 +70,7 @@
                             <section class="medium">
                                 <i class="icon featured fa-cog"></i>
                                 <header>
-                                    <h2>TECNOLOGIAS</h2>
+                                    <h2>TECNOLOGÍAS</h2>
                                 </header>
                                 <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
                             </section>
@@ -84,7 +84,7 @@
                             <section class="middle">
                                 <i class="icon featured alt fa-flash"></i>
                                 <header>
-                                    <h2>VALORACION</h2>
+                                    <h2>VALORACIÓN</h2>
                                 </header>
                                 <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
                             </section>

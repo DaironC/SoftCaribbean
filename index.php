@@ -29,6 +29,7 @@
                         if (has_post_thumbnail()) {
                             the_post_thumbnail('category-thumb');
                         }
+<<<<<<< HEAD
                     ?>
                     </a>
 
@@ -48,6 +49,21 @@
                         </footer>
                     </div>
 
+=======
+                        ?>
+                     </a>
+                     <header>
+                        <h3>
+                           <center><?php the_title();?></center>
+                        </h3>
+                     </header>
+                     <p><?php the_excerpt();?></p>
+                     <footer>
+                        <ul class="actions">
+                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información </a></li>
+                        </ul>
+                     </footer>
+>>>>>>> cd267a4cf394fea088dfbba43e79cb9630e459f6
                   </section>
                </div >
                <?php endwhile;?>

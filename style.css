@@ -8,7 +8,7 @@ Version: 1.0
 */
 @import url("assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
-
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,7 +31,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Francois One', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -107,9 +109,9 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro';
+		
 		font-weight: 300;
-		color: #5d5d5d;
+		text-align: justify;
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -144,6 +146,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #252122;
 		font-weight: 700;
+		margin: 10px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -180,7 +183,8 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1.5em;
+		
+		margin: 10px;
 	}
 
 /* Container */
@@ -1738,7 +1742,7 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0em;
 		}
 
 	ol {
@@ -1942,8 +1946,8 @@ input, select, textarea {
 
 	#top.social li {
 			display: inline-block;
-			padding-right: 0;
-			margin-left: 0.75em;
+			
+		
 			
 		}
 
@@ -1953,7 +1957,7 @@ input, select, textarea {
 			#top.social li a {
 				display: inline-block;
 				text-align: center;
-				border-radius: 5px;
+				border-radius: 3px;
 				width: 40px; 
 				height: 40px; 
 				margin-top: 2px; 
@@ -2191,7 +2195,7 @@ input, select, textarea {
 
 /* Nav */
 
-@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
 	#nav {
 	
 		background-color: rgba(245, 133, 28, 0.747);
