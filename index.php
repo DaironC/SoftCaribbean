@@ -29,7 +29,6 @@
                         if (has_post_thumbnail()) {
                             the_post_thumbnail('category-thumb');
                         }
-<<<<<<< HEAD
                     ?>
                     </a>
 
@@ -39,9 +38,7 @@
 
                     <div class="box-container panel">
                         
-
                         <?= the_excerpt() ?>
-
                         <footer>
                             <ul class="actions">
                             <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
@@ -49,21 +46,6 @@
                         </footer>
                     </div>
 
-=======
-                        ?>
-                     </a>
-                     <header>
-                        <h3>
-                           <center><?php the_title();?></center>
-                        </h3>
-                     </header>
-                     <p><?php the_excerpt();?></p>
-                     <footer>
-                        <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información </a></li>
-                        </ul>
-                     </footer>
->>>>>>> cd267a4cf394fea088dfbba43e79cb9630e459f6
                   </section>
                </div >
                <?php endwhile;?>
@@ -77,7 +59,7 @@
                     var i;
 
                     for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
+                        acc[i].addEventListener("click", ()=> {
                             /* Toggle between adding and removing the "active" class,
                             to highlight the button that controls the panel */
                             this.classList.toggle("active");
