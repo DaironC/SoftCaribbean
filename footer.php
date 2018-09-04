@@ -23,7 +23,7 @@
             </div>
               <div class="col-12 ">
                  
-              </div>
+              </div> 
             </div>
                      <div class="col-4 col-12-medium">
             <section>
