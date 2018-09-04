@@ -30,15 +30,18 @@
                            }
                            ?>
                         </a>
-                        <header>
-                           <h3><?php the_title();?></h3>
-                        </header>
-                        <p><?php the_excerpt();?></p>
-                        <footer>
-                           <ul class="actions">
-                              <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
-                           </ul>
-                        </footer>
+
+                           <div class="box-container">
+                                <header>
+                                <h3><?php the_title();?></h3>
+                                </header>
+                                <p><?php the_excerpt();?></p>
+                                <footer>
+                                <ul class="actions">
+                                    <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion</a></li>
+                                </ul>
+                                </footer>
+                           </div>
                      </section>
                   </div >
                   <?php endwhile;?>

@@ -66,3 +66,20 @@ wp_enqueue_script('dropotron', get_template_directory_uri() . '/assets/js/jquery
 wp_enqueue_style("style", get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'misrecursos');
+
+//////////////// js
+
+//  add_action("wp_enqueue_scripts", "softca_insertar_js");
+
+//  function softca_insertar_js(){
+
+//      if (is_home()){
+//          wp_register_script('miscript', get_stylesheet_directory_uri().'/assets/js/script.js', array('jquery'), '1', true );
+//          wp_enqueue_script('miscript');
+//      }
+
+        
+//      }
+    
+    
+    

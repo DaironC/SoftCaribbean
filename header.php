@@ -13,6 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <!--[if lte IE 8]><script src ="<?php Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
         <?php wp_head(); ?>
+        
+        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
+
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
@@ -67,7 +70,7 @@
                             <section class="medium">
                                 <i class="icon featured fa-cog"></i>
                                 <header>
-                                    <h2>TECNOLOGÍAS</h2>
+                                    <h2>TECNOLOGIAS</h2>
                                 </header>
                                 <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
                             </section>
@@ -81,7 +84,7 @@
                             <section class="middle">
                                 <i class="icon featured alt fa-flash"></i>
                                 <header>
-                                    <h2>VALORACIÓN</h2>
+                                    <h2>VALORACION</h2>
                                 </header>
                                 <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
                             </section>

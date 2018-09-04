@@ -15,33 +15,39 @@
             <div class="row">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
                <?php if (have_posts()): while (have_posts()): the_post();?>
                <div class="col-4 col-6-medium col-12-small">
                   <!-- post -->
-                  <section class="box">
-                     <a href="<?php the_permalink();?>" class="image featured">
+                  <section class="box portafolio">
+                    <a href="<?php the_permalink();?>" class="image featured">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
                         if (has_post_thumbnail()) {
                             the_post_thumbnail('category-thumb');
                         }
-                        ?>
-                     </a>
-                     <header>
-                        <h3>
-                           <center><?php the_title();?></center>
-                        </h3>
-                     </header>
-                     <p><?php the_excerpt();?></p>
-                     <footer>
-                        <ul class="actions">
-                           <li><a href="<?php the_permalink();?>" class="button alt">+ Información </a></li>
-                        </ul>
-                     </footer>
+                    ?>
+                    </a>
+
+                    <header class="accordion">   
+                        <h3><?= the_title()?></h3>
+                    </header>
+
+                    <div class="box-container panel">
+                        
+
+                        <?= the_excerpt() ?>
+
+                        <footer>
+                            <ul class="actions">
+                            <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
+                            </ul>
+                        </footer>
+                    </div>
+
                   </section>
                </div >
                <?php endwhile;?>
@@ -50,17 +56,38 @@
                <!-- no posts found -->
                <h3>No hay nada</h3>
                <?php endif;?>
+               <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("active");
+
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+
             </div> 
       </div>
    </div>
 </div>
 <br>
 <section>	
-<center><ul class="actions">
+<ul class="actions">
 <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">Mas Información</a></li>
 </ul>
 </footer>
-</section>	</center>
+</section>
 <!-- Blog -->
 <section>
     <header class="major">
@@ -85,17 +112,20 @@
                         the_post_thumbnail('category-thumb');
                     }?> 
                     </a>
-                    <header>
-                    <h3>
-                        <?php the_title();?>
-                    </h3>
-                    </header>
-                    <?php the_excerpt(); ?>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                    </ul>
-                    </footer>
+                    <div class="box-container">
+                        <header>
+                        <h3>
+                            <?php the_title();?>
+                        </h3>
+                        </header>
+                        <?php the_excerpt(); ?>
+                        <footer>
+                            <ul class="actions">
+                                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                        </ul>
+                        </footer>
+                    </div>
+
                 </section>
             </div>
             <?php endwhile;?>

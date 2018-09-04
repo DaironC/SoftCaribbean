@@ -8,7 +8,7 @@ Version: 1.0
 */
 @import url("assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
-@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,9 +31,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-	font-family: 'Francois One', sans-serif;
-}
+	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -109,9 +107,9 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		
+		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		text-align: justify;
+		color: #5d5d5d;
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -146,7 +144,6 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #252122;
 		font-weight: 700;
-		margin: 10px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -183,8 +180,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		
-		margin: 10px;
+		margin-bottom: 1.5em;
 	}
 
 /* Container */
@@ -1587,16 +1583,12 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		border-radius: 10px;
-		padding: 1.75em 1.75em 1.75em 1.75em;
+		
 	}
 
-		.box .image.featured {
-			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
-		}
+	box header{
+		padding: 1em !important;		
+	}
 
 		.box.post header {
 			padding-top: 1em;
@@ -1731,7 +1723,6 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
 		}
 
 		.image.left {
@@ -1747,7 +1738,7 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0em;
+			padding-left: 0.5em;
 		}
 
 	ol {
@@ -1951,8 +1942,8 @@ input, select, textarea {
 
 	#top.social li {
 			display: inline-block;
-			
-		
+			padding-right: 0;
+			margin-left: 0.75em;
 			
 		}
 
@@ -1962,7 +1953,7 @@ input, select, textarea {
 			#top.social li a {
 				display: inline-block;
 				text-align: center;
-				border-radius: 3px;
+				border-radius: 5px;
 				width: 40px; 
 				height: 40px; 
 				margin-top: 2px; 
@@ -2200,7 +2191,7 @@ input, select, textarea {
 
 /* Nav */
 
-
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 	#nav {
 	
 		background-color: rgba(245, 133, 28, 0.747);
@@ -3031,3 +3022,43 @@ input, select, textarea {
 			}
 
 	}
+
+	/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+	border: none;
+    outline: none;
+	transition: background-color ease 0.5s !important;
+	margin: 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: #ccc;
+	transition: background-color ease 0.5s !important;
+}
+
+.active{
+	border-radius: 0px !important;
+}
+
+.accordion:hover{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.box-container{
+	padding: 1.5em;
+}
