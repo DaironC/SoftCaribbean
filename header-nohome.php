@@ -22,6 +22,7 @@
                     <li><a class="icon fa-whatsapp" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
                 </ul>
                 </div>    
+                </nav>
          <!-- Logo -->
          <?php if ( get_header_image() ) : ?>
          <div id="site-header">

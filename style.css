@@ -1730,6 +1730,10 @@ input, select, textarea {
 			margin: 0 2em 2em 0;
 		}
 
+		 #logo{
+			margin-top:50px;
+		}
+
 /* List */
 
 	ul {
@@ -1905,7 +1909,11 @@ input, select, textarea {
 
 
 			.top-bar {
-				width: 100%;
+				position: fixed;
+    			top: 0;
+   				 width: 100%;
+    			z-index: 3;
+				
 				
 			  }
 			  
