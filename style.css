@@ -1583,7 +1583,6 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		border-radius: 10px;
-		
 	}
 
 	box header{
@@ -2857,16 +2856,6 @@ input, select, textarea {
 			}
 
 		/* Box */
-
-			.box {
-				padding: 25px 15px 20px 15px;
-			}
-
-				.box .image.featured {
-					left: 15px;
-					top: 15px;
-					margin: -40px 0 40px -30px;
-				}
 
 				.box.post header {
 					padding-top: 0;
