@@ -34,19 +34,11 @@
                     </a>
 
                     <header class="accordion">   
-                        <h3><?= the_title()?></h3>
+                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
                     </header>
 
                     <div class="box-container panel">
-                        
-
                         <?= the_excerpt() ?>
-
-                        <footer>
-                            <ul class="actions">
-                            <li><a href="<?php the_permalink();?>" class="button alt">+ Informacion </a></li>
-                            </ul>
-                        </footer>
                     </div>
 
                   </section>
@@ -69,22 +61,14 @@
                     }
                     function mostrarPanel(){
                         this.classList.toggle("active");
-                        console.log("f:",f);
                         var panel = this.nextElementSibling;
-                        if (panel.style.display === ""||panel.style.display === "none"){ 
-                            panel.style.display = "block"; 
-                            f=1;
-                        }else{
-                            f=0;                       
-                        }
+                        if (panel.style.display === ""||panel.style.display === "none") panel.style.display = "block";
+                            
                     }
                     function ocultarPanel(){
-                        var panel = this.nextElementSibling;                        
-                        if (panel.style.display === "block" && f==1) {
-                            //this.classList.remove("active");
-                            f=0;
-                            panel.style.display = "none";
-                        }
+                        this.classList.remove("active");
+                        var panel = this.nextElementSibling;                            
+                        if (panel.style.display === "block") panel.style.display = "none";
                     }
                 </script>
 
