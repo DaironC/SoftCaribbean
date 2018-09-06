@@ -41,16 +41,14 @@
          </div>
 
          <div class="col-4 col-12-medium">
-            
             <a href="#" class="image featured img-fluid">
-                <img src="<?php bloginfo('template_directory') ?>/images/cmmilogo.png" alt="" /></a>
-           
+				      <img src="<?php bloginfo('template_directory') ?>/images/cmmilogo.png" alt="" /></a>
+			      <a href="#" class="image featured img-fluid">
+               <img id="logo-it" src="<?php bloginfo('template_directory') ?>/images/marcaColombiaTI.png" alt="Marca Colombia IT" style="width: 100px;height: 100px;" align="middle"/></a>
          </div>
       </div>
    </div>
 </section>
-
-
 
 <?php wp_footer(); ?>
         <!--[if lte IE 8]><script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/ie/respond.min.js"></script><![endif]-->

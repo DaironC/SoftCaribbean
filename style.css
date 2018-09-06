@@ -1725,10 +1725,25 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.featured .img-portafolio {
+			width: 100%;
+			height: 300px !important;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
 		}
+
+		#logo-it{
+			display: block;
+			margin:auto;
+		}
+		#img-index{
+			max-height: 200;
+		}
+
+
 
 /* List */
 
@@ -2876,11 +2891,14 @@ input, select, textarea {
 				.box.post h2 {
 					font-size: 1.5em;
 					line-height: 1.5em;
+					padding-left: 30px;
+
 				}
 
 				.box.post header > p {
 					margin-top: 0;
 					font-size: 1em;
+					padding-left: 30px;
 				}
 
 		/* Divided */

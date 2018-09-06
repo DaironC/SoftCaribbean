@@ -15,19 +15,20 @@
             <div class="row img-fluid">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
                <?php if (have_posts()): while (have_posts()): the_post();?>
-               <div class="col-4 col-6-medium col-12-small">
+               <div class="col-4 col-6-medium col-12-small" >
                   <!-- post -->
-                  <section class="box portafolio img-fluid ">
-                    <a href="<?php the_permalink();?>" class="image featured">
+                  <section class="box portafolio img-fluid. ">
+                    <a  href="<?php the_permalink();?>" class="image featured">
+                   
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
                         if (has_post_thumbnail()) {
-                            the_post_thumbnail('category-thumb');
+                            the_post_thumbnail('post-thumbnail',array('class'=>'img-portafolio'));
                         }
                     ?>
                     </a>
@@ -59,39 +60,31 @@
                <script>
                     var acc = document.getElementsByClassName("accordion");
                     var i;
+                    var f=0;
 
                     for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("mouseover", function() {
-                            /* Toggle between adding and removing the "active" class,
-                            to highlight the button that controls the panel */
-                            this.classList.toggle("active");
+                        acc[i].addEventListener("mouseover", mostrarPanel);
+                        acc[i].addEventListener("mouseout", ocultarPanel);
 
-                            /* Toggle between hiding and showing the active panel */
-                            var panel = this.nextElementSibling;
-
-                            if (panel.style.display === ""||panel.style.display === "none") panel.style.display = "block";
-                            
-                        });
                     }
-
-
-                    for (let index = 0; index < acc.length; index++) {
-                        acc[index].addEventListener("mouseout", function() {
-                            /* Toggle between adding and removing the "active" class,
-                            to highlight the button that controls the panel */
-                            console.log(this.classList);
-                            
-                            this.classList.remove("active");
-                            
-                            /* Toggle between hiding and showing the active panel */
-                            var panel = this.nextElementSibling;
-
-                            console.log(panel.style.display);
-                            
-                            if (panel.style.display === "block") panel.style.display = "none";
-                            
-                        });
-                        
+                    function mostrarPanel(){
+                        this.classList.toggle("active");
+                        console.log("f:",f);
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === ""||panel.style.display === "none"){ 
+                            panel.style.display = "block"; 
+                            f=1;
+                        }else{
+                            f=0;                       
+                        }
+                    }
+                    function ocultarPanel(){
+                        var panel = this.nextElementSibling;                        
+                        if (panel.style.display === "block" && f==1) {
+                            //this.classList.remove("active");
+                            f=0;
+                            panel.style.display = "none";
+                        }
                     }
                 </script>
 
@@ -115,7 +108,7 @@
         <div class="row">
         <?php query_posts(array(
         "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 5,//id del canal donde se va mostrar portafolio
+        "cat"       => 4,//id del canal donde se va mostrar portafolio
 
         ));
         ?>
