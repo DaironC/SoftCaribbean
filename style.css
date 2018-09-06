@@ -1646,6 +1646,30 @@ input, select, textarea {
 		font-size: 1.1em;
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
+		width: 100%;
+		margin:auto;
+		margin-bottom: 20px;
+
+		-moz-transition: background-color .25s ease-in-out;
+		-webkit-transition: background-color .25s ease-in-out;
+		-ms-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+	}
+
+	input.boton {
+		-webkit-appearance: none;
+		display: block;
+		text-decoration: none;
+		cursor: pointer;
+		border: 0;
+		border-radius: 5px;
+		background:#1A119B;
+		color: #fff !important;
+		font-weight: 700;
+		outline: 0;
+		font-size: 1.1em;
+		padding: 0.65em 1.5em 0.65em 1.5em;
+		text-align: center;
 		width: 70%;
 		margin:auto;
 		margin-bottom: 20px;
