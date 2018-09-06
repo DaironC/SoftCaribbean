@@ -1597,11 +1597,27 @@ input, select, textarea {
 		.box.post h2 {
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
+			padding:0 30 0 30;
+		}
+		.box.post h3 {
+			font-size: 1.5em;
+			letter-spacing: -0.015em;
+			padding:0 30 0 30;
+		}
+
+		.box.post p {
+			margin-bottom: 1.5em;
+			padding:0 30 0 30;
+		}
+		.box.post blockquote{
+			margin-left: 60px;
+			padding-left: 0px
 		}
 
 		.box.post header > p {
 			margin-top: 1.25em;
 			font-size: 1.25em;
+			padding: 0 30 0 30;
 		}
 
 		.box footer ul.actions {
@@ -1726,7 +1742,7 @@ input, select, textarea {
 
 		.image.featured .img-portafolio {
 			width: 100%;
-			height: 300px !important;
+			height: 200px !important;
 		}
 
 		.image.left {

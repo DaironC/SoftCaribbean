@@ -44,7 +44,7 @@
             <a href="#" class="image featured img-fluid">
 				      <img src="<?php bloginfo('template_directory') ?>/images/cmmilogo.png" alt="" /></a>
 			      <a href="#" class="image featured img-fluid">
-               <img id="logo-it" src="<?php bloginfo('template_directory') ?>/images/marcaColombiaTI.png" alt="Marca Colombia IT" style="width: 100px;height: 100px;" align="middle"/></a>
+               <img id="logo-it" src="<?php bloginfo('template_directory') ?>/images/marcaColombiaTI.png" alt="Marca Colombia IT" style="width: 100px;height: 100px;" /></a>
          </div>
       </div>
    </div>
