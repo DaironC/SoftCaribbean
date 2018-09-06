@@ -1737,13 +1737,15 @@ input, select, textarea {
 		#logo-it{
 			display: block;
 			margin:auto;
+                        width: 100px;
+                        height: 100px;
 		}
 		#img-index{
-			max-height: 200;
+			max-height: 200px;
 		}
 
 		#logo{
-			margin-top: 20;
+			margin-top: 50px;
 		}
 
 
@@ -3080,3 +3082,4 @@ input, select, textarea {
 .box-container{
 	padding: 1.5em;
 }
+
