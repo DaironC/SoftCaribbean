@@ -1742,6 +1742,10 @@ input, select, textarea {
 			max-height: 200;
 		}
 
+		#logo{
+			margin-top: 20;
+		}
+
 
 
 /* List */
