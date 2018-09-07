@@ -1625,6 +1625,10 @@ input, select, textarea {
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
+		.box.side {
+			background: #CEECF5;
+			padding-top: 10px;
+		}
 
 /* Button */
 
@@ -1952,19 +1956,21 @@ input, select, textarea {
 
 	ul.divided {
 		list-style: none;
-		padding-left: 0;
+	
 	}
 
 		ul.divided li {
-			border-top: solid 1px #ddd;
-			padding: 1em 0 1em 0;
+		
+			border-top: solid 2px rgba(243, 105, 13, 0.993);
+			padding: 0.5em 1.5em 0.5em 0;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 		}
 
 			ul.divided li:first-child {
 				border-top: 0;
 				padding-top: 0;
 			}
-
+/* fin Divided */
 
 
 
