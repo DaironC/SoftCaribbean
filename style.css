@@ -8,7 +8,7 @@ Version: 1.0
 */
 @import url("assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
-
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,7 +31,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Francois One', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -39,7 +41,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
+
+
 
 ol, ul {
 	list-style: none;
@@ -2275,7 +2280,7 @@ input, select, textarea {
 
 /* Nav */
 
-@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
 	#nav {
 	
 		background-color: rgba(245, 133, 28, 0.747);
@@ -3168,6 +3173,10 @@ img.icono-login{
 	display: block;
 	width: 120px;
 	height: 120px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 
