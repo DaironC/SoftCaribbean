@@ -1,4 +1,4 @@
-<!-- header-nohome es la copia de header pero sin el masterslider para las paginas del menu principal  -->
+<!-- header-intranet para usar en las paginas de intranet  -->
 <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
