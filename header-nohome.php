@@ -6,10 +6,13 @@
       <meta charset="<?php bloginfo('charset'); ?>" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    
+      <link rel="stylesheet"  href="<?php  bloginfo('template_url' ); ?>/assets/css/bootstrap.min.css">
+      <script type = "text / javascript" src = "'/assets/js/bootstrap.js'"> </script>
       <!--[if lte IE 8]><script src ="<?php  Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
       <?php wp_head();?>
       <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo ( ' stylesheet_directory ' ); ?> ! /assets/css/ie8.css" /> <! [Endif]  -->
-   </head>
+  
+    </head>
    <body class="no-sidebar is-preload">
       <div id="page-wrapper">
             
