@@ -3256,7 +3256,9 @@ aside.especiales{
 	border-radius: 5px;
 	background-color:#fff;
 	margin-top:10px;
+	padding:10px;
 	min-height: 500px
+	
 
 }
 
@@ -3274,6 +3276,19 @@ section.logos{
 	color:white;
 	text-align: center;
 
+}
+
+.card{
+	margin-top: 10px;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.fechas-especiales{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	color: #2A3787;
 }
 
 
