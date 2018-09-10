@@ -1,4 +1,3 @@
-
 <!-- header-nohome es la copia de header pero sin el masterslider para las paginas del menu principal  -->
 <html <?php language_attributes() ?> >
    <head>

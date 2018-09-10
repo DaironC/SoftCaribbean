@@ -8,9 +8,8 @@
               <h2>Dirección</h2>
                  <ul class="contact">
                     <p>
-                       Softcaribbean
-                       Carrera 48 Nro 12 Sur - 148.
-                       Edificio El Crucero. Torre Sur. Of. 203.
+                       Carrera 48 Nro 12 Sur - 148.</br>
+                       Edificio El Crucero. Torre Sur. Of. 203.</br>
                     </p>
                  </ul>
 
@@ -30,9 +29,9 @@
                <h2>Llámanos</h2>
                  <ul class="contact">
                      <p>
-                        Medellín - Antioquia - Colombia
-                        Contáctanos: Teléfono Fijo: (574) 4445455
-                        Celular: (57) 3174008432 
+                        Medellín, Antioquia - Colombia</br>
+                        Teléfono Fijo: (574) 4445455</br>
+                        Celular: (57) 3174008432
                      </p>
                 </ul>
                 <h3>Email</h3>
