@@ -56,9 +56,30 @@
 
 <!-- Main -->
 <main id="main">
-    <div class="container">
-     <h3>Intranet de SoftCaribbean</h1>
-    </div>
+   <div class="container">
+   <div class="row">
+      <div class="col-4">
+         <aside class="especiales">
+            <h4>Epcot Center</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+         </aside>
+      </div>
+    
+     
+      <div class="col-8">
+         <section class="logos">
+         
+         <p>ssssssssssssss</p>
+         
+         </section>
+         <section class="logos">
+         
+         <p>ssssssssssssss</p>
+         
+         </section>
+         </div>
+      </div>
+   </div>
 </main>
 
   <?php get_footer();?>
