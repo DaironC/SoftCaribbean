@@ -4,6 +4,8 @@
       <title><?php bloginfo('name');?></title>
       <meta charset="<?php bloginfo('charset'); ?>" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet"  href="<?php  bloginfo('template_url' ); ?>/assets/css/bootstrap.min.css">
+      <script type = "text / javascript" src = "'/assets/js/bootstrap.js'"> </script>
       <!--[if lte IE 8]><script src ="<?php  Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
       <?php wp_head();?>
       <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo ( ' stylesheet_directory ' ); ?> ! /assets/css/ie8.css" /> <! [Endif]  -->
@@ -14,7 +16,7 @@
       <!-- Header -->
       <section id="header-intranet" >
       <nav class="top-bar">
-            <div class="container-fluid">
+            <div>
                 <ul id="top" class="social">
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-linkedin"target="_blank" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
@@ -25,7 +27,7 @@
     </nav>
          
         <div class="row">
-          <div class="col-sm-8 col-xs-8">
+          <div class="">
         <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
@@ -35,7 +37,7 @@
                     </div>
          <?php endif; ?>
           </div>
-          <div class="col-sm-4 col-xs-4">
+          <div class="">
           <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
