@@ -3245,6 +3245,25 @@ img.icono-login{
     display: none; 
 }
 
+aside.especiales{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	border-radius: 5px;
+	background-color:#fff;
+	margin-top:10px;
+	min-height: 500px
+
+}
+section.logos{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	border-radius: 5px;
+	background-color:#fff;
+	margin-top:10px;
+	min-height: 250px
+}
+
+
 
 
 
