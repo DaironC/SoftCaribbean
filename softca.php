@@ -24,9 +24,10 @@
                 </ul>
                 </div>    
                 </nav>
-         <!-- Logo -->
+         
         <div class="row">
           <div class="col-sm-8">
+        <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
