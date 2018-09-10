@@ -1801,7 +1801,10 @@ input, select, textarea {
 		#logo{
 			margin-top: 50px;
 		}
-
+		#logo-intranet{
+			align-self: flex-start;		
+			margin-top: 50px;
+		}
 
 
 /* List */
@@ -2332,7 +2335,58 @@ input, select, textarea {
 					color: #fff !important;
 					font-weight: 700;
 				}
-
+				#nav-intranet {
+	
+					background-color: rgba(255, 255, 255, 0.747);
+					-webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
+					-moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
+					box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
+				
+				}
+					#nav-intranet > ul {
+						margin: 0;
+						padding: 10px;
+						margin-top: 25px;
+						
+					}
+			
+						#nav-intranet > ul > li {
+							display: inline-block;
+							margin: 0 0.35em 0 0.35em;
+							font-family: 'Francois One', sans-serif;
+							font-size: 125%;
+							
+							
+						}
+			
+							#nav-intranet > ul > li > ul {
+								display: none;
+			
+							}
+			
+							#nav-intranet > ul > li > a {
+								border-radius: 5px;
+								color: #fff;
+								text-decoration: none;
+								padding: 0.6em 1.2em 0.6em 1.2em;
+								-moz-transition: background-color .25s ease-in-out;
+								-webkit-transition: background-color .25s ease-in-out;
+								-ms-transition: background-color .25s ease-in-out;
+								transition: background-color .25s ease-in-out;
+								outline: 0;
+							}
+			
+							#nav-intranet > ul > li:hover > a, #nav-intranet > ul > li.active > a {
+								
+								background: rgb(187, 135, 38);
+							}
+			
+							#nav-intranet > ul > li.current > a {
+								background: #fd8700;
+								color: #fff !important;
+								font-weight: 700;
+							}		
+				
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
