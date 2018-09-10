@@ -1802,7 +1802,7 @@ input, select, textarea {
 			margin-top: 50px;
 		}
 		#logo-intranet{
-			margin-top: 20px;
+			margin-top: 50px;
 		}
 
 
@@ -2284,11 +2284,9 @@ input, select, textarea {
 	#header-intranet {
 		position: relative;
 		background: #ffffff;
-		border-bottom: solid 0.1px #ccc;
+		border-bottom: solid 0.5px #ccc;
 		padding: 0em 0 0em 0;
 		text-align: center;
-		margin: auto;
-		display: block;
 	}
 
 		#header-intranet h1 {
@@ -2353,9 +2351,9 @@ input, select, textarea {
 					font-weight: 700;
 				}
 				#nav-intranet {
+					margin-top: 60px;
 					align-content: center;
 					background-color: rgba(255, 255, 255, 0.747);
-					float: right !important;
 				}
 					#nav-intranet > ul {
 						margin: 0;
@@ -2953,6 +2951,10 @@ input, select, textarea {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
+			}
+
+			#nav-intranet{
+				display: none;
 			}
 
 	}
