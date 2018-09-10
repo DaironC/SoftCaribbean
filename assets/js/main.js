@@ -21,7 +21,7 @@
 		});
 
 	$(function() {
-
+		var ruta=document.location.pathname;
 		var	$window = $(window),
 			$body = $('body');
 
@@ -64,7 +64,7 @@
 				$(
 					'<div id="navPanel">' +
 						'<nav>' +
-							$('#nav').navList() +
+							$((ruta.includes("intranet"))?'#nav-intranet':'#nav').navList() +
 						'</nav>' +
 					'</div>'
 				)
