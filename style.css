@@ -8,7 +8,7 @@ Version: 1.0
 */
 @import url("assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
-
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,7 +31,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Francois One', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -39,7 +41,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
+
+
 
 ol, ul {
 	list-style: none;
@@ -1468,7 +1473,9 @@ input, select, textarea {
 		border-radius: 5px;
 		border: solid 1px #dddddd;
 		background: #fff;
-		width: 100%;
+		width: 70%;
+		margin:auto;
+		margin-bottom: 20px;
 	}
 
 		form input[type=text]:focus,
@@ -1623,6 +1630,10 @@ input, select, textarea {
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
+		.box.side {
+			background: #CEECF5;
+			padding-top: 10px;
+		}
 
 /* Button */
 
@@ -1632,7 +1643,7 @@ input, select, textarea {
 	button,
 	.button {
 		-webkit-appearance: none;
-		display: inline-block;
+		display: block;
 		text-decoration: none;
 		cursor: pointer;
 		border: 0;
@@ -1645,6 +1656,33 @@ input, select, textarea {
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
 		width: 100%;
+		margin:auto;
+		margin-bottom: 20px;
+
+		-moz-transition: background-color .25s ease-in-out;
+		-webkit-transition: background-color .25s ease-in-out;
+		-ms-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+	}
+
+	input.boton {
+		-webkit-appearance: none;
+		display: block;
+		text-decoration: none;
+		cursor: pointer;
+		border: 0;
+		border-radius: 5px;
+		background:#1A119B;
+		color: #fff !important;
+		font-weight: 700;
+		outline: 0;
+		font-size: 1.1em;
+		padding: 0.65em 1.5em 0.65em 1.5em;
+		text-align: center;
+		width: 70%;
+		margin:auto;
+		margin-bottom: 20px;
+
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -1926,19 +1964,21 @@ input, select, textarea {
 
 	ul.divided {
 		list-style: none;
-		padding-left: 0;
+	
 	}
 
 		ul.divided li {
-			border-top: solid 1px #ddd;
-			padding: 1em 0 1em 0;
+		
+			border-top: solid 2px rgba(243, 105, 13, 0.993);
+			padding: 0.5em 1.5em 0.5em 0;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 		}
 
 			ul.divided li:first-child {
 				border-top: 0;
 				padding-top: 0;
 			}
-
+/* fin Divided */
 
 
 
@@ -2052,6 +2092,15 @@ input, select, textarea {
 					#top.social li a.fa-whatsapp:hover {
 							background: #075e54;
 						}
+
+						#top.social li a.fa-user:hover {
+							background: #717776;
+						}
+
+
+						
+
+
 
 
 
@@ -2234,7 +2283,7 @@ input, select, textarea {
 
 /* Nav */
 
-@import url("https://fonts.googleapis.com/css?family=Francois+One");
+
 	#nav {
 	
 		background-color: rgba(245, 133, 28, 0.747);
@@ -3152,4 +3201,38 @@ input, select, textarea {
 .box-container{
 	padding: 1.5em;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	width: 70%;
+	border-radius: 5px;
+	background-color:#fff;
+	padding-bottom: 10px;
+	margin:auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+h1,h3.inicio-titulo{
+	text-align: center;
+	margin-bottom: 5px;
+	color: #b4b4b4;
+}
+
+img.icono-login{
+	margin:auto;
+	display: block;
+	width: 120px;
+	height: 120px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
 
