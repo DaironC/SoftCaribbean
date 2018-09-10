@@ -3266,9 +3266,10 @@ section.logos{
 	min-height: 250px
 }
 
-div.intra{
-	text-align: center;
+#intra{
+
 	color:white;
+	text-align: center;
 
 }
 
