@@ -16,12 +16,10 @@
             <p>The Epcot Center is a theme park in Disney World, Florida.</p>
          </aside>
       </div>
-    
-     
       <div class="col-8">
          <section class="logos">
          
-         <p>ssssssssssssss</p>
+         <p>Texto de logos</p>
          
          </section>
          <section class="logos">
