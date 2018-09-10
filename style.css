@@ -1802,8 +1802,7 @@ input, select, textarea {
 			margin-top: 50px;
 		}
 		#logo-intranet{
-			align-self: flex-start;		
-			margin-top: 50px;
+			margin-top: 20px;
 		}
 
 
@@ -2280,6 +2279,27 @@ input, select, textarea {
 			line-height: 1;
 		}
 
+/* Header-intranet */
+
+	#header-intranet {
+		position: relative;
+		background: #ffffff;
+		border-bottom: solid 0.1px #ccc;
+		padding: 0em 0 0em 0;
+		text-align: center;
+		margin: auto;
+		display: block;
+	}
+
+		#header-intranet h1 {
+			color: #252122;
+			font-weight: 900;
+			font-size: 2.5em;
+			letter-spacing: -0.0em;
+			line-height: 1;
+		}
+
+
 
 /* Nav */
 
@@ -2336,12 +2356,8 @@ input, select, textarea {
 					font-weight: 700;
 				}
 				#nav-intranet {
-	
+					align-content: center;
 					background-color: rgba(255, 255, 255, 0.747);
-					-webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
-					-moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
-					box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
-				
 				}
 					#nav-intranet > ul {
 						margin: 0;
@@ -2355,8 +2371,6 @@ input, select, textarea {
 							margin: 0 0.35em 0 0.35em;
 							font-family: 'Francois One', sans-serif;
 							font-size: 125%;
-							
-							
 						}
 			
 							#nav-intranet > ul > li > ul {
@@ -3210,6 +3224,7 @@ input, select, textarea {
 	background-color:#fff;
 	padding-bottom: 10px;
 	margin:auto;
+	padding-top: 10px;
 }
 
 .card:hover {
