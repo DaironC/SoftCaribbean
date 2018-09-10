@@ -1,9 +1,9 @@
 <?php
 /*
-  Template Name: intranet
+  Template Name: Aplicar HV
  */
 ?>
-<?php get_header(); ?>  
+<?php get_header('nohome'); ?>  
 
 <!-- Main -->
 <main id="main">
