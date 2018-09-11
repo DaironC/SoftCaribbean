@@ -3279,6 +3279,14 @@ section.logos{
 	color: #2A3787;
 }
 
-
+.card-enviarHV {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	width: 90%;
+	border-radius: 5px;
+	background-color:#fff;
+	margin:auto;
+	padding: 20px;	
+}
 
 
