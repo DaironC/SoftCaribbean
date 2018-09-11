@@ -1473,7 +1473,7 @@ input, select, textarea {
 		border-radius: 5px;
 		border: solid 1px #dddddd;
 		background: #fff;
-		width: 70%;
+		width: 90%;
 		margin:auto;
 		margin-bottom: 20px;
 	}
@@ -1485,7 +1485,7 @@ input, select, textarea {
 		form textarea:focus {
 			box-shadow: inset 0px 0px 1px 1px #43bff0;
 		}
-
+		
 	form textarea {
 		height: 15em;
 	}
@@ -1680,6 +1680,29 @@ input, select, textarea {
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
 		width: 70%;
+		margin:auto;
+		margin-bottom: 20px;
+
+		-moz-transition: background-color .25s ease-in-out;
+		-webkit-transition: background-color .25s ease-in-out;
+		-ms-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+	}
+	input.enviar {
+		-webkit-appearance: none;
+		display: block;
+		text-decoration: none;
+		cursor: pointer;
+		border: 0;
+		border-radius: 5px;
+		background:#1A119B;
+		color: #fff !important;
+		font-weight: 700;
+		outline: 0;
+		font-size: 1.1em;
+		padding: 0.65em 1.5em 0.65em 1.5em;
+		text-align: center;
+		width: 50%;
 		margin:auto;
 		margin-bottom: 20px;
 
@@ -3287,6 +3310,17 @@ section.logos{
 	background-color:#fff;
 	margin:auto;
 	padding: 20px;	
+}
+.headerCardHV{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.footerCardHV{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
 }
 
 
