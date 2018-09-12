@@ -1683,10 +1683,8 @@ input, select, textarea {
 		font-size: 1.1em;
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
-		float: right;
-		width: auto;
-		height: auto;
-
+		align-self: flex-end;
+		width: 50%;
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -3322,7 +3320,7 @@ input, select, textarea {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
     padding: 10px;
-    margin-right: 20px f!important;
+    margin-right: 20px !important;
 }
 
 .card-login {
