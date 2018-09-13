@@ -11,11 +11,11 @@
 
 <div class="container">
 
-<div id="reconocimiento">
+<div class="reconocimiento">
 <div class="row">
    <div class="col-md-3">
       <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <img class="card-img-top"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
          Juan Cardenas
          </button>
@@ -33,7 +33,7 @@
 
       <div class="col-md-3">
       <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
          Juan Cardenas
          </button>
@@ -50,7 +50,7 @@
 
       <div class="col-md-3">
       <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
          Juan Cardenas
          </button>
@@ -67,7 +67,7 @@
 
       <div class="col-md-3">
       <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
          Juan Cardenas
          </button>
