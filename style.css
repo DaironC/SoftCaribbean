@@ -3388,6 +3388,7 @@ aside.especiales{
 	background-color:#fff;
 	margin-top:10px;
 	padding:10px;
+	padding-left: 20px;
 	min-height: 500px
 	
 
@@ -3398,9 +3399,10 @@ section.logos{
     transition: 0.3s;
 	border-radius: 5px;
 	background-color:#fff;
-	margin-top:10px;
-	padding-top: 15px;
+	padding-top: 10px;
+	padding: 20px;
 	min-height: 250px
+	
 	
 }
 
@@ -3412,7 +3414,7 @@ section.logos{
 	background-color:#fff;
 	margin-top:10px;
 	padding-top: 15px;
-	min-height: 480px
+	min-height: 420px
 	
 
 }
@@ -3450,7 +3452,7 @@ section.logos{
 	padding: 10px;
 	text-align: center;
 }
-#reconocimineto{
+#reconocimiento{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 	border-radius: 5px;
@@ -3458,7 +3460,7 @@ section.logos{
 	margin:auto;
 	padding: 20px;	
 	margin-top: 20px;
-
+	text-align: center;
 }
 
 #especiales{
@@ -3467,15 +3469,16 @@ section.logos{
 	border-radius: 5px;
 	background-color:#fff;
 	margin:auto;
-	padding: 20px;	
-	margin-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px;
 
 
 }
 .titulos-intranet{
 	text-align: center;
 	color: #2A3787;
-	margin-bottom: 10px;
+	
+	padding: 10px;
 }
 
 
