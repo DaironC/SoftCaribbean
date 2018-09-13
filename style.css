@@ -1840,8 +1840,8 @@ input, select, textarea {
 		#logo-it{
 			display: block;
 			margin:auto;
-                        width: 100px;
-                        height: 100px;
+        	width: 100px;
+        	height: 100px;
 		}
 		#img-index{
 			max-height: 200px;
@@ -3452,7 +3452,7 @@ section.logos{
 	padding: 10px;
 	text-align: center;
 }
-#reconocimiento{
+.reconocimiento{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 	border-radius: 5px;
@@ -3495,7 +3495,7 @@ background: #e2e2e2
 
 .card-img-top{
 	width: 100%;
-	height: 150px !important;
+	height: 300px !important;
 	padding: 10px;
 	margin: auto;
 }

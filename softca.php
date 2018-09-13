@@ -47,9 +47,9 @@
                <table class="table">
                   <thead>
                      <tr>
-                        <th scope="col"><img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/alfresco.png"></th>
-                        <th scope="col"><img class="card-img-top" style="width:150px;height:120px;" src="<?php bloginfo('template_directory') ?>/images/Logokuye.png"></th>
-                        <th scope="col"><img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/Sinsajo.png"></th>
+                        <th scope="col"><img   style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/alfresco.png"></th>
+                        <th scope="col"><img  style="width:150px;height:120px;" src="<?php bloginfo('template_directory') ?>/images/Logokuye.png"></th>
+                        <th scope="col"><img   style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/Sinsajo.png"></th>
                      </tr>
                   </thead>
                   
