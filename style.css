@@ -1656,7 +1656,7 @@ input, select, textarea {
 		border: 0;
 		border-radius: 5px;
 		background:#1A119B;
-		color: #252122 !important;
+		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
 		font-size: 1.1em;
@@ -2979,7 +2979,7 @@ input, select, textarea {
 
 				#navPanel .link {
 					display: block;
-					color: #888;
+					color: rgb(216, 213, 213);
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
@@ -3481,4 +3481,21 @@ section.logos{
 	padding: 10px;
 }
 
+.btn-miembros{
+ background-color: rgb(255, 255, 255) ;
+ color: #252122 !important;
+ border-radius: 0px;
 
+ 
+}
+
+.btn-miembros:hover{
+background: #e2e2e2
+}
+
+.card-img-top{
+	width: 100%;
+	height: 150px !important;
+	padding: 10px;
+	margin: auto;
+}

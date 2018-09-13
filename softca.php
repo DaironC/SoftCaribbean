@@ -65,7 +65,7 @@
  <div class="container">
       <div class="row">
 <div  class="col">
-         <div id="reconocimiento" >
+         <div class="reconocimiento" >
          <table class="table ">
                 <thead>
                      <tr>

@@ -8,24 +8,87 @@
 
 <main id="main">
 
-<div class="card" style="width: 18rem;">
-<img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
 
-<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-    Juan Cardenas
-</button>
+<div class="container">
 
-<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-<div class="card-body">
-       <p>el cambia pantallas</p> 
+<div id="reconocimiento">
+<div class="row">
+   <div class="col-md-3">
+      <div class="card">
+         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+         Juan Cardenas
+         </button>
+         <div id="collapsefive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               <p>Analista Desarrollador de Wappa</p>
+               <p>Aficiones</p>
+               <p>Su tio
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+      <div class="col-md-3">
+      <div class="card">
+         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+         Juan Cardenas
+         </button>
+         <div id="collapse2" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               <p>Analista Desarrollador de Wappa</p>
+               <p>Aficiones</p>
+               <p>Su tio
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+      <div class="col-md-3">
+      <div class="card">
+         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+         Juan Cardenas
+         </button>
+         <div id="collapsetwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               <p>Analista Desarrollador de Wappa</p>
+               <p>Aficiones</p>
+               <p>Su tio
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+      <div class="col-md-3">
+      <div class="card">
+         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+         Juan Cardenas
+         </button>
+         <div id="collapseone" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+               <p>Analista Desarrollador de Wappa</p>
+               <p>Aficiones</p>
+               <p>Su tio
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
 </div>
-
-</div>  
-
-
-
+</div>
+</div>
+   
 </main>
-
-
 
 <?php get_footer();?>
