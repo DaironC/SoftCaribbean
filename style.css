@@ -2949,6 +2949,11 @@ input, select, textarea {
 						background-color: #FE642E;
 					}
 				
+					
+				#nav > ul {
+					display:none;
+						
+					}
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -3223,10 +3228,6 @@ input, select, textarea {
 					font-size: 1.25em;
 				}
 
-				#nav > ul {
-					display:none;
-						
-					}
 
 
 		/* Banner */
