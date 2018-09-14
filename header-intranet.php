@@ -40,7 +40,7 @@
           <div class="col-8">
           <?php
                 wp_nav_menu(array(
-                    'theme_location' => 'principal',
+                    'theme_location' => 'principal-intranet',
                     'container' => 'nav',
                     'container_id' => 'nav-intranet'));
                 ?>
