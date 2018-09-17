@@ -1655,7 +1655,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background:#1A119B;
+		background:#004b82;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1698,7 +1698,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background:#1A119B;
+		background:#004b82;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -2048,7 +2048,7 @@ input, select, textarea {
 				justify-content: flex-end;
 				display: flex;
 				
-				background-color: rgba(245, 133, 28, 0.747);
+				background-color: #ff6600;
 				-webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
     			-moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
     			box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
@@ -2354,7 +2354,7 @@ input, select, textarea {
 
 	#nav {
 	
-		background-color: rgba(245, 133, 28, 0.747);
+		background-color:  #ff6600;
 		-webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
     	-moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
     	box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
@@ -2395,11 +2395,11 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					
-					background: rgb(187, 135, 38);
+					background:  #f07523;
 				}
 
 				#nav > ul > li.current > a {
-					background: #fd8700;
+					background:  #ff6600;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2976,7 +2976,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background-color: rgba(245, 133, 28, 0.9);
+				background-color: #ff6600;
 				color: #FE642E;
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 				
