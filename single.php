@@ -7,7 +7,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 	<section id="main">
 	<div class="container">
 	  <div class="row">
-		<div class="col-8 col-12-medium">
+		<div class="col-xs-12 col-sm-12 col-md-8">
 
 			
 		<?php if (have_posts()): while (have_posts()): the_post();?>
@@ -46,7 +46,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 
 		</div>
 
-		<div class="col-4 col-12-medium">
+		<div class="col-xs-12 col-sm-12 col-md-4">
 
 			<!-- Sidebar -->
 			<section class="box side">
