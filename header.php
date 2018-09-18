@@ -67,85 +67,55 @@
                 
                 <!-- Banner -->
                 <section id="banners">
-                <?php masterslider(1); ?>
-                </section>
+   <?php masterslider(1); ?>
+</section>
+<!-- Intro -->
+<section id="intro" class="container">
+   <div class="row">
+      <div class="col-4 col-12-medium ">
+         <div class="card">
+            <section class="medium">
+               <i class="icon featured fa-cog"></i>
+               <header>
+                  <h2>TECNOLOGIAS</h2>
+               </header>
+               <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
+            </section>
+            <ul class="actions">
+            <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
+         </div>
+      </div>
+      <div class="col-4 col-12-medium ">
+         <div class="card">
+            <section class="middle">
+               <i class="icon featured alt fa-flash"></i>
+               <header>
+                  <h2>VALORACION</h2>
+               </header>
+               <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
+            </section>
+            <ul class="actions">
+               <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button large">CMMI Nivel 5</a></li>
+            </ul>
+         </div>
+      </div>
 
-                <!-- Intro -->
-                <section id="intro" class="container">
-                    <div class="row">
-                        <div class="col-4 col-12-medium">
-                            <section class="medium">
-                                <i class="icon featured fa-cog"></i>
-                                <header>
-                                    <h2>TECNOLOGIAS</h2>
-                                </header>
-                                <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
-                            </section>
+      <div class="col-4 col-12-medium ">
+          <div class="card">
+         <section class="last">
 
-                            <ul class="actions">
-                                <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="middle">
-                                <i class="icon featured alt fa-flash"></i>
-                                <header>
-                                    <h2>VALORACION</h2>
-                                </header>
-                                <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button large">CMMI Nivel 5</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="last">
-                                <i class="icon featured alt2 fa-star"></i> 
-                                <header>
-                                    <h2>TESTIMONIOS</h2>
-                                </header>
-                                <p> Testimonios sobre las experiencias de nuestros clientes </p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button large">+ Informacion</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--grafica -->
-                    <!-- <div class="ct-chart ct-perfect-fourth"></div>
-                    
-                    <script>
-                         var data = {
-                            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                            series: [8, 2, 4, 2, 0]
-                         };
+            <i class="icon featured alt2 fa-star"></i> 
+            <header>
+               <h2>TESTIMONIOS</h2>
+            </header>
+            <p> Testimonios sobre las experiencias de nuestros clientes </p>
+         </section>
+         <ul class="actions">
+            <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button large">+ Informacion</a></li>
+         </ul>
+            </div>
+      </div>
+   </div>
+   </div>
+</section>
            
-                       new Chartist.Pie('.ct-chart', data);
-           
-           
-                       let colors = ['#FF5722','#3F51B5','#8BC34A','#FFC107','#E91E63']
-                       setTimeout(() => {
-                             let pie = document.getElementsByClassName("ct-chart-pie")[0].childNodes;
-                             for (pos in pie) {
-                               pie[pos].firstChild.style.fill = colors[pos];
-                             }
-                             
-                       }, 1);
-                  </script> -->
-
-                    <!--  segunda Grafica 
-                            <div class="ct-major-sexto">
-                           <script>
-                           
-                           new Chartist.Bar('.ct-chart', {
-                            labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
-                            series: [20, 60, 120, 200, 180, 20, 10]
-                            }, {
-                            distributeSeries: true
-                            });
-                           </script>
-                           </div> -->
-                        </div>
-                </section>
