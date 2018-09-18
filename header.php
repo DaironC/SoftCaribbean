@@ -19,11 +19,15 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
-    <body class="homepage is-preload">
-        <div id="page-wrapper">
+    <body class="homepage is-preload" >
+
+        <div id="page-wrapper" >
             <?php bloginfo('description'); ?> 
             <!-- Header -->
+            <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
             <section id="header">
+
+           
 
 
                 
@@ -143,4 +147,5 @@
                             });
                            </script>
                            </div> -->
+                        </div>
                 </section>
