@@ -2618,10 +2618,7 @@ input, select, textarea {
 				box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
 			}
 
-		#intro .button {
-			min-width: 12em;
-		}
-
+	
 		#intro footer {
 			margin: 0;
 		}
@@ -3363,7 +3360,7 @@ input, select, textarea {
 	margin:auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	padding-top: 10px;
+
 }
 
 .card-items:hover{

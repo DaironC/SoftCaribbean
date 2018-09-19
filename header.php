@@ -19,11 +19,15 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
-    <body class="homepage is-preload">
-        <div id="page-wrapper">
+    <body class="homepage is-preload" >
+
+        <div id="page-wrapper" >
             <?php bloginfo('description'); ?> 
             <!-- Header -->
+            <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
             <section id="header">
+
+           
 
 
                 
@@ -48,7 +52,7 @@
                     </div>
                 <?php endif; ?>
 
-                <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+             
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
@@ -63,103 +67,75 @@
                 
                 <!-- Banner -->
                 <section id="banners">
-                <?php masterslider(1); ?>
-                </section>
+   <?php masterslider(1); ?>
+</section>
+<!-- Intro -->
+<section id="intro" class="container">
+   <div class="row">
+      <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section class="medium">
+               <i class="icon featured fa-cog"></i>
+               <header>
+                  <h2>TECNOLOGIAS</h2>
+               </header>
+               <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
+            </section>
+            <ul class="actions">
+            <li><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
+         </div>
+      </div>
 
-                <!-- Intro -->
-                <section id="intro" class="container">
-                    <div class="row">
-                          <header class="major">
-                            <h2>Pilares Softcaribbean</h2>
-                          </header>
-                        <div class="col-3 col-12">
-                            <section class="">
-                                <i class="icon featured fa-cog"></i>
-                                <header>
-                                    <h2>Gestion Del Talento Humano</h2>
-                                </header>
-                                <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
-                            </section>
+      <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section >
+               <i class="icon featured alt fa-flash"></i>
+               <header>
+                  <h2>VALORACION</h2>
+               </header>
+               <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
+            </section>
+            <ul class="actions">
+               <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">CMMI Nivel 5</a></li>
+            </ul>
+         </div>
+      </div>
 
-                            <ul class="actions">
-                                <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
-                            </ul>
+      <div class="col-3 col-12-medium ">
+          <div class="card-items">
+         <section class="last">
 
-                        </div>
-                        <div class="col-3 col-12">
-                            <section class="">
-                                <i class="icon featured alt fa-flash"></i>
-                                <header>
-                                    <h2>Definicion y Mejora De Procesos </h2>
-                                </header>
-                                <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button large">CMMI Nivel 5</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-3 col-12">
-                            <section class="">
-                                <i class="icon featured alt2 fa-star"></i> 
-                                <header>
-                                    <h2>Gestion Del Riesgo</h2>
-                                </header>
-                                <p> Testimonios sobre las experiencias de nuestros clientes </p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button large">+ Informacion</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <i class="icon featured alt2 fa-star"></i> 
+            <header>
+               <h2>TESTIMONIOS</h2>
+            </header>
+            <p> Testimonios sobre las experiencias de nuestros clientes </p>
+         </section>
+         <ul class="actions">
+            <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
+         </ul>
+            </div>
+      </div>
 
-                     <div class="col-3 col-12">
-                            <section class="">
-                                <i class="icon featured fa-cog"></i>
-                                <header>
-                                    <h2>Enfoque Social Y Desarrollo Sostenible</h2>
-                                </header>
-                                <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
-                            </section>
+ <div class="col-3 col-12-medium ">
+          <div class="card-items">
+         <section class="last">
 
-                            <ul class="actions">
-                                <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
-                            </ul>
+            <i class="icon featured alt2 fa-star"></i> 
+            <header>
+               <h2>TESTIMONIOS</h2>
+            </header>
+            <p> Testimonios sobre las experiencias de nuestros clientes </p>
+         </section>
+         <ul class="actions">
+            <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button">+ Informacion</a></li>
+         </ul>
+            </div>
+      </div>
 
-                     </div>
-                </div>
 
-                    <!--grafica -->
-                    <!-- <div class="ct-chart ct-perfect-fourth"></div>
-                    
-                    <script>
-                         var data = {
-                            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                            series: [8, 2, 4, 2, 0]
-                         };
+
+   </div>
+   </div>
+</section>
            
-                       new Chartist.Pie('.ct-chart', data);
-           
-           
-                       let colors = ['#FF5722','#3F51B5','#8BC34A','#FFC107','#E91E63']
-                       setTimeout(() => {
-                             let pie = document.getElementsByClassName("ct-chart-pie")[0].childNodes;
-                             for (pos in pie) {
-                               pie[pos].firstChild.style.fill = colors[pos];
-                             }
-                             
-                       }, 1);
-                  </script> -->
-
-                    <!--  segunda Grafica 
-                            <div class="ct-major-sexto">
-                           <script>
-                           
-                           new Chartist.Bar('.ct-chart', {
-                            labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
-                            series: [20, 60, 120, 200, 180, 20, 10]
-                            }, {
-                            distributeSeries: true
-                            });
-                           </script>
-                           </div> -->
-                </section>
