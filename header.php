@@ -71,15 +71,18 @@
 </section>
 <!-- Intro -->
 <section id="intro" class="container">
+<header class="pilar">
+               <h2>Pilares Softcaribbean</h2>
+            </header>
    <div class="row">
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
                <i class="icon featured fa-cog"></i>
                <header>
-                  <h2>TECNOLOGIAS</h2>
+                  <h2>Gestión del talento humano</h2>
                </header>
-               <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
+               
             </section>
             <ul class="actions">
             <li><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
@@ -91,12 +94,12 @@
             <section >
                <i class="icon featured alt fa-flash"></i>
                <header>
-                  <h2>VALORACION</h2>
+                  <h2>Definición y Mejora de procesos</h2>
                </header>
-               <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
+              
             </section>
             <ul class="actions">
-               <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">CMMI Nivel 5</a></li>
+               <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
             </ul>
          </div>
       </div>
@@ -107,9 +110,9 @@
 
             <i class="icon featured alt2 fa-star"></i> 
             <header>
-               <h2>TESTIMONIOS</h2>
+               <h2>Gestión del riesgo</h2>
             </header>
-            <p> Testimonios sobre las experiencias de nuestros clientes </p>
+           
          </section>
          <ul class="actions">
             <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
@@ -123,9 +126,9 @@
 
             <i class="icon featured alt2 fa-star"></i> 
             <header>
-               <h2>TESTIMONIOS</h2>
+               <h2>Enfoque social y Desarrollo sostenible</h2>
             </header>
-            <p> Testimonios sobre las experiencias de nuestros clientes </p>
+           
          </section>
          <ul class="actions">
             <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button">+ Informacion</a></li>
