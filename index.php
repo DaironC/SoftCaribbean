@@ -10,7 +10,7 @@
          <!-- Portfolio -->
          <section>
             <header class="major">
-               <h2>My Portafolio</h2>
+               <h2>Mi Portafolio</h2>
             </header>
             <div class="row img-fluid">
                <?php query_posts(array(

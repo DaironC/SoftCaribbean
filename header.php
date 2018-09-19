@@ -69,11 +69,14 @@
                 <!-- Intro -->
                 <section id="intro" class="container">
                     <div class="row">
-                        <div class="col-4 col-12-medium">
-                            <section class="medium">
+                          <header class="major">
+                            <h2>Pilares Softcaribbean</h2>
+                          </header>
+                        <div class="col-3 col-12">
+                            <section class="">
                                 <i class="icon featured fa-cog"></i>
                                 <header>
-                                    <h2>TECNOLOGIAS</h2>
+                                    <h2>Gestion Del Talento Humano</h2>
                                 </header>
                                 <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
                             </section>
@@ -83,11 +86,11 @@
                             </ul>
 
                         </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="middle">
+                        <div class="col-3 col-12">
+                            <section class="">
                                 <i class="icon featured alt fa-flash"></i>
                                 <header>
-                                    <h2>VALORACION</h2>
+                                    <h2>Definicion y Mejora De Procesos </h2>
                                 </header>
                                 <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
                             </section>
@@ -95,11 +98,11 @@
                                 <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button large">CMMI Nivel 5</a></li>
                             </ul>
                         </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="last">
+                        <div class="col-3 col-12">
+                            <section class="">
                                 <i class="icon featured alt2 fa-star"></i> 
                                 <header>
-                                    <h2>TESTIMONIOS</h2>
+                                    <h2>Gestion Del Riesgo</h2>
                                 </header>
                                 <p> Testimonios sobre las experiencias de nuestros clientes </p>
                             </section>
@@ -108,6 +111,22 @@
                             </ul>
                         </div>
                     </div>
+
+                     <div class="col-3 col-12">
+                            <section class="">
+                                <i class="icon featured fa-cog"></i>
+                                <header>
+                                    <h2>Enfoque Social Y Desarrollo Sostenible</h2>
+                                </header>
+                                <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
+                            </section>
+
+                            <ul class="actions">
+                                <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
+                            </ul>
+
+                     </div>
+                </div>
 
                     <!--grafica -->
                     <!-- <div class="ct-chart ct-perfect-fourth"></div>
