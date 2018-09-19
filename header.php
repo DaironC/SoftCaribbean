@@ -52,7 +52,7 @@
                     </div>
                 <?php endif; ?>
 
-                <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+             
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
@@ -73,7 +73,7 @@
 <section id="intro" class="container">
    <div class="row">
       <div class="col-4 col-12-medium ">
-         <div class="card">
+         <div class="card-items">
             <section class="medium">
                <i class="icon featured fa-cog"></i>
                <header>
@@ -86,8 +86,8 @@
          </div>
       </div>
       <div class="col-4 col-12-medium ">
-         <div class="card">
-            <section class="middle">
+         <div class="card-items">
+            <section >
                <i class="icon featured alt fa-flash"></i>
                <header>
                   <h2>VALORACION</h2>
@@ -101,7 +101,7 @@
       </div>
 
       <div class="col-4 col-12-medium ">
-          <div class="card">
+          <div class="card-items">
          <section class="last">
 
             <i class="icon featured alt2 fa-star"></i> 
