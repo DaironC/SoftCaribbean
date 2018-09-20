@@ -83,7 +83,11 @@
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
+            <div class="contenedor">
+                <div id="icono0" >
                <i class="icon featured fa-cog"></i>
+               </div>
+               </div>
                <header style="height:50px;">
                   <h3>Gestión del talento humano</h3>
                </header>
@@ -99,8 +103,8 @@
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section >
-                <div id="contenedor">
-                <div id="girando" >
+                <div class="contenedor">
+                <div id="icono1" >
                <i  class="icon featured alt fa-flash"></i>
                 </div>
                 </div>
@@ -115,11 +119,40 @@
          </div>
       </div>
 
+    <script>
+        var card =document.getElementsByClassName("card-items");
+        var i;
+        var numIcon=0;
+        
+        for (i = 0; i < card.length; i++) {
+            card[i].addEventListener("mouseover", girar);
+            card[i].addEventListener("mouseout", detener);
+            numIcon=i;
+        }
+
+        function girar(){
+            var icon = document.getElementById("icono"+numIcon);
+            icon.id="girando";
+            
+            
+        }
+        function detener(){
+            var icono= document.getElementById("girando");
+            icono.id="icono"+numIcon;
+            
+        }
+         
+    </script>
+
 
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
+            <div class="contenedor">
+            <div id="icono2" >
                <i class="icon featured alt2 fa-star"></i>
+               </div>
+               </div>
                <header style="height:50px;">
                   <h3>Gestión del riesgo</h3>
                </header>
@@ -135,7 +168,11 @@
          <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section >
+            <div class="contenedor">
+            <div id="icono3" >
                <i class="icon featured alt fa-flash"></i>
+               </div>
+               </div>
                <header style="height:50px;">
                   <h3>Enfoque social y Desarrollo sostenible</h3>
                </header>
