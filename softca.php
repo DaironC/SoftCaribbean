@@ -71,8 +71,7 @@
                      <tr>
                        <th> <h4 class="titulos-intranet">Reconocimiento 1</h4></th>    
                        <th> <h4  class="titulos-intranet">Reconocimiento 2</h4></th>      
-                       <th> <h4  class="titulos-intranet">Reconocimiento 3</h4></th>       
-                    
+                       <th> <h4  class="titulos-intranet">Reconocimiento 3</h4></th>
                     </tr>
                   </thead>
                   <thead>
