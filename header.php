@@ -118,33 +118,6 @@
             </ul>
          </div>
       </div>
-
-    <script>
-        var card =document.getElementsByClassName("card-items");
-        var i;
-        var numIcon=0;
-        
-        for (i = 0; i < card.length; i++) {
-            card[i].addEventListener("mouseover", girar);
-            card[i].addEventListener("mouseout", detener);
-            numIcon=i;
-        }
-
-        function girar(){
-            var icon = document.getElementById("icono"+numIcon);
-            icon.id="girando";
-            
-            
-        }
-        function detener(){
-            var icono= document.getElementById("girando");
-            icono.id="icono"+numIcon;
-            
-        }
-         
-    </script>
-
-
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
@@ -185,5 +158,30 @@
       </div>
    </div>
    </div>
+
+   <script>
+        var card =document.getElementsByClassName("card-items");
+        var i;
+        var numIcon=0;
+        
+        for (i = 0; i < card.length; i++) {
+            card[i].addEventListener("mouseover", girar);
+            card[i].addEventListener("mouseout", detener);
+        
+        }
+
+        function girar(){
+            var icon = this.getElementsByTagName("div")[1];
+            icon.id="girando";
+            console.log("Girar",);
+            
+        }
+        function detener(){
+            var icon = this.getElementsByTagName("div")[1];
+            icon.id="icon";
+            console.log("Detener",this);
+        }
+         
+    </script>
 </section>
            
