@@ -1850,7 +1850,10 @@ input, select, textarea {
 		}
 
 		#logo{
+		
 			margin-top: 50px;
+			height: 60%;
+			
 		}
 		#logo-intranet{
 			margin-top: 50px;
@@ -2356,7 +2359,9 @@ input, select, textarea {
 
 
 	#nav {
-	
+		margin:auto;
+		margin-top: 90px;
+		margin-right: 20px;
 		background-color:  #2A3787;
 		-webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
     	-moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.45);
@@ -2885,6 +2890,7 @@ input, select, textarea {
 			#copyright ul.links {
 				display: block;
 			}
+			
 
 		/* Nav */
 
@@ -3052,6 +3058,13 @@ input, select, textarea {
 				display: none;
 			}
 
+			.hidden-back{
+			
+				
+				background: #fff;
+				height: 0px;
+			}
+
 	}
 
 /* Small */
@@ -3192,6 +3205,7 @@ input, select, textarea {
 				width: 8em;
 				margin: 0 0 3em 0;
 			}
+			
 
 				.icon.featured:after {
 					border-left: solid 4em transparent;
@@ -3506,6 +3520,11 @@ section.logos{
 	
 	padding: 10px;
 }
+.titulo-pilares{
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
 
 .btn-miembros{
  background-color: rgb(255, 255, 255) ;
@@ -3536,10 +3555,11 @@ background: #e2e2e2
 
 #site-header{
 	background:#fff;
+	height: 200px;
 }
 
 .pilar {
-	background: #fff;
+	background: #FE642E;
 	margin-top: 15px;
 	border-radius: 3px;		
 }
@@ -3549,4 +3569,10 @@ background: #e2e2e2
 }
 .slider{
 	border-bottom: solid 5px rgb(212, 211, 211);
+}
+.hidden-back{
+			
+				
+	background: #fff;
+
 }

@@ -42,24 +42,29 @@
                 </ul>
              </div>    
                 </nav>  
+                
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
-                <?php if (get_header_image()) : ?>
+                <div class="row">
+          <div class="col-3 col-12-medium">
+        <!-- Logo -->
+          <?php if (get_header_image()) : ?>
                     <div id="site-header">
                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                             <img id="logo" src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                         </a>
                     </div>
-                <?php endif; ?>
-
-             
-                <?php
+         <?php endif; ?>
+          </div>
+          <div class="col-9 col-12-medium hidden-back" ">
+          <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
                     'container' => 'nav',
-                    'container_id' => 'nav',
-                ));
+                    'container_id' => 'nav'));
                 ?>
+          </div>
+        </div>
 
 
                  
@@ -76,7 +81,7 @@
 <section id="intro" class="container">
     
 <div class="pilar" >
-               <h2 class="titulos-intranet">Pilares Softcaribbean</h2>
+               <h2 class="titulo-pilares">En Softcaribbean trabajamos bajo 4 Pilares </h2>
             </div>
    <div class="row">
       <div class="col-3 col-12-medium ">
@@ -100,7 +105,7 @@
             <section >
                <i class="icon featured alt fa-flash"></i>
                <header style="height:50px;">
-                  <h3>Definición y Mejora de procesos</h3>
+                  <h3>Definición y Mejora Continua</h3>
                </header>
               
             </section>
@@ -141,17 +146,6 @@
             </ul>
          </div>
       </div>
-
-
-
-
-
-      
-
-     
-
-
-
    </div>
    </div>
 </section>
