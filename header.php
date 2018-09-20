@@ -67,25 +67,31 @@
                 
                 <!-- Banner -->
                 <section id="banners">
-   <?php masterslider(1); ?>
+
+                <div class="slider">
+   <?php masterslider(4); ?>
+            </div>
 </section>
 <!-- Intro -->
 <section id="intro" class="container">
-<header class="pilar">
-               <h2>Pilares Softcaribbean</h2>
-            </header>
+    
+<div class="pilar" >
+               <h2 class="titulos-intranet">Pilares Softcaribbean</h2>
+            </div>
    <div class="row">
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
                <i class="icon featured fa-cog"></i>
-               <header>
-                  <h2>Gestión del talento humano</h2>
+               <header style="height:50px;">
+                  <h3>Gestión del talento humano</h3>
                </header>
                
             </section>
+           
             <ul class="actions">
-            <li><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
+            <li class="botones-items"><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
+            </ul>
          </div>
       </div>
 
@@ -93,48 +99,56 @@
          <div class="card-items">
             <section >
                <i class="icon featured alt fa-flash"></i>
-               <header>
-                  <h2>Definición y Mejora de procesos</h2>
+               <header style="height:50px;">
+                  <h3>Definición y Mejora de procesos</h3>
                </header>
               
             </section>
             <ul class="actions">
-               <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
             </ul>
          </div>
       </div>
 
+
       <div class="col-3 col-12-medium ">
-          <div class="card-items">
-         <section class="last">
-
-            <i class="icon featured alt2 fa-star"></i> 
-            <header>
-               <h2>Gestión del riesgo</h2>
-            </header>
+         <div class="card-items">
+            <section class="medium">
+               <i class="icon featured alt2 fa-star"></i>
+               <header style="height:50px;">
+                  <h3>Gestión del riesgo</h3>
+               </header>
+               
+            </section>
            
-         </section>
-         <ul class="actions">
-            <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
-         </ul>
-            </div>
+            <ul class="actions">
+            <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
+       </ul>
+         </div>
       </div>
 
- <div class="col-3 col-12-medium ">
-          <div class="card-items">
-         <section class="last">
-
-            <i class="icon featured alt2 fa-star"></i> 
-            <header>
-               <h2>Enfoque social y Desarrollo sostenible</h2>
-            </header>
-           
-         </section>
-         <ul class="actions">
-            <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button">+ Informacion</a></li>
-         </ul>
-            </div>
+         <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section >
+               <i class="icon featured alt fa-flash"></i>
+               <header style="height:50px;">
+                  <h3>Enfoque social y Desarrollo sostenible</h3>
+               </header>
+              
+            </section>
+            <ul class="actions">
+               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+            </ul>
+         </div>
       </div>
+
+
+
+
+
+      
+
+     
 
 
 
