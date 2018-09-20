@@ -3582,11 +3582,11 @@ background: #e2e2e2
 	to   { -webkit-transform: rotateY(-360deg); }
   }
 
-  #contenedor:hover {
+.contenedor {
 	-webkit-perspective: 600px  !important;
  }
 
-#girando:hover{
+#girando{
 	-webkit-animation-name: girando !important;
 	-webkit-animation-timing-function: linear  !important;
 	-webkit-animation-iteration-count: infinite  !important;
