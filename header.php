@@ -70,14 +70,14 @@
                 <section id="banners">
 
                 <div class="slider">
-   <?php masterslider(4); ?>
+   <?php masterslider(1); ?>
             </div>
 </section>
 <!-- Intro -->
 <section id="intro" class="container">
     
 <div class="pilar" >
-               <h2 class="titulos-intranet">En Softcaribbean trabajamos bajo 4 Pilares Softcaribbean</h2>
+               <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares Softcaribbean</h2>
             </div>
    <div class="row">
       <div class="col-3 col-12-medium ">
