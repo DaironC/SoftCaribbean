@@ -27,10 +27,6 @@
             <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
             <section id="header">
 
-           
-
-
-                
 
   <nav class="top-bar">
             <div>
@@ -81,7 +77,7 @@
 <section id="intro" class="container">
     
 <div class="pilar" >
-               <h2 class="titulo-pilares">En Softcaribbean trabajamos bajo 4 Pilares </h2>
+               <h2 class="titulos-intranet">En Softcaribbean trabajamos bajo 4 Pilares Softcaribbean</h2>
             </div>
    <div class="row">
       <div class="col-3 col-12-medium ">
@@ -103,7 +99,11 @@
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section >
-               <i class="icon featured alt fa-flash"></i>
+                <div id="contenedor">
+                <div id="girando" >
+               <i  class="icon featured alt fa-flash"></i>
+                </div>
+                </div>
                <header style="height:50px;">
                   <h3>Definición y Mejora Continua</h3>
                </header>

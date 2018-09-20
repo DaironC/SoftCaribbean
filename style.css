@@ -3576,3 +3576,21 @@ background: #e2e2e2
 	background: #fff;
 
 }
+
+@-webkit-keyframes girando {
+	from { -webkit-transform: rotateY(0deg);    }
+	to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  #contenedor:hover {
+	-webkit-perspective: 600px  !important;
+ }
+
+#girando:hover{
+	-webkit-animation-name: girando !important;
+	-webkit-animation-timing-function: linear  !important;
+	-webkit-animation-iteration-count: infinite  !important;
+	-webkit-animation-duration: 2s  !important;
+	-webkit-transform-style: preserve-3d  !important;
+ }
+ 
