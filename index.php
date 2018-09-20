@@ -10,12 +10,12 @@
          <!-- Portfolio -->
          <section>
             <header class="major">
-               <h2>My Portafolio</h2>
+               <h2>Mi Portafolio</h2>
             </header>
             <div class="row img-fluid">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>

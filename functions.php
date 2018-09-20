@@ -49,6 +49,7 @@ add_theme_support('post-thumbnails');}
 // }
 register_nav_menus(array(
 'principal' => 'Menu Principal',
+'principal-intranet' => 'Menu Principal Intranet',
 
 ));
 

@@ -19,11 +19,15 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
-    <body class="homepage is-preload">
-        <div id="page-wrapper">
+    <body class="homepage is-preload" >
+
+        <div id="page-wrapper" >
             <?php bloginfo('description'); ?> 
             <!-- Header -->
+            <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
             <section id="header">
+
+           
 
 
                 
@@ -38,24 +42,29 @@
                 </ul>
              </div>    
                 </nav>  
+                
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
-                <?php if (get_header_image()) : ?>
+                <div class="row">
+          <div class="col-3 col-12-medium">
+        <!-- Logo -->
+          <?php if (get_header_image()) : ?>
                     <div id="site-header">
                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                             <img id="logo" src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                         </a>
                     </div>
-                <?php endif; ?>
-
-                <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-                <?php
+         <?php endif; ?>
+          </div>
+          <div class="col-9 col-12-medium hidden-back" ">
+          <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
                     'container' => 'nav',
-                    'container_id' => 'nav',
-                ));
+                    'container_id' => 'nav'));
                 ?>
+          </div>
+        </div>
 
 
                  
@@ -63,84 +72,81 @@
                 
                 <!-- Banner -->
                 <section id="banners">
-                <?php masterslider(1); ?>
-                </section>
 
-                <!-- Intro -->
-                <section id="intro" class="container">
-                    <div class="row">
-                        <div class="col-4 col-12-medium">
-                            <section class="medium">
-                                <i class="icon featured fa-cog"></i>
-                                <header>
-                                    <h2>TECNOLOGIAS</h2>
-                                </header>
-                                <p> Multiple manejo de Lenguajes, base de datos y Framework.</p>
-                            </section>
-
-                            <ul class="actions">
-                                <li><a href="http:54.242.192.75/productos/tecnologia/" class="button large">+ Informacion</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="middle">
-                                <i class="icon featured alt fa-flash"></i>
-                                <header>
-                                    <h2>VALORACION</h2>
-                                </header>
-                                <p>Obtuvimos la valoración CMMI Nivel 5 un logro más hacia la mejora continua.</p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button large">CMMI Nivel 5</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <section class="last">
-                                <i class="icon featured alt2 fa-star"></i> 
-                                <header>
-                                    <h2>TESTIMONIOS</h2>
-                                </header>
-                                <p> Testimonios sobre las experiencias de nuestros clientes </p>
-                            </section>
-                            <ul class="actions">
-                                <li><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button large">+ Informacion</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--grafica -->
-                    <!-- <div class="ct-chart ct-perfect-fourth"></div>
-                    
-                    <script>
-                         var data = {
-                            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                            series: [8, 2, 4, 2, 0]
-                         };
+                <div class="slider">
+   <?php masterslider(4); ?>
+            </div>
+</section>
+<!-- Intro -->
+<section id="intro" class="container">
+    
+<div class="pilar" >
+               <h2 class="titulo-pilares">En Softcaribbean trabajamos bajo 4 Pilares </h2>
+            </div>
+   <div class="row">
+      <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section class="medium">
+               <i class="icon featured fa-cog"></i>
+               <header style="height:50px;">
+                  <h3>Gestión del talento humano</h3>
+               </header>
+               
+            </section>
            
-                       new Chartist.Pie('.ct-chart', data);
-           
-           
-                       let colors = ['#FF5722','#3F51B5','#8BC34A','#FFC107','#E91E63']
-                       setTimeout(() => {
-                             let pie = document.getElementsByClassName("ct-chart-pie")[0].childNodes;
-                             for (pos in pie) {
-                               pie[pos].firstChild.style.fill = colors[pos];
-                             }
-                             
-                       }, 1);
-                  </script> -->
+            <ul class="actions">
+            <li class="botones-items"><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
+            </ul>
+         </div>
+      </div>
 
-                    <!--  segunda Grafica 
-                            <div class="ct-major-sexto">
-                           <script>
-                           
-                           new Chartist.Bar('.ct-chart', {
-                            labels: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
-                            series: [20, 60, 120, 200, 180, 20, 10]
-                            }, {
-                            distributeSeries: true
-                            });
-                           </script>
-                           </div> -->
-                </section>
+      <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section >
+               <i class="icon featured alt fa-flash"></i>
+               <header style="height:50px;">
+                  <h3>Definición y Mejora Continua</h3>
+               </header>
+              
+            </section>
+            <ul class="actions">
+               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+            </ul>
+         </div>
+      </div>
+
+
+      <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section class="medium">
+               <i class="icon featured alt2 fa-star"></i>
+               <header style="height:50px;">
+                  <h3>Gestión del riesgo</h3>
+               </header>
+               
+            </section>
+           
+            <ul class="actions">
+            <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
+       </ul>
+         </div>
+      </div>
+
+         <div class="col-3 col-12-medium ">
+         <div class="card-items">
+            <section >
+               <i class="icon featured alt fa-flash"></i>
+               <header style="height:50px;">
+                  <h3>Enfoque social y Desarrollo sostenible</h3>
+               </header>
+              
+            </section>
+            <ul class="actions">
+               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   </div>
+</section>
+           

@@ -27,7 +27,7 @@
     </nav>
          
         <div class="row">
-          <div class="">
+          <div class="col-4">
         <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
@@ -37,10 +37,11 @@
                     </div>
          <?php endif; ?>
           </div>
-          <div class="">
+          
+          <div class="col-8" >
           <?php
                 wp_nav_menu(array(
-                    'theme_location' => 'principal',
+                    'theme_location' => 'principal-intranet',
                     'container' => 'nav',
                     'container_id' => 'nav-intranet'));
                 ?>
