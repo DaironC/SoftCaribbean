@@ -77,7 +77,7 @@
 <section id="intro" class="container">
     
 <div class="pilar" >
-               <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares Softcaribbean</h2>
+               <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares</h2>
             </div>
    <div class="row">
       <div class="col-3 col-12-medium ">
@@ -105,7 +105,9 @@
             <section >
                 <div class="contenedor">
                 <div id="icono1" >
-               <i  class="icon featured alt fa-flash"></i>
+                <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/procesos.png" >
+           
+           
                 </div>
                 </div>
                <header style="height:50px;">
