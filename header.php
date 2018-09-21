@@ -85,10 +85,13 @@
             <section class="medium">
             <div class="contenedor">
                 <div id="icono0" >
-               <i class="icon featured fa-cog"></i>
+
+                 <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/talentohumano2.png" >
+           
+
                </div>
                </div>
-               <header style="height:50px;">
+               <header  style="height:50px; margin-top:50px;">
                   <h3>Gestión del talento humano</h3>
                </header>
                
@@ -105,12 +108,12 @@
             <section >
                 <div class="contenedor">
                 <div id="icono1" >
-                <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/procesos.png" >
+                <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/procesos2.png" >
            
            
                 </div>
                 </div>
-               <header style="height:50px;">
+               <header  style="height:50px; margin-top:50px;">
                   <h3>Definición y Mejora Continua</h3>
                </header>
               
@@ -125,10 +128,11 @@
             <section class="medium">
             <div class="contenedor">
             <div id="icono2" >
-               <i class="icon featured alt2 fa-star"></i>
+            <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/riesgos.png" >
+           
                </div>
                </div>
-               <header style="height:50px;">
+               <header  style="height:50px; margin-top:50px;">
                   <h3>Gestión del riesgo</h3>
                </header>
                
@@ -144,11 +148,12 @@
          <div class="card-items">
             <section >
             <div class="contenedor">
-            <div id="icono3" >
-               <i class="icon featured alt fa-flash"></i>
+            <div id="icono3"  >
+            <img   class="icono-login" src="<?php bloginfo('template_directory') ?>/images/social.png" >
+        
                </div>
                </div>
-               <header style="height:50px;">
+               <header style="height:50px; margin-top:50px;" >
                   <h3>Enfoque social y Desarrollo sostenible</h3>
                </header>
               
