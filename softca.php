@@ -61,7 +61,6 @@
          </div>
       </div>
    </div>
-<<<<<<< HEAD
 
  <div class="container">
       <div class="row">
@@ -84,39 +83,6 @@
                   </thead>
                </table>
          </div>
-=======
-   <div class="container">
-   <div class="row">
-      <div  class="col-12">
-         <div class="reconocimiento" >
-            <table class="tabla">
-               <thead>
-                  <tr>
-                     <td>
-                        <h4 class="titulos-intranet">Reconocimiento 1</h4>
-                        </th>    
-                     </td>
-                     <td>
-                        <h4  class="titulos-intranet">Reconocimiento 2</h4>
-                        </th>      
-                     </td>
-                     <td>
-                        <h4  class="titulos-intranet">Reconocimiento 3</h4>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td> <img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-2.png">
-                     </td>
-                     <td><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-3.png">
-                     </td>
-                     <td><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-4.png"></td>
-                  </tr>
-               </tbody>
-            </table>
-            </table>
->>>>>>> fd201f70ece7dd91af9b030068814c55001e0690
          </div>
       </div>
    </div>
