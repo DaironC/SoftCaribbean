@@ -80,91 +80,49 @@
                <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares</h2>
             </div>
    <div class="row">
+   
+    <?php query_posts(array(
+        "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+        "cat"       => 4,//id del canal donde se va mostrar portafolio
+
+        ));
+        ?>
+
+     <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
-            <div class="contenedor">
-                <div id="icono0" >
-
-                 <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/talentohumano2.png" >
-           
-
-               </div>
-               </div>
-               <header  style="height:50px; margin-top:50px;">
-                  <h3>Gestión del talento humano</h3>
-               </header>
                
-            </section>
-           
-            <ul class="actions">
-            <li class="botones-items"><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
-            </ul>
-         </div>
-      </div>
-
-      <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section >
-                <div class="contenedor">
-                <div id="icono1" >
-                <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/procesos2.png" >
-           
-           
-                </div>
-                </div>
-               <header  style="height:50px; margin-top:50px;">
-                  <h3>Definición y Mejora Continua</h3>
-               </header>
-              
-            </section>
-            <ul class="actions">
-               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
-            </ul>
-         </div>
-      </div>
-      <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section class="medium">
             <div class="contenedor">
-            <div id="icono2" >
-            <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/riesgos.png" >
-           
-               </div>
-               </div>
-               <header  style="height:50px; margin-top:50px;">
-                  <h3>Gestión del riesgo</h3>
-               </header>
-               
-            </section>
-           
-            <ul class="actions">
-            <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
-       </ul>
-         </div>
-      </div>
-
-         <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section >
-            <div class="contenedor">
-            <div id="icono3"  >
-            <img   class="icono-login" src="<?php bloginfo('template_directory') ?>/images/social.png" >
+            <div id="icono" >
         
-               </div>
-               </div>
-               <header style="height:50px; margin-top:50px;" >
-                  <h3>Enfoque social y Desarrollo sostenible</h3>
-               </header>
+            <img   href="<?php the_permalink(); ?>" >
+                <?php
+                    // check if the post has a Post Thumbnail assigned to it.
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('post-thumbnail',array('class'=>'img-items'));
+                    }
+                    ?> 
+                    </img>
+                    </div>
+                    </div>
               
+            <div >
+               <header  >
+                  <h3><?php the_title();?></h3>
+               </header>
+               </div>   
             </section>
+           
             <ul class="actions">
-               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
             </ul>
          </div>
       </div>
-   </div>
-   </div>
+
+
+      
+      
 
    <script>
         var card =document.getElementsByClassName("card-items");
@@ -190,5 +148,14 @@
         }
          
     </script>
+
+     <?php endwhile;?>
+            <!-- post navigation -->
+            <?php else: ?>
+            <!-- no posts found -->
+            <h3>No hay nada</h3>
+            <?php endif;?>
+            <!-- revisar  -->
+        
 </section>
            
