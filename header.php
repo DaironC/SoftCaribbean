@@ -27,10 +27,6 @@
             <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
             <section id="header">
 
-           
-
-
-                
 
   <nav class="top-bar">
             <div>
@@ -74,79 +70,92 @@
                 <section id="banners">
 
                 <div class="slider">
-   <?php masterslider(4); ?>
+   <?php masterslider(1); ?>
             </div>
 </section>
 <!-- Intro -->
 <section id="intro" class="container">
     
 <div class="pilar" >
-               <h2 class="titulo-pilares">En Softcaribbean trabajamos bajo 4 Pilares </h2>
+               <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares</h2>
             </div>
    <div class="row">
+   
+    <?php query_posts(array(
+        "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+        "cat"       => 4,//id del canal donde se va mostrar portafolio
+
+        ));
+        ?>
+
+     <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
       <div class="col-3 col-12-medium ">
          <div class="card-items">
             <section class="medium">
-               <i class="icon featured fa-cog"></i>
-               <header style="height:50px;">
-                  <h3>Gestión del talento humano</h3>
-               </header>
                
+            <div class="contenedor">
+            <div id="icono" >
+        
+            <img   href="<?php the_permalink(); ?>" >
+                <?php
+                    // check if the post has a Post Thumbnail assigned to it.
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('post-thumbnail',array('class'=>'img-items'));
+                    }
+                    ?> 
+                    </img>
+                    </div>
+                    </div>
+              
+            <div >
+               <header  >
+                  <h3><?php the_title();?></h3>
+               </header>
+               </div>   
             </section>
            
             <ul class="actions">
-            <li class="botones-items"><a href="http:54.242.192.75/productos/tecnologia/" class="button ">+ Informacion</a></li>
-            </ul>
-         </div>
-      </div>
-
-      <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section >
-               <i class="icon featured alt fa-flash"></i>
-               <header style="height:50px;">
-                  <h3>Definición y Mejora Continua</h3>
-               </header>
-              
-            </section>
-            <ul class="actions">
-               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
+            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
             </ul>
          </div>
       </div>
 
 
-      <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section class="medium">
-               <i class="icon featured alt2 fa-star"></i>
-               <header style="height:50px;">
-                  <h3>Gestión del riesgo</h3>
-               </header>
-               
-            </section>
-           
-            <ul class="actions">
-            <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/testimonios/" class="button ">+ Informacion</a></li>
-       </ul>
-         </div>
-      </div>
+      
+      
 
-         <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section >
-               <i class="icon featured alt fa-flash"></i>
-               <header style="height:50px;">
-                  <h3>Enfoque social y Desarrollo sostenible</h3>
-               </header>
-              
-            </section>
-            <ul class="actions">
-               <li class="botones-items"><a href=" http://54.242.192.75/nosotros-2/calificacion-cmmi/ " class="button">+Informacion</a></li>
-            </ul>
-         </div>
-      </div>
-   </div>
-   </div>
+   <script>
+        var card =document.getElementsByClassName("card-items");
+        var i;
+        var numIcon=0;
+        
+        for (i = 0; i < card.length; i++) {
+            card[i].addEventListener("mouseover", girar);
+            card[i].addEventListener("mouseout", detener);
+        
+        }
+
+        function girar(){
+            var icon = this.getElementsByTagName("div")[1];
+            icon.id="girando";
+            console.log("Girar",);
+            
+        }
+        function detener(){
+            var icon = this.getElementsByTagName("div")[1];
+            icon.id="icon";
+            console.log("Detener",this);
+        }
+         
+    </script>
+
+     <?php endwhile;?>
+            <!-- post navigation -->
+            <?php else: ?>
+            <!-- no posts found -->
+            <h3>No hay nada</h3>
+            <?php endif;?>
+            <!-- revisar  -->
+        
 </section>
            

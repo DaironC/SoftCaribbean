@@ -1,3 +1,6 @@
+<!--
+  kskkssjsjjs
+-->
 <?php
    /*
      Template Name: intranet
@@ -58,37 +61,28 @@
          </div>
       </div>
    </div>
-   <div class="container">
-   <div class="row">
-      <div  class="col-12">
-         <div class="reconocimiento" >
-            <table class="tabla">
-               <thead>
-                  <tr>
-                     <td>
-                        <h4 class="titulos-intranet">Reconocimiento 1</h4>
-                        </th>    
-                     </td>
-                     <td>
-                        <h4  class="titulos-intranet">Reconocimiento 2</h4>
-                        </th>      
-                     </td>
-                     <td>
-                        <h4  class="titulos-intranet">Reconocimiento 3</h4>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td> <img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-2.png">
-                     </td>
-                     <td><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-3.png">
-                     </td>
-                     <td><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-4.png"></td>
-                  </tr>
-               </tbody>
-            </table>
-            </table>
+
+ <div class="container">
+      <div class="row">
+<div  class="col">
+         <div id="reconocimiento" >
+         <table class="table ">
+                <thead>
+                     <tr>
+                       <th> <h4 class="titulos-intranet">Reconocimiento 1</h4></th>    
+                       <th> <h4  class="titulos-intranet">Reconocimiento 2</h4></th>      
+                       <th> <h4  class="titulos-intranet">Reconocimiento 3</h4></th>
+                    </tr>
+                  </thead>
+                  <thead>
+                     <tr>
+                        <th scope="col"><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-2.png"></th>
+                        <th scope="col"><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-3.png"></th>
+                        <th scope="col"><img class="card-img-top" src="<?php bloginfo('template_directory') ?>/images/reconocimineto-4.png"></th>
+                     </tr>
+                  </thead>
+               </table>
+         </div>
          </div>
       </div>
    </div>

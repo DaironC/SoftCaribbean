@@ -32,24 +32,25 @@
              </div>    
                 </nav>  
          <!-- Logo -->
-         <?php if (get_header_image()) : ?>
+         <div class="row">
+          <div class="col-3 col-12-medium">
+        <!-- Logo -->
+          <?php if (get_header_image()) : ?>
                     <div id="site-header">
                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                             <img id="logo" src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                         </a>
                     </div>
          <?php endif; ?>
-         <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-         <?php  
-            wp_nav_menu( array(
-               'theme_location'  => 'principal',
-               
-               'container'       => 'nav',
-               
-               'container_id'    => 'nav',
-               
-            ) );  
-            
-            ?> 
+          </div>
+          <div class="col-9 col-12-medium hidden-back" ">
+          <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'principal',
+                    'container' => 'nav',
+                    'container_id' => 'nav'));
+                ?>
+          </div>
+        </div>
       </section>
       
