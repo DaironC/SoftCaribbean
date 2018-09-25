@@ -7,6 +7,11 @@
 
 
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
+
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
         <style src="<?php bloginfo('stylesheet_directory') ?>/assets/css/chartist.min.css"></style>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <meta charset="<?php bloginfo('charset'); ?>" />
@@ -73,89 +78,116 @@
    <?php masterslider(1); ?>
             </div>
 </section>
+
 <!-- Intro -->
-<section id="intro" class="container">
+<section class="container" >
     
-<div class="pilar" >
+    <div class="pilar" >
                <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares</h2>
-            </div>
-   <div class="row">
-   
-    <?php query_posts(array(
-        "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 4,//id del canal donde se va mostrar portafolio
+    </div>
 
-        ));
-        ?>
+        <div class="slick">
+    
+            <?php query_posts(array(
+                "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+                "cat"       => 4,//id del canal donde se va mostrar portafolio
+            ));
+                ?>
 
-     <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
-      <div class="col-3 col-12-medium ">
-         <div class="card-items">
-            <section class="medium">
-               
-            <div class="contenedor">
-            <div id="icono" >
-        
-            <img   href="<?php the_permalink(); ?>" >
-                <?php
-                    // check if the post has a Post Thumbnail assigned to it.
-                    if (has_post_thumbnail()) {
-                        the_post_thumbnail('post-thumbnail',array('class'=>'img-items'));
-                    }
-                    ?> 
-                    </img>
-                    </div>
-                    </div>
-              
-            <div >
-               <header  >
-                  <h3><?php the_title();?></h3>
-               </header>
-               </div>   
-            </section>
-           
-            <ul class="actions">
-            <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-            </ul>
-         </div>
-      </div>
+            <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
 
-
-      
-      
-
-   <script>
-        var card =document.getElementsByClassName("card-items");
-        var i;
-        var numIcon=0;
-        
-        for (i = 0; i < card.length; i++) {
-            card[i].addEventListener("mouseover", girar);
-            card[i].addEventListener("mouseout", detener);
-        
-        }
-
-        function girar(){
-            var icon = this.getElementsByTagName("div")[1];
-            icon.id="girando";
-            console.log("Girar",);
+                <div class="card-items" style="margin-left:0.5em; margin-right:0.5em;">
+                    <section class="medium">
+                
+                        <div class="contenedor">
+                            <div id="icono">
+                                    <?php
+                                        // check if the post has a Post Thumbnail assigned to it.
+                                        if (has_post_thumbnail()) {
+                                        the_post_thumbnail('post-thumbnail',array('class'=>'img-items'));
+                                        }
+                                        ?>
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <header class="titulo-items" >
+                                <h3><?php the_title();?></h3>
+                            </header>
+                        </div>   
+                    </section>
             
-        }
-        function detener(){
-            var icon = this.getElementsByTagName("div")[1];
-            icon.id="icon";
-            console.log("Detener",this);
-        }
-         
-    </script>
-
-     <?php endwhile;?>
-            <!-- post navigation -->
-            <?php else: ?>
-            <!-- no posts found -->
-            <h3>No hay nada</h3>
-            <?php endif;?>
-            <!-- revisar  -->
-        
+                    <ul class="actions">
+                        <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                    </ul>
+                </div>
+       
+                <?php endwhile;?>
+                <!-- post navigation -->
+                <?php else: ?>
+                <!-- no posts found -->
+                <h3>No hay nada</h3>
+                <?php endif;?>
+                <!-- revisar  -->
+ 
+    </div>   
 </section>
-           
+         <script>   
+                    $('.slick').slick({
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        cssEase: 'linear',
+                        arrows: false,
+                        responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                            }
+                        }
+                        ]
+                    });
+            
+                </script>
+
+                <script>
+                    var card =document.getElementsByClassName("card-items");
+                    var i;
+                    var numIcon=0;
+                    
+                    for (i = 0; i < card.length; i++) {
+                        card[i].addEventListener("mouseover", girar);
+                        card[i].addEventListener("mouseout", detener);
+                    
+                    }
+
+                    function girar(){
+                        var icon = this.getElementsByTagName("div")[1];
+                        icon.id="girando";
+                    
+                        
+                    }
+                    function detener(){
+                        var icon = this.getElementsByTagName("div")[1];
+                        icon.id="icon";
+                        
+                    }
+                    
+                </script>  

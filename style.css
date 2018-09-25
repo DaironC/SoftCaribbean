@@ -116,7 +116,7 @@ input, select, textarea {
 		font-weight: 300;
 		color: #5d5d5d;
 		font-size: 14pt;
-		line-height: 1.75em;
+		line-height: 1.2em;
 	}
 
 	strong, b {
@@ -1835,8 +1835,8 @@ input, select, textarea {
 		}
 		.img-items{
 			margin: auto;
-			width: 150px;
-			height: 150px;
+			width: 200px;
+			height: 300px;
 			
 		}
 
@@ -2586,7 +2586,7 @@ input, select, textarea {
 
 	#intro {
 		text-align: center;
-		overflow: hidden;
+		overflow: ;
 
 	}
 
@@ -3383,9 +3383,6 @@ input, select, textarea {
 	margin:auto;
 	margin-top: 20px;
 	margin-bottom:20px;
-
-
-
 }
 
 .card-items:hover{
@@ -3536,6 +3533,9 @@ section.logos{
 	text-align: center;
 	color: #fff;
 	padding: 10px;
+}
+.titulo-items{
+	margin-top:20px;
 }
 
 .btn-miembros{

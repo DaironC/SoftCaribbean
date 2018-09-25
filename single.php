@@ -28,6 +28,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 			</header>
 
 			<p>
+			
 			<?php the_content();?>
 
 			</p>
@@ -46,18 +47,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 
 		</div>
 
-		<div class="col-xs-12 col-sm-12 col-md-4">
-
-			<!-- Sidebar -->
-			<section class="box side">
-
-				<ul class="divided">
-				<li><a>  <?php get_sidebar(''); ?>   </a> </li>
-				</ul> 
-			</section>
-		</div>
 		
-	</div>
 </div>
 	</section>
 	<!-- Fin Sidebar -->
