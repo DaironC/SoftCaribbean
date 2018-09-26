@@ -7,7 +7,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 	<section id="main">
 	<div class="container">
 	  <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-10">
+		<div class="col-xs-12 col-sm-12 col-md-10" style="margin:auto;">
 
 			
 		<?php if (have_posts()): while (have_posts()): the_post();?>

@@ -29,15 +29,21 @@
                     <div class="col-md-6" >
                         <h4><a>Cargo:</a></h4>
                         <h3><?php the_title();?></h3>
-                        <?php the_excerpt(); ?>
+                        <?php the_content(); ?>
                     </div>
                     <div class="col-md-6" >
                         <div class="card">
-                        <h4>Se requiere de una (1) persona para trabajar en la ciudad de Medellín.</h4>
-                        <p><?php 
-                         //$post=the_content();
-                        
-                        ?></p>
+                        <div class="ofertaReqCard">
+                        <script>
+                        var ofertaCard,i,ofertaContent;
+                        ofertaContent = document.getElementsByClassName("reqOferta");
+                        ofertaCard = document.getElementsByClassName("ofertaReqCard");
+                        for (i = 0; i < ofertaContent.length; i++) {
+                            ofertaContent[i].style.display = "none";
+                            ofertaCard[i].innerText=ofertaContent[i].innerText;
+                        }                        
+                        </script>
+                        </div>
                         <a href="enviar-hoja-de-vida" class="button-apply">Aplicar</a>
                         </div>
                     </div>

@@ -15,7 +15,7 @@
             <div class="row img-fluid">
                <?php query_posts(array(
                   "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 3,//id del canaldonde se va mostrar portafilio
+                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
                   
                   ));
                   ?>
@@ -92,7 +92,7 @@
         <div class="row">
         <?php query_posts(array(
         "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 2,//id del canal donde se va mostrar portafolio
+        "cat"       => 4,//id del canal donde se va mostrar portafolio
 
         ));
         ?>
