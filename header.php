@@ -90,7 +90,7 @@
     
             <?php query_posts(array(
                 "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-                "cat"       => 4,//id del canal donde se va mostrar portafolio
+                "cat"       => 12,//id del canal donde se va mostrar portafolio
             ));
                 ?>
 
@@ -190,4 +190,4 @@
                         
                     }
                     
-                </script>   
+                </script>  

@@ -14,7 +14,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 
 		<!-- Content -->
 		<article class="box post">
-		<a href="<?php the_permalink();?>" class="image featured img-single">
+		<a href="<?php the_permalink();?>" class="image featured">
 		
 		<?php
         // check if the post has a Post Thumbnail assigned to it.

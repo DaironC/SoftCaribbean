@@ -1,27 +1,31 @@
-
-<!-- header-nohome es la copia de header pero sin el masterslider para las paginas del menu principal  -->
 <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
-      <meta charset="<?php bloginfo('charset'); ?>" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    
-      <link rel="stylesheet"  href="<?php  bloginfo('template_url' ); ?>/assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script type = "text / javascript" src = "'/assets/js/bootstrap.js'"> </script>
-      <!--[if lte IE 8]><script src ="<?php  Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
-      <?php wp_head();?>
-      <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo ( ' stylesheet_directory ' ); ?> ! /assets/css/ie8.css" /> <! [Endif]  -->
-  
+
+
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
+        <style src="<?php bloginfo('stylesheet_directory') ?>/assets/css/chartist.min.css"></style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <meta charset="<?php bloginfo('charset'); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!--[if lte IE 8]><script src ="<?php Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
+        <?php wp_head(); ?>
+        
+        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
+
+        <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
+       
     </head>
-   <body class="no-sidebar is-preload">
-      <div id="page-wrapper">
-            
-      <!-- Header -->
-      <section id="header">
-      <nav class="top-bar">
+    <body class="homepage is-preload" >
+
+        <div id="page-wrapper" >
+            <?php bloginfo('description'); ?> 
+            <!-- Header -->
+            <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
+            <section id="header">
+
+
+  <nav class="top-bar">
             <div>
                 <ul id="top" class="social">
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
@@ -31,9 +35,11 @@
                 </ul>
              </div>    
                 </nav>  
-         <!-- Logo -->
-         <div class="row">
-          <div class="col-3 col-12-medium">
+                
+                <!-- Logo -->
+                <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
+                <div class="row">
+          <div class="col-2 col-12-medium">
         <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
@@ -43,7 +49,7 @@
                     </div>
          <?php endif; ?>
           </div>
-          <div class="col-9 col-12-medium hidden-back" ">
+          <div class="col-10 col-12-medium hidden-back" ">
           <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
@@ -52,5 +58,3 @@
                 ?>
           </div>
         </div>
-      </section>
-      

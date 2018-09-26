@@ -37,8 +37,7 @@
                     </div>
          <?php endif; ?>
           </div>
-          
-          <div class="col-8" >
+          <div class="col-8">
           <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal-intranet',

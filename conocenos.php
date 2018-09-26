@@ -15,21 +15,17 @@
 <div class="row">
    <div class="col-md-3">
       <div class="card">
-         <img class="card-img-top"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
+         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
          Dairon Correa
          </button>
          <div id="collapsefive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
+               <p>Practicante Softca</p>
             </div>
          </div>
       </div>
    </div>
-   
 
 
       <div class="col-md-3">
@@ -40,10 +36,8 @@
          </button>
          <div id="collapse2" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
+               <p>Analista Desarrollador</p>
+               
             </div>
          </div>
       </div>
@@ -57,9 +51,8 @@
          </button>
          <div id="collapsetwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
+               <p>Secretaria </p>
+               
                </p>
             </div>
          </div>
@@ -70,18 +63,21 @@
       <div class="card">
          <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/harwin.PNG">
          <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
-         harwin
+         Harwin Silva
          </button>
          <div id="collapseone" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
+               <p>Practicante Softca</p>
+              
                </p>
             </div>
          </div>
       </div>
    </div>
+
+
+
+
 </div>
 </div>
 </div>
