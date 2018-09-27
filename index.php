@@ -1,55 +1,158 @@
- <!-- en este script se encuentra el contenido que muestra portafolio y blogs Softca en la pagina Principal teniendo encuenta que esta en codigo dinamico 
- (query_Post) para wordpress  -->
-<?php get_header();?><!--header-->
-</section>
+<!-- en este script se encuentra el contenido que muestra portafolio y blogs Softca en la pagina Principal teniendo encuenta que esta en codigo dinamico 
+   (query_Post) para wordpress  -->
+   <?php get_header();?><!--header-->
+
 <!-- Main -->
-<section id="main">
-<div class="container">
-   <div class="row">
-      <div class="col-12">
-         <!-- Portfolio -->
-         <section>
-            <header class="major">
-               <h2>Mi Portafolio</h2>
-            </header>
-            <div class="row img-fluid">
-               <?php query_posts(array(
-                  "showposts" => 3,//cantidad de entradas en portafolio para mostrar
-                  "cat"       => 4,//id del canaldonde se va mostrar portafilio
-                  
-                  ));
-                  ?>
-               <?php if (have_posts()): while (have_posts()): the_post();?>
-               <div class="col-4 col-6-medium col-12-small" >
-                  <!-- post -->
-                  <section class="box portafolio img-fluid. ">
-                    <a  href="<?php the_permalink();?>" class="image featured">
-                   
+ <section id="main">
+   <div class="container">
+   <!-- mi portafolio -->
+      <div class="major">
+         <h2>Mi Portafolio</h2>
+      </div>
+      <div class="slick2">
+
+         <?php query_posts(array(
+            "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+            "cat"       => 6,//id del canaldonde se va mostrar portafilio
+            
+            ));
+            ?>
+         <?php if (have_posts()): while (have_posts()): the_post();?>
+         <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+         <section class="medium">
+               <div class="contenedor">
+                  <div id="icono">
                      <?php
                         // check if the post has a Post Thumbnail assigned to it.
                         if (has_post_thumbnail()) {
-                            the_post_thumbnail('post-thumbnail',array('class'=>'img-portafolio'));
+                            the_post_thumbnail('post-thumbnail',array('class'=>'img-pilar2'));
                         }
-                    ?>
-                    </a>
+                        ?>
+                  </div>
+               </div>
+               <header class="accordion">
+                  <h3>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+            </header>
+            <div class="box-container panel">
+               <?= the_excerpt() ?>
+            </div>
+         </section>
+         </div>
+         <?php endwhile;?>
+         <!-- post navigation -->
+         <?php else: ?>
+         <!-- no posts found -->
+         <h3>No hay nada</h3>
+         <?php endif;?>
+         
+        
+      </div>
+    </div>
+    <ul class="actions">
+         <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">Mas Información</a></li>
+         </ul>
+</section>
 
-                    <header class="accordion">   
-                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                    </header>
+<!-- Blog -->
+<section>
+<header class="major">
+<h2>Blog Softca</h2>
+</header>
+<div class="container">
+<div class="row">
+<?php query_posts(array(
+   "showposts" => 2,//cantidad de entradas en portafolio para mostrar
+   "cat"       => 4,//id del canal donde se va mostrar portafolio
+   
+   ));
+   ?>
+<?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
+<div class="col-6 col-6-medium col-12-small">
+<section class="box">
+<a href="<?php the_permalink(); ?>" class="image featured">
+<?php
+   // check if the post has a Post Thumbnail assigned to it.
+   if (has_post_thumbnail()) {
+       the_post_thumbnail('category-thumb');
+   }?> 
+</a>
+<div class="box-container">
+<header>
+<h3>
+<?php the_title();?>
+</h3>
+</header>
+<?php the_excerpt(); ?>
+<footer>
+<ul class="actions">
+<li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+</ul>
+</footer>
+</div>
+</section>
+</div>
+<?php endwhile;?>
+<!-- post navigation -->
+<?php else: ?>
+<!-- no posts found -->
+<h3>No hay nada</h3>
+<?php endif;?>
+<!-- revisar  -->
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>       
+<!-- Código de instalación Cliengo para http://54.242.192.75/ -->
+                <script type="text/javascript">(function () {
+                var ldk = document.createElement('script');
+                ldk.type = 'text/javascript';
+                ldk.async = true;
+                ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ldk, s);
+                })();</script>
 
-                    <div class="box-container panel">
-                        <?= the_excerpt() ?>
-                    </div>
+                 <script>   
+                    $('.slick2').slick({
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        cssEase: 'linear',
+                        dots: true,
+                        responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                            }
+                        }
+                        ]
+                    });
+            
+                </script>
 
-                  </section>
-               </div >
-               <?php endwhile;?>
-               <!-- post navigation -->
-               <?php else: ?>
-               <!-- no posts found -->
-               <h3>No hay nada</h3>
-               <?php endif;?>
-               <script>
+                 <script>
                     var acc = document.getElementsByClassName("accordion");
                     var i;
                     var f=0;
@@ -71,83 +174,5 @@
                         if (panel.style.display === "block") panel.style.display = "none";
                     }
                 </script>
-
-            </div> 
-      </div>
-   </div>
-</div>
-<br>
-<section>	
-<ul class="actions">
-<li ><a href="http://localhost:81/softca/category/portafolio/" class="button">Mas Información</a></li>
-</ul>
-</footer>
-</section>
-<!-- Blog -->
-<section>
-    <header class="major">
-        <h2>Blog Softca</h2>
-    </header>
-    <div class="container">
-        <div class="row">
-        <?php query_posts(array(
-        "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-        "cat"       => 4,//id del canal donde se va mostrar portafolio
-
-        ));
-        ?>
-        <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
-
-            <div class="col-6 col-6-medium col-12-small">
-                <section class="box">
-                <a href="<?php the_permalink(); ?>" class="image featured">
-                <?php
-                    // check if the post has a Post Thumbnail assigned to it.
-                    if (has_post_thumbnail()) {
-                        the_post_thumbnail('category-thumb');
-                    }?> 
-                    </a>
-                    <div class="box-container">
-                        <header>
-                        <h3>
-                            <?php the_title();?>
-                        </h3>
-                        </header>
-                        <?php the_excerpt(); ?>
-                        <footer>
-                            <ul class="actions">
-                                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                        </ul>
-                        </footer>
-                    </div>
-
-                </section>
-            </div>
-            <?php endwhile;?>
-            <!-- post navigation -->
-            <?php else: ?>
-            <!-- no posts found -->
-            <h3>No hay nada</h3>
-            <?php endif;?>
-            <!-- revisar  -->
-        
-        </div>
-    </div>
-
-</section>
-</div>
-</div>
-</div>
-</section>
-         
-<!-- Código de instalación Cliengo para http://54.242.192.75/ -->
- <script type="text/javascript">(function () {
- var ldk = document.createElement('script');
- ldk.type = 'text/javascript';
- ldk.async = true;
- ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(ldk, s);
- })();</script>
  
     <?php get_footer();?>
