@@ -57,54 +57,56 @@
 
 <!-- Blog -->
 <section>
-<header class="major">
-<h2>Blog Softca</h2>
-</header>
-<div class="container">
-<div class="row">
-<?php query_posts(array(
-   "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-   "cat"       => 4,//id del canal donde se va mostrar portafolio
+
+        <div class="container">
+
+        <div class="pilar" >
+               <h2 class="titulos">Blog Softcaribbean</h2>
+    </div>
+            <div class="row" style="margin-top:5px;">
+                <?php query_posts(array(
+                    "showposts" => 2,//cantidad de entradas en portafolio para mostrar
+                    "cat"       => 4,//id del canal donde se va mostrar portafolio
    
-   ));
-   ?>
-<?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
-<div class="col-6 col-6-medium col-12-small">
-<section class="box">
-<a href="<?php the_permalink(); ?>" class="image featured">
-<?php
-   // check if the post has a Post Thumbnail assigned to it.
-   if (has_post_thumbnail()) {
-       the_post_thumbnail('category-thumb');
-   }?> 
-</a>
-<div class="box-container">
-<header>
-<h3>
-<?php the_title();?>
-</h3>
-</header>
-<?php the_excerpt(); ?>
-<footer>
-<ul class="actions">
-<li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-</ul>
-</footer>
-</div>
-</section>
-</div>
-<?php endwhile;?>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<h3>No hay nada</h3>
-<?php endif;?>
-<!-- revisar  -->
-</div>
-</div>
-</section>
-</div>
-</div>
+                        ));
+                 ?>
+                <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
+                 <div class="col-6 col-6-medium col-12-small">
+                    <section class="box">
+                        <a href="<?php the_permalink(); ?>" class="image featured">
+                <?php
+                // check if the post has a Post Thumbnail assigned to it.
+                      if (has_post_thumbnail()) {
+                        the_post_thumbnail('post-thumbnail',array('class'=>'img-blog'));
+                 }?> 
+                        </a>
+                        <div class="box-container">
+    <header>
+        <h3>
+                <?php the_title();?>
+        </h3>
+    </header>
+                <?php the_excerpt(); ?>
+    <footer>
+        <ul class="actions">
+        <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </footer>
+            </div>
+        </section>
+    </div>
+        <?php endwhile;?>
+        <!-- post navigation -->
+        <?php else: ?>
+        <!-- no posts found -->
+        <h3>No hay nada</h3>
+        <?php endif;?>
+        <!-- revisar  -->
+                                </div>
+             </div>
+            </section>
+        </div>
+    </div>
 </div>
 </section>       
 <!-- Código de instalación Cliengo para http://54.242.192.75/ -->

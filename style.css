@@ -1576,12 +1576,17 @@ input, select, textarea {
 				margin: 0;
 				padding: 0 1em 0 1em;
 			}
+
+
 		header.separador {
 			position: relative;
 			text-align: center;
 			border-bottom: solid 1px #ccc;
 			top: 1em;
 			margin: 0 0 3em 0;
+		}
+		header{
+			
 		}
 
 		
@@ -1853,6 +1858,10 @@ input, select, textarea {
 		}
 		.img-single{
 			max-height: 300px;
+		}
+		.img-blog{
+			height: 350px;
+			width: 100%
 		}
 
 		.image.left {
@@ -3563,6 +3572,12 @@ section.logos{
 }
 .titulo-items{
 	margin-top:20px;
+}
+.titulo-blog{
+	margin-top:20px;
+	margin-bottom: 20px;
+	height: 30px;
+	background: #fff;
 }
 
 .btn-miembros{
