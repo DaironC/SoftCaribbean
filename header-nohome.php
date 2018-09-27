@@ -20,7 +20,7 @@
       <div id="page-wrapper">
             
       <!-- Header -->
-      <section id="header">
+      <section id="site-header">
       <nav class="top-bar">
             <div>
                 <ul id="top" class="social">
