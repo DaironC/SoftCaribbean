@@ -139,7 +139,8 @@
                         autoplay: true,
                         autoplaySpeed: 2000,
                         cssEase: 'linear',
-                        arrows: false,
+                        arrows: true,
+                        dots: true,
                         responsive: [
                         {
                             breakpoint: 1024,

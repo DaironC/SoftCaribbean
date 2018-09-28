@@ -7,7 +7,7 @@
    <div class="container">
    <!-- mi portafolio -->
       <div class="major">
-         <h2>Mi Portafolio</h2>
+         <h2>Nuestros Servicios</h2>
       </div>
       <div class="slick2">
 
@@ -38,6 +38,9 @@
             <div class="box-container panel">
                <?= the_excerpt() ?>
             </div>
+            <ul class="actions">
+         <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">+Información</a></li>
+    </ul>
          </section>
          </div>
          <?php endwhile;?>
@@ -50,9 +53,7 @@
         
       </div>
     </div>
-    <ul class="actions">
-         <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">Mas Información</a></li>
-         </ul>
+    
 </section>
 
 <!-- Blog -->
@@ -127,6 +128,7 @@
                         autoplaySpeed: 2000,
                         cssEase: 'linear',
                         dots: true,
+                        arrows: true,
                         responsive: [
                         {
                             breakpoint: 1024,
@@ -146,6 +148,7 @@
                             breakpoint: 480,
                             settings: {
                             slidesToShow: 1,
+                            arrows: true,
                             slidesToScroll: 1
                             }
                         }
