@@ -3,113 +3,101 @@
    <?php get_header();?><!--header-->
 
 <!-- Main -->
- <section id="main">
-   <div class="container">
-   <!-- mi portafolio -->
-      <div class="major">
-         <h2>Nuestros Servicios</h2>
-      </div>
-      <div class="slick2">
+<section id="main">
+    <div class="container">
+    <!-- mi portafolio -->
+        <div class="major">
+            <h2>Nuestros Servicios</h2>
+        </div>
+        <div class="slick2">
 
-         <?php query_posts(array(
-            "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-            "cat"       => 6,//id del canaldonde se va mostrar portafilio
-            
-            ));
-            ?>
-         <?php if (have_posts()): while (have_posts()): the_post();?>
-         <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+            <?php query_posts(array(
+                "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+                "cat"       => 6,//id del canaldonde se va mostrar portafilio
+                
+                ));
+                ?>
+            <?php if (have_posts()): while (have_posts()): the_post();?>
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
 
-         <section class="medium">
-               <div class="contenedor">
-                  <div id="icono">
-                     <?php
-                        // check if the post has a Post Thumbnail assigned to it.
-                        if (has_post_thumbnail()) {
-                            the_post_thumbnail('post-thumbnail',array('class'=>'img-pilar2'));
-                        }
-                        ?>
-                  </div>
-               </div>
-               <header class="accordion">
-                  <h3>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-            </header>
-            <div class="box-container panel">
-               <?= the_excerpt() ?>
-            </div>
-            <ul class="actions">
-         <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">+Información</a></li>
-    </ul>
-         </section>
-         </div>
-         <?php endwhile;?>
-         <!-- post navigation -->
-         <?php else: ?>
-         <!-- no posts found -->
-         <h3>No hay nada</h3>
-         <?php endif;?>
-         
-        
-      </div>
-    </div>
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                        <?php
+                            // check if the post has a Post Thumbnail assigned to it.
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('post-thumbnail',array('class'=>'img-pilar2'));
+                            }
+                            ?>
+                    </div>
+                </div>
+                <header >
+                    <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                </header>
     
-</section>
-
-<!-- Blog -->
-<section>
-
-        <div class="container">
-
-        <div class="pilar" >
-               <h2 class="titulos">Blog Softcaribbean</h2>
+                <ul class="actions">
+            <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">+Información</a></li>
+        </ul>
+            </section>
+            </div>
+            <?php endwhile;?>
+            <!-- post navigation -->
+            <?php else: ?>
+            <!-- no posts found -->
+            <h3>No hay nada</h3>
+            <?php endif;?>
+            
+            
+        </div>
     </div>
+        
+    </section>
+
+    <!-- Blog -->
+    <section>
+    <div class="container">
+        <div class="pilar" >
+            <h2 class="titulos">Blog Softcaribbean</h2>
+        </div>
             <div class="row" style="margin-top:5px;">
                 <?php query_posts(array(
                     "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-                    "cat"       => 4,//id del canal donde se va mostrar portafolio
-   
-                        ));
-                 ?>
+                    "cat"       => 5,//id del canal donde se va mostrar portafolio
+                
+                    ));
+                ?>
                 <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
-                 <div class="col-6 col-6-medium col-12-small">
-                    <section class="box">
-                        <a href="<?php the_permalink(); ?>" class="image featured">
-                <?php
-                // check if the post has a Post Thumbnail assigned to it.
-                      if (has_post_thumbnail()) {
-                        the_post_thumbnail('post-thumbnail',array('class'=>'img-blog'));
-                 }?> 
-                        </a>
-                        <div class="box-container">
-    <header>
-        <h3>
-                <?php the_title();?>
-        </h3>
-    </header>
-                <?php the_excerpt(); ?>
-    <footer>
-        <ul class="actions">
-        <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </footer>
+                    <div class="col-6 col-6-medium col-12-small">
+                        <section class="box">
+                            <a href="<?php the_permalink(); ?>" class="image featured">
+                                <?php
+                                // check if the post has a Post Thumbnail assigned to it.
+                                if (has_post_thumbnail()) {
+                                the_post_thumbnail('post-thumbnail',array('class'=>'img-blog'));
+                                }?> 
+                
+                                    <div class="box-container">
+                                        <header class="accordion">
+                                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                                        </header>
+
+                                        <div class="box-container panel">
+                                        <?= the_excerpt() ?>
+                                        </div>
+                                    </div>
+                        </section>
+                    </div>
+                    <?php endwhile;?>
+                    <!-- post navigation -->
+                    <?php else: ?>
+                    <!-- no posts found -->
+                    <h3>No hay nada</h3>
+                    <?php endif;?>
+                    <!-- revisar  -->
             </div>
-        </section>
-    </div>
-        <?php endwhile;?>
-        <!-- post navigation -->
-        <?php else: ?>
-        <!-- no posts found -->
-        <h3>No hay nada</h3>
-        <?php endif;?>
-        <!-- revisar  -->
-                                </div>
-             </div>
-            </section>
         </div>
-    </div>
-</div>
-</section>       
+    </section>
+</section>   
 <!-- Código de instalación Cliengo para http://54.242.192.75/ -->
                 <script type="text/javascript">(function () {
                 var ldk = document.createElement('script');
