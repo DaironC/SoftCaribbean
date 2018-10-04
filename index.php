@@ -36,7 +36,7 @@
                 </header>
     
                 <ul class="actions">
-            <li ><a href="http://localhost:81/softca/category/portafolio/" class="button">+Información</a></li>
+                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
         </ul>
             </section>
             </div>

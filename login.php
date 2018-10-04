@@ -7,21 +7,34 @@
 <!-- Main -->
 <main id="main">
    <div class="container">
-      <form action="">
-         <div class="card-login ">
+
+         <div class="card-login">
             <img class="icono-login" src="<?php bloginfo('template_directory') ?>/images/icono_login.png" >
             <div class="container">
+
                <h3 class="inicio-titulo">Inicio de Sesión</h3>
                <h1 class="inicio-titulo">Intranet SoftCaribbean</h1>
-               <div class="login col-12">
-                  <input class="usuario" type="text" name="Usuario" placeholder="Usuario" required>
-                  <input class="clave" type="password" name="Password" placeholder="Contraseña" required>
-                  <input class="boton" type="submit" value="Ingresar">
-               </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Usuario" id="user" required>
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control" type="password" placeholder="Contraseña" id="pass" required>
+                </div>
+                
+                <input class="btn btn-success" type="submit" value="Ingresar" onclick="valForm()">
             </div>
          </div>
-      </form>
    </div>
 </main>
+
+
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/assets/js/login.js"></script>
+
+
+
+
+
   <?php get_footer();?>
       
