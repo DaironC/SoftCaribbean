@@ -10,7 +10,8 @@
 
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
-         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
+        <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
+        <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
         <style src="<?php bloginfo('stylesheet_directory') ?>/assets/css/chartist.min.css"></style>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -46,8 +47,9 @@
                 
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
+               <div class="header-background" >
                 <div class="row">
-          <div class="col-3 col-12-medium">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 ">
         <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
@@ -57,7 +59,7 @@
                     </div>
          <?php endif; ?>
           </div>
-          <div class="col-9 col-12-medium hidden-back" ">
+          <div id="display-nav"class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
           <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal',
@@ -65,15 +67,11 @@
                     'container_id' => 'nav'));
                 ?>
           </div>
-        </div>
-
-
-                 
+        </div>  
+                </div>
                 <!--Fin Logo -->
-                
                 <!-- Banner -->
                 <section id="banners">
-
                 <div class="slider">
    <?php masterslider(1); ?>
             </div>

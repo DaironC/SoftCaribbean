@@ -13,7 +13,7 @@
 
             <?php query_posts(array(
                 "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-                "cat"       => 6,//id del canaldonde se va mostrar portafilio
+                "cat"       => 5,//id del canaldonde se va mostrar portafilio
                 
                 ));
                 ?>
@@ -52,17 +52,17 @@
     </div>
         
     </section>
-
+ 
     <!-- Blog -->
     <section>
     <div class="container">
         <div class="pilar" >
             <h2 class="titulos">Blog Softcaribbean</h2>
         </div>
-            <div class="row" style="margin-top:5px;">
+            <div class="row" style="margin-top:5px; margin-bottom:10px;">
                 <?php query_posts(array(
                     "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-                    "cat"       => 5,//id del canal donde se va mostrar portafolio
+                    "cat"       => 6,//id del canal donde se va mostrar portafolio
                 
                     ));
                 ?>
