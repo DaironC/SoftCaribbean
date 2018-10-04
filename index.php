@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <header >
-                    <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <h3 style="margin-top:20px;" ><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
                 </header>
     
                 <ul class="actions">
@@ -168,4 +168,4 @@
                     }
                 </script>
  
-    <?php get_footer();?>
+ <?php get_footer();?>
