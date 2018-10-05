@@ -31,7 +31,17 @@ function valForm(){
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         
         xhr.send(data);
+
+
+        
+      
     }
 
 
 }
+
+localStorage.setItem("po", "Softecaribbean");
+localStorage.setItem("pop", "prueba3");
+
+let a = localStorage.getItem("po");
+console.log(a)
