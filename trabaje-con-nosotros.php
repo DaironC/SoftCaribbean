@@ -3,13 +3,11 @@
   Template Name: Ofertas
  */
 ?>
-
-<?php get_header('nohome'); ?> 
-
+<?php get_header('nohome'); ?>
+<!-- Main -->
 <main id="main">
-    <div class="container">
-    
-        <div class="tab">
+   <div class="container">
+       <div class="tab">
             <button class="tablinks" onclick="abrirOferta(event, 'Profesional')" id="mostrar">Profesional</button>
             <button class="tablinks" onclick="abrirOferta(event, 'Aprendiz')">Aprendiz</button>
         </div>
@@ -94,8 +92,10 @@
                 <?php endif;?>
             </div>
         </div>
-    </div>
+   </div>
 </main>
+ <?php get_footer();?>
+
 
 <script>
 function abrirOferta(evt, tipoOferta) {
@@ -114,6 +114,3 @@ function abrirOferta(evt, tipoOferta) {
 //Mostrar siempre la pestaña 'profesional' activa
 document.getElementById("mostrar").click();
 </script>
-
-
-<?php get_footer();?>

@@ -2351,11 +2351,10 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+	#header{
 		position: relative;
 		background: rgba(240, 240, 240, 0.6);
 		border-bottom: solid 1px #ccc;
-		padding: 0em 0 0em 0;
 		text-align: center;
 	
 	}
@@ -2411,9 +2410,8 @@ input, select, textarea {
 
 			#nav > ul > li {
 				display: inline-block;
-				margin: 0 0.35em 0 0.35em;
 				font-family: 'Francois One', sans-serif;
-				font-size: 125%;
+				font-size: 115%;
 				
 				
 			}
@@ -2669,6 +2667,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		background: #f7f7f7 url("assets/css/images/bg.jpg");
+                height: auto;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2780,9 +2779,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				padding: 0em 0 3em 0;
-			}
+			
 
 		/* Banner */
 
@@ -3243,8 +3240,7 @@ input, select, textarea {
 					top: 0;
 					width: 275px;
 					z-index: 10002;
-					background-color: #ff6600;
-					color: #FE642E;
+					background-color: #2A3787;
 					box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 					
 				}
@@ -3410,7 +3406,7 @@ input, select, textarea {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 	width: 100%;
-	height: 400px;
+	height: auto;
 	border-radius: 5px;
 	background-color:#fff;
 	padding-bottom: 10px;

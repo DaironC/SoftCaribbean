@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <header >
-                    <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
                 </header>
     
                 <ul class="actions">
@@ -67,7 +67,7 @@
                     ));
                 ?>
                 <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>
-                    <div class="col-6 col-6-medium col-12-small">
+                    <div class="col-md-6 col-sm-12">
                         <section class="box">
                             <a href="<?php the_permalink(); ?>" class="image featured">
                                 <?php
@@ -168,4 +168,4 @@
                     }
                 </script>
  
-    <?php get_footer();?>
+ <?php get_footer();?>
