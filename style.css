@@ -2351,11 +2351,10 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+	#header{
 		position: relative;
 		background: rgba(240, 240, 240, 0.6);
 		border-bottom: solid 1px #ccc;
-		padding: 0em 0 0em 0;
 		text-align: center;
 	
 	}
@@ -2668,6 +2667,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		background: #f7f7f7 url("assets/css/images/bg.jpg");
+                height: auto;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2779,9 +2779,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				padding: 0em 0 3em 0;
-			}
+			
 
 		/* Banner */
 

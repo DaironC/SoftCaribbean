@@ -34,9 +34,7 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 
 			</p>
 
-			<footer class="comentarios"> </footer>
-			<?php comments_template(); ?>
-
+		
 
 			</article>
 			<?php endwhile;?>
