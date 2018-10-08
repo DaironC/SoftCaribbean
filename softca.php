@@ -1,6 +1,3 @@
-<!--
-  kskkssjsjjs
--->
 <?php
    /*
      Template Name: intranet
@@ -87,4 +84,20 @@
       </div>
    </div>
 </main>
+
+<script>
+function apiStorage()
+{
+  if(typeof(Storage) !== 'undefined')
+  {
+    alert('Tu navegador SI soporta El API de Storage')
+  }
+  else
+  {
+    alert('Tu navegador No Soporta el API de Storage')
+  }
+}
+
+  window.onload = apiStorage;
+</script>
 <?php get_footer('intranet');?>
