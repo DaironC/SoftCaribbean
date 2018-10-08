@@ -3,8 +3,8 @@
    <div class="menu--prueba" ></div>
    <div class="container">
       <div class="row">
-         <div class="col-4 col-12-medium">
-            <div class="col-12">
+         <div class="col-md-4">
+            <div>
               <h2>Dirección</h2>
                  <ul class="contact">
                     <p>
@@ -20,11 +20,11 @@
                     <li><a class="icon fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
                 </ul>
             </div>
-              <div class="col-12 ">
+              <div >
                  
               </div> 
             </div>
-                     <div class="col-4 col-12-medium">
+                     <div class="col-md-4">
             <section>
                <h2>Llámanos</h2>
                  <ul class="contact">
@@ -39,7 +39,7 @@
             </section>
          </div>
 
-         <div class="col-4 col-12-medium">
+         <div class="col-md-4">
             <a href="#" class="image featured img-fluid">
 				      <img src="<?php bloginfo('template_directory') ?>/images/cmmilogo.png" alt="" /></a>
 			      <a href="#" class="image featured img-fluid">

@@ -1851,8 +1851,8 @@ input, select, textarea {
 
 		.img-items{
 			margin: auto;
-			width: 200px;
-			height: 200px;
+			width: 190px;
+			height: 190px;
 			margin-top: 10px;
 			
 		}
@@ -2195,6 +2195,7 @@ input, select, textarea {
 					ul.social-footer li {
 						display: inline-block;
 						padding-right: 0;
+						margin-top:10px;
 						margin-left: 0.75em;
 						
 					}
