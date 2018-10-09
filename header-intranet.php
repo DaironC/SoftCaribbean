@@ -1,21 +1,36 @@
-<!-- header-intranet para usar en las paginas de intranet  -->
 <html <?php language_attributes() ?> >
    <head>
       <title><?php bloginfo('name');?></title>
-      <meta charset="<?php bloginfo('charset'); ?>" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="stylesheet"  href="<?php  bloginfo('template_url' ); ?>/assets/css/bootstrap.min.css">
-      <script type = "text / javascript" src = "'/assets/js/bootstrap.js'"> </script>
-      <!--[if lte IE 8]><script src ="<?php  Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
-      <?php wp_head();?>
-      <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo ( ' stylesheet_directory ' ); ?> ! /assets/css/ie8.css" /> <! [Endif]  -->
-   </head>
-   <body class="no-sidebar is-preload">
-      <div id="page-wrapper">
-            
-      <!-- Header -->
-      <section id="header-intranet" >
-      <nav class="top-bar">
+
+
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
+        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
+        
+        <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
+        <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+       
+        <meta charset="<?php bloginfo('charset'); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!--[if lte IE 8]><script src ="<?php Bloginfo('stylesheet_directory'); ?> /assets/js/ie/html5shiv.js"></script><![endif]-->
+        <?php wp_head(); ?>
+        
+        <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
+       
+    </head>
+    <body class="homepage is-preload" >
+
+        <div id="page-wrapper" >
+            <?php bloginfo('description'); ?> 
+            <!-- Header -->
+            <img class="fondo1" src="<?php bloginfo('template_directory') ?>/images/fondo1.jpg" >
+            <section id="header">
+
+
+  <nav class="top-bar">
             <div>
                 <ul id="top" class="social">
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
@@ -23,22 +38,24 @@
                     <li><a class="icon fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
                     <li><a class="fas fa-user"  href="http://localhost/wordpress/login/"><span class="label"></span></a></li>               
                 </ul>
-            </div>    
-    </nav>
-         
-        <div class="row">
-          <div class="col-4">
+             </div>    
+                </nav>  
+                
+                <!-- Logo -->
+                <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
+               <div class="header-background" >
+                <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 ">
         <!-- Logo -->
           <?php if (get_header_image()) : ?>
                     <div id="site-header">
                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                            <img id="logo-intranet" src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+                            <img id="logo" src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                         </a>
                     </div>
          <?php endif; ?>
           </div>
-          
-          <div class="col-8" >
+          <div id="display-nav"class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
           <?php
                 wp_nav_menu(array(
                     'theme_location' => 'principal-intranet',
@@ -46,6 +63,12 @@
                     'container_id' => 'nav-intranet'));
                 ?>
           </div>
-        </div>
+        </div>  
+                </div>
+                </section>
+      
 
-      </section>
+
+
+
+

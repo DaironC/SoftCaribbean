@@ -4,88 +4,89 @@
     */
    ?>
 
-<?php get_header( 'nohome' ); ?>
+<?php get_header( 'intranet' ); ?>
 
+    
 <main id="main">
+   <div class="container">
 
-
-<div class="container">
-
-<div class="reconocimiento">
-<div class="row">
-   <div class="col-md-3">
-      <div class="card">
-         <img class="card-img-top"  src="<?php bloginfo('template_directory') ?>/images/DAIRON.jpg">
-         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-         Dairon Correa
-         </button>
-         <div id="collapsefive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
-            </div>
-         </div>
+     <div class="">
+     <div class="slick4" >
+     <?php query_posts(array(
+         "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+         "cat"       => 7,//id del canal donde se va mostrar portafolio
+         ));
+         ?>
+      <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
+      <div class="">
+        <div class=" card-contenedor">
+          <div class="efecto-carta">
+              <div >
+                <?php
+                    // check if the post has a Post Thumbnail assigned to it.
+                    if (has_post_thumbnail()) {
+                    the_post_thumbnail('post-thumbnail',array('class'=>'img-box'));
+                    }
+                    ?>
+              </div>
+              <div class="content">
+                <h2><?php the_title();?></h2>
+                <p><?php the_content();?></p>
+              </div>
+          </div>
+        </div>
       </div>
-   </div>
-   
-
-
-      <div class="col-md-3">
-      <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/cobos.PNG">
-         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-         Juan Cobos
-         </button>
-         <div id="collapse2" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
-            </div>
-         </div>
+      <?php endwhile;?>
+      <!-- post navigation -->
+      <?php else: ?>
+      <!-- no posts found -->
+      <h3>No hay nada</h3>
+      <?php endif;?>
+      <!-- revisar  -->
       </div>
-   </div>
+     </div>
 
-      <div class="col-md-3">
-      <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/dani.jpg">
-         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
-         Daniela Lopera
-         </button>
-         <div id="collapsetwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
-            </div>
-         </div>
-      </div>
    </div>
-
-      <div class="col-md-3">
-      <div class="card">
-         <img class="card-img-top"  style="width:150px;height:80px;"  src="<?php bloginfo('template_directory') ?>/images/harwin.PNG">
-         <button class=" btn-miembros " type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
-         harwin
-         </button>
-         <div id="collapseone" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-               <p>Analista Desarrollador de Wappa</p>
-               <p>Aficiones</p>
-               <p>Su tio
-               </p>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-   
 </main>
 
 <?php get_footer();?>
+
+
+  <script>   
+                    $('.slick4').slick({
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        arrows: true,
+                        dots: true,
+                        responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                           
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                            }
+                        }
+                        ]
+                    });
+            
+
+
+
+                </script>
