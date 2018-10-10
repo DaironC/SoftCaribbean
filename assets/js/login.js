@@ -16,6 +16,7 @@ function valForm() {
         var data = "<root type=\"pojo\">\n\t<object name=\"Object_41769\" type=\"object\"  class=\"org.metatron.terceros.dto.RegistroCliente\">\n\t\t<property  id=\"reg_dsmail\"  value=\"" + usuarios + "\"/>\n\t\t<property  id=\"reg_dspassword\"  value=\"" + clave + "\"/>\n\t\t<property  id=\"reg_cdtipo\"  value=\"REGISTRO_WAPPON\"/>\n\t</object>\n</root>";
 
         var xhr = new XMLHttpRequest();
+        var datos = this.responseText;
 
         xhr.onreadystatechange = function () {
             console.log(this.readyState);
@@ -40,7 +41,8 @@ function val(obj) {
     
     if (obj.msg.Data === "true") {
         console.log("Existe");
-
+        localStorage.setItem('uui', btoa(JSON.stringify(obj.msg.Data1)));
+        location.href = 'http://localhost/softca/intranet/';
     } else {
         console.log("No");
 

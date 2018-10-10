@@ -85,19 +85,6 @@
    </div>
 </main>
 
-<script>
-function apiStorage()
-{
-  if(typeof(Storage) !== 'undefined')
-  {
-    alert('Tu navegador SI soporta El API de Storage')
-  }
-  else
-  {
-    alert('Tu navegador No Soporta el API de Storage')
-  }
-}
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/assets/js/softca.js"></script>
 
-  window.onload = apiStorage;
-</script>
 <?php get_footer('intranet');?>
