@@ -9,6 +9,7 @@
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/tilt.jquery.js"></script>
         <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
         
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
@@ -83,7 +84,7 @@
                <h2 class="titulos">En Softcaribbean trabajamos bajo 4 Pilares</h2>
     </div>
 
-        <div class="slick">
+        <div class="slick" >
     
             <?php query_posts(array(
                 "showposts" => 4,//cantidad de entradas en portafolio para mostrar
@@ -129,6 +130,8 @@
  
     </div>   
 </section>
+
+
          <script>   
                     $('.slick').slick({
                         slidesToShow: 4,
@@ -163,6 +166,9 @@
                         ]
                     });
             
+
+
+
                 </script>
 
                 <script>
