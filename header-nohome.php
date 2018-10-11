@@ -12,7 +12,9 @@
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
         <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
-        
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/sweetalert.min.js"></script>
+
+
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>

@@ -44,7 +44,9 @@ function val(obj) {
         localStorage.setItem('uui', btoa(JSON.stringify(obj.msg.Data1)));
         location.href = 'http://localhost/softca/intranet/';
     } else {
-        console.log("No");
+
+       
+         console.log("No");
 
     }
 
