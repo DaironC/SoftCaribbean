@@ -25,29 +25,24 @@ function valForm() {
                 val(JSON.parse(this.responseText));
             }
         };
-
         xhr.open("POST", "https://www.wappasonline.com/MetatronServices/CgiJson?sessionid=null&_clase=org.metatron.services.terceros.ServicesRegistroCliente&_method=validateUser&metodoload=postLogin&origin=%2A");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
         xhr.send(data);
-
-
-
     }
 }
 
 function val(obj) {
     console.log(obj.msg.Data);
+ 
     
     if (obj.msg.Data === "true") {
         console.log("Existe");
         localStorage.setItem('uui', btoa(JSON.stringify(obj.msg.Data1)));
-        location.href = 'http://localhost/softca/intranet/';
+        location.href = 'http://localhost/wordpress/intranet/';      
     } else {
-
-       
-         console.log("No");
-
+        swal({
+            text: "Usuario y/o contraseña invalida",
+            icon: "error"
+        });
     }
-
 }

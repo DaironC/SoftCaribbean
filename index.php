@@ -13,7 +13,7 @@
 
             <?php query_posts(array(
                 "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-                "cat"       => 5,//id del canaldonde se va mostrar portafilio
+                "cat"       => 3,//id del canaldonde se va mostrar portafilio
                 
                 ));
                 ?>
@@ -62,7 +62,7 @@
             <div class="row" style="margin-top:5px; margin-bottom:10px;">
                 <?php query_posts(array(
                     "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-                    "cat"       => 6,//id del canal donde se va mostrar portafolio
+                    "cat"       => 2,//id del canal donde se va mostrar portafolio
                 
                     ));
                 ?>
@@ -99,14 +99,21 @@
     </section>
 </section>   
 <!-- Código de instalación Cliengo para http://54.242.192.75/ -->
-                <script type="text/javascript">(function () {
+                <script type="text/javascript">
+                    
+    
+    
+    
+                window.onload = function() {( function () {
                 var ldk = document.createElement('script');
                 ldk.type = 'text/javascript';
                 ldk.async = true;
                 ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(ldk, s);
-                })();</script>
+                })();
+            }
+                </script>
 
                  <script>   
                     $('.slick2').slick({

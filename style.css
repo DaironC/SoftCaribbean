@@ -1616,6 +1616,7 @@ input, select, textarea {
 		}
 
 		.box.post h2 {
+			text-align: -webkit-center;
 			font-size: 2.5em;
 			letter-spacing: -0.015em;
 			padding:0 30 0 30;
@@ -1857,6 +1858,7 @@ input, select, textarea {
 			
 		}
 		.img-single{
+		
 			max-height: 300px;
 		}
 		.img-blog{
@@ -3005,6 +3007,7 @@ input, select, textarea {
 				}
 
 				.box.post h2 {
+					text-align: -webkit-center;
 					font-size: 1.5em;
 					line-height: 1.5em;
 					padding-left: 30px;
@@ -3640,11 +3643,13 @@ background: #e2e2e2
 }
 
 @-webkit-keyframes girando {
+
 	from { -webkit-transform: rotateY(0deg);    }
 	to   { -webkit-transform: rotateY(-360deg); }
   }
 
 .contenedor {
+
 	-webkit-perspective: 600px  !important;
  }
 
@@ -3739,12 +3744,43 @@ background: #e2e2e2
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5)
 }
 
+.loader {
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: url('images/img-load.png') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 1;
+}
 
 
+  @-webkit-keyframes girando {
 
+	from { -webkit-transform: rotate(0deg);    }
+	to   { -webkit-transform: rotate(360deg); }
+  }
 
+.contenedor {
+	-webkit-perspective: 600px  !important;
+ }
 
+#girando{
+	position: absolute;
+  margin: auto;
+    top: 57%;
+	left: 40%;
+	right: 40%;
+	width: 40px;
+	height: 40px;
+	border: 5px solid #eee;
+	border-top: 5px solid rgb(255, 94, 0);
+	border-radius: 50%;
+	-webkit-animation-name: girando !important;
+	-webkit-animation-timing-function: linear  !important;
+	-webkit-animation-iteration-count: infinite  !important;
+	-webkit-animation-duration: 2s  !important;
+	-webkit-transform-style: preserve-3d  !important;
+ }
 
-
- 
-  
