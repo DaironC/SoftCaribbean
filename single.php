@@ -16,13 +16,13 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
 		<article class="box post">
 		<a href="<?php the_permalink();?>" class="image featured">
 		
-		<?php
+		<!-- <?php
         // check if the post has a Post Thumbnail assigned to it.
         if (has_post_thumbnail()) {
 			the_post_thumbnail('post-thumbnail',array('class'=>'img-single'));
 		
         }
-        ?>
+        ?> -->
 			</a>
 			<header>
 			<h2><?php the_title();?></h2>

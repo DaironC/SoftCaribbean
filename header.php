@@ -10,6 +10,8 @@
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/tilt.jquery.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/index.js"></script>
+      
         <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
         
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
@@ -171,7 +173,7 @@
 
                 </script>
 
-                <script>
+                <!-- <script>
                     var card =document.getElementsByClassName("card-items");
                     var i;
                     var numIcon=0;
@@ -194,6 +196,6 @@
                         
                     }
                     
-                </script>  
+                </script>   -->
 
                 
