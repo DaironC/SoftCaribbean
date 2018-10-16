@@ -16,6 +16,7 @@
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/load.js"></script>
        
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -25,7 +26,22 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
+      
+
+ 
+
     <body class="homepage is-preload" >
+    
+    <div class="loader">
+   
+   <div class="contendor">
+      
+       <div id="girando">
+ 
+       </div>
+       
+   </div>
+</div>
 
         <div id="page-wrapper" >
             <?php bloginfo('description'); ?> 
@@ -40,7 +56,7 @@
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-linkedin"target="_blank" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
                     <li><a class="icon fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
-                    <li><a class="fas fa-user"  href="http://localhost/softca/login-php/"><span class="label"></span></a></li>               
+                    <li><a class="fas fa-user"  href="http://localhost/wordpress/login/"><span class="label"></span></a></li>               
                 </ul>
              </div>    
                 </nav>  
@@ -130,6 +146,7 @@
  
     </div>   
 </section>
+
 
 
          <script>   

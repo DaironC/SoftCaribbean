@@ -25,10 +25,10 @@ en wordpres, que ya se encuentra en forma dinamica y en la parte inferior encont
         ?>
 			</a>
 			<header>
-			<h2><?php the_title();?></h2>
+			<h2 style="margin:;"><?php the_title();?></h2>
 			</header>
 
-			<p>
+			<p class="contenido-single">
 			
 			<?php the_content();?>
 

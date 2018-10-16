@@ -1,9 +1,9 @@
 function validar() {
-    console.log(JSON.parse(atob(localStorage.getItem('uui'))));
     if (localStorage.getItem('uui') === null) {
-        location.href = 'http://localhost/softca/';
+        location.href = 'http://localhost/wordpress/login/';
+    } else {
+        console.log(JSON.parse(atob(localStorage.getItem('uui'))));
     }
-
 }
 
 validar();

@@ -22,7 +22,7 @@
                   <input class="form-control" type="password" placeholder="Clave" id="pass" required>
                 </div>
                 
-                <input class="btn btn-success" type="submit" value="Ingresar" onclick="valForm()">
+                <input type="submit" value="Ingresar" onclick="valForm()">
             </div>
          </div>
      

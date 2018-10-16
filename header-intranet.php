@@ -6,8 +6,8 @@
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
-        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
-        
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/load.js"></script>
+       
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
@@ -21,6 +21,17 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
+    <div class="loader">
+   
+        <div class="contendor">
+           
+            <div id="girando">
+      
+            </div>
+            
+        </div>
+    </div>
+
     <body class="homepage is-preload" >
 
         <div id="page-wrapper" >
@@ -66,9 +77,6 @@
         </div>  
                 </div>
                 </section>
-      
-
-
 
 
 

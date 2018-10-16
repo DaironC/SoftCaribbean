@@ -7,13 +7,13 @@
    <head>
       <title><?php bloginfo('name');?></title>
 
-
-        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
+   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/chartist.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/slick.min.js"></script>
-        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/tilt.jquery.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/load.js"></script>
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/sweetalert.min.js"></script>
-
+        <script type = "text / javascript" src = "'/assets/js/script.js'"> </script>
 
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick-theme.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
@@ -28,6 +28,7 @@
         <!-- [if lte IE 8]> <link rel = "stylesheet" href = " <?php Bloginfo(' stylesheet_directory '); ?> ! /assets/css/ie8.css" /> <! [Endif] -->
        
     </head>
+  
     <body class="homepage is-preload" >
 
         <div id="page-wrapper" >
