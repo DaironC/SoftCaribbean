@@ -9,46 +9,134 @@
         <div class="major">
             <h2>Nuestros Servicios</h2>
         </div>
+
         <div class="slick2">
 
-            <?php query_posts(array(
-                "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-                "cat"       => 3,//id del canaldonde se va mostrar portafilio
-                
-                ));
-                ?>
-            <?php if (have_posts()): while (have_posts()): the_post();?>
+            <!-- Nuestros Servicios 1 -->
             <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
 
             <section class="medium">
                 <div class="contenedor">
                     <div id="icono">
-                        <?php
-                            // check if the post has a Post Thumbnail assigned to it.
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail('post-thumbnail',array('class'=>'img-pilar2'));
-                            }
-                            ?>
+                    <img src="<?php bloginfo('template_directory') ?>/images/Talento Humano.png" alt=""  class="img-pilar2" />
                     </div>
                 </div>
                 <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Talento Humano</a></h3>
+                </header>
+    
+                <ul class="actions">
+                <li><a href=" http://localhost/softca/nuestro-servicio-1/" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </section>
+            </div>
+            <!-- Fin servicio -->
+
+            <!-- Nuestro Servicio2 -->
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                        
+                    <img src="<?php bloginfo('template_directory') ?>/images/mejora continua.png" alt=""  class="img-pilar2" />
+         
+                        
+                    </div>
+                </div>
+                <header >
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Mejora Continua</a></h3>
+                </header>
+    
+                <ul class="actions">
+                <li><a href="http://54.242.192.75/mejora-continua/" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </section>
+            </div>
+            <!-- Fin Servicio -->
+
+            <!-- Nuestro Servicio3 -->
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                    <img src="<?php bloginfo('template_directory') ?>/images/Gestion del riesgo.png" alt=""  class="img-pilar2" />
+                    </div>
+                </div>
+                <header >
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Gestion Del Riesgo</a></h3>
                 </header>
     
                 <ul class="actions">
                 <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-        </ul>
+                </ul>
             </section>
             </div>
-            <?php endwhile;?>
-            <!-- post navigation -->
-            <?php else: ?>
-            <!-- no posts found -->
-            <h3>No hay nada</h3>
-            <?php endif;?>
+             <!-- Fin Servicio -->
+
+             <!-- Nuestro Servicio 4 -->
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
+                    </div>
+                </div>
+                <header >
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
+                </header>
+    
+                <ul class="actions">
+                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </section>
+            </div>
+            <!-- Fin Servicio -->
+
+             <!-- Nuestro Servicio 5 -->
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
+                    </div>
+                </div>
+                <header >
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
+                </header>
+    
+                <ul class="actions">
+                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </section>
+            </div>
+            <!-- Fin Servicio -->
             
-            
+             <!-- Nuestro Servicio 6 -->
+            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+
+            <section class="medium">
+                <div class="contenedor">
+                    <div id="icono">
+                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
+                    </div>
+                </div>
+                <header >
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
+                </header>
+    
+                <ul class="actions">
+                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                </ul>
+            </section>
+            </div>
+            <!-- Fin Servicio -->
+
         </div>
+       
     </div>
         
     </section>
@@ -62,7 +150,7 @@
             <div class="row" style="margin-top:5px; margin-bottom:10px;">
                 <?php query_posts(array(
                     "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-                    "cat"       => 2,//id del canal donde se va mostrar portafolio
+                    "cat"       => 5,//id del canal donde se va mostrar portafolio
                 
                     ));
                 ?>
@@ -99,58 +187,53 @@
     </section>
 </section>   
 <!-- Código de instalación Cliengo para http://54.242.192.75/ -->
-                <script type="text/javascript">
-                    
-    
-    
-    
-                window.onload = function() {( function () {
-                var ldk = document.createElement('script');
-                ldk.type = 'text/javascript';
-                ldk.async = true;
-                ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ldk, s);
-                })();
-            }
-                </script>
+<script type="text/javascript">
+    window.onload = function() {( function () {
+        var ldk = document.createElement('script');
+        ldk.type = 'text/javascript';
+        ldk.async = true;
+        ldk.src = 'https://s.cliengo.com/weboptimizer/5b857e0fe4b0ae9c80701756/5b857e14e4b0ae9c8070175c.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ldk, s);
+        })();
+        }
+</script>
 
-                 <script>   
-                    $('.slick2').slick({
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 2000,
-                        cssEase: 'linear',
-                        dots: true,
-                        arrows: true,
-                        responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                            slidesToShow: 1,
-                            arrows: true,
-                            slidesToScroll: 1
-                            }
-                        }
-                        ]
-                    });
-            
-                </script>
+<script>   
+    $('.slick2').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: 'linear',
+        dots: true,
+        arrows: true,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            arrows: true,
+            slidesToScroll: 1
+            }
+        }
+        ]
+    });
+</script>
 
                  <script>
                     var acc = document.getElementsByClassName("accordion");
@@ -174,5 +257,17 @@
                         if (panel.style.display === "block") panel.style.display = "none";
                     }
                 </script>
+
+                <script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+        document.getElementById("icono").className = "slideUp";
+    }
+}
+</script>
  
+ <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/assets/js/index.js"></script>
+
  <?php get_footer();?>

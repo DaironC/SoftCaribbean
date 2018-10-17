@@ -38,7 +38,7 @@ function val(obj) {
     if (obj.msg.Data === "true") {
         console.log("Existe");
         localStorage.setItem('uui', btoa(JSON.stringify(obj.msg.Data1)));
-        location.href = 'http://localhost/wordpress/intranet/';      
+        location.href = 'http://localhost/softca/intranet/';      
     } else {
         swal({
             text: "Usuario y/o contraseña invalida",
