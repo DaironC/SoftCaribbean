@@ -148,14 +148,11 @@
 .slick-dots li button
 {
     font-size: 0;
-    line-height: 0;
-
+    line-height: 0
     display: block;
-
     width: 10px;
     height: 10px;
     padding: 5px;
-
     cursor: pointer;
     margin-top:50px;
     color: #000000;

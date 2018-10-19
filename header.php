@@ -18,6 +18,8 @@
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://www.jsdelivr.com/#!hint.css">
+     
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/load.js"></script>
        
         <meta charset="<?php bloginfo('charset'); ?>" />
@@ -52,17 +54,20 @@
             <section id="header">
 
 
+
   <nav class="top-bar">
             <div>
                 <ul id="top" class="social">
+                    <!--
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-linkedin"target="_blank" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
                     <li><a class="icon fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
+                   -->
                     <li><a class="fas fa-user"  href="http://localhost/wordpress/login/"><span class="label"></span></a></li>               
                 </ul>
              </div>    
                 </nav>  
-                
+
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
                <div class="header-background" >

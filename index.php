@@ -5,6 +5,31 @@
 <!-- Main -->
 <section id="main">
     <div class="container">
+
+  
+  <div class="scroll-group">
+      
+      <ul class="scroll-espaciado" >
+
+                    <li ><a id="scroll1" class=" fas fa-columns"><p>Pilares Softcaribbean</p></a></li>
+                    <li><a class="fas fa-cogs" id="scroll2"><p>Servicios Softcaribbean</p></a></li>
+                    <li><a class="fas fa-book" id="scroll3" ><p>Blog Softcaribbean</p></a></li>               
+        </ul>
+      
+</div>
+
+<div class="redes-sociales">
+        <ul class="redes">
+
+            <li><a  target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/company/softcaribbean/"><i class="fab fa-linkedin-in"  aria-hidden="true"></i></a></li>               
+</ul>
+
+</div>
+
+
+    
     <!-- mi portafolio -->
         <div class="major">
             <h2>Nuestros Servicios</h2>
@@ -13,7 +38,7 @@
 
             <?php query_posts(array(
                 "showposts" => 4,//cantidad de entradas en portafolio para mostrar
-                "cat"       => 3,//id del canaldonde se va mostrar portafilio
+                "cat"       => 5,//id del canaldonde se va mostrar portafilio
                 
                 ));
                 ?>
@@ -62,7 +87,7 @@
             <div class="row" style="margin-top:5px; margin-bottom:10px;">
                 <?php query_posts(array(
                     "showposts" => 2,//cantidad de entradas en portafolio para mostrar
-                    "cat"       => 2,//id del canal donde se va mostrar portafolio
+                    "cat"       => 6,//id del canal donde se va mostrar portafolio
                 
                     ));
                 ?>
@@ -174,5 +199,68 @@
                         if (panel.style.display === "block") panel.style.display = "none";
                     }
                 </script>
+
+
+                        
+
+
+
+                <script>
+           
+
+function myFunction(x) {
+
+                        const btn1 = document.getElementById('scroll1');
+                        const btn2 = document.getElementById('scroll2');
+                        const btn3 = document.getElementById('scroll3');
+                        if (x.matches){
+                        
+
+                         btn1.addEventListener('click', () => window.scrollTo({
+                            top: 650,
+                            behavior: 'smooth',
+                         }));
+             
+                        btn2.addEventListener('click', () => window.scrollTo({
+                         top: 1150,
+                          behavior: 'smooth',
+                        }));
+
+                        btn3.addEventListener('click', () => window.scrollTo({
+                         top: 1700,
+                          behavior: 'smooth',
+                        }));
+                    
+                    }else{
+                        
+                        btn1.addEventListener('click', () => window.scrollTo({
+                            top: 400,
+                            behavior: 'smooth',
+                         }));
+             
+                        btn2.addEventListener('click', () => window.scrollTo({
+                         top: 900,
+                          behavior: 'smooth',
+                        }));
+
+                        btn3.addEventListener('click', () => window.scrollTo({
+                         top: 1300,
+                          behavior: 'smooth',
+                        }));
+
+                    }
+}
+
+                    var x = window.matchMedia("(min-width: 760px)")
+                    myFunction(x) // Call listener function at run time
+                    x.addListener(myFunction)
+                   
+               
+                </script>
  
+
+
+                 
+                        
+    
  <?php get_footer();?>
