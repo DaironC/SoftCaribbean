@@ -4072,13 +4072,12 @@ section.logos {
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	font-size: 20px !important;
+	font-size: 1.2em;
 	text-align: center;
 	background: #262626;
 	color: #fff;
 	margin: o 2px;
 	border-radius: 50%;
-	font-size: 30px;
 	transition: 1s !important;
 
 
@@ -4117,3 +4116,4 @@ section.logos {
 	transform: translateX(-120px) rotate(360deg);
 	transition-delay: 0.2s;
 }
+
