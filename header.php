@@ -18,6 +18,8 @@
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet"href="<?php bloginfo('stylesheet_directory') ?>/assets/css/slick.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://www.jsdelivr.com/#!hint.css">
+     
         <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/assets/js/load.js"></script>
        
         <meta charset="<?php bloginfo('charset'); ?>" />
@@ -52,17 +54,20 @@
             <section id="header">
 
 
+
   <nav class="top-bar">
             <div>
                 <ul id="top" class="social">
+                    <!--
                     <li ><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/SomosSoftcaribbean/?hc_ref=ARQbwq8hZi_hNLfPQsht80CVgoeJDFIrJcRqAwD5KtE9ANgSzsBP0Csnik3zfZr175s"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-linkedin"target="_blank" href="https://www.linkedin.com/company/softcaribbean/"><span class="label">LinkedIn</span></a></li>
                     <li><a class="icon fa-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573016951794&text=Hola%2C%20deseo"><span class="label">whatsapp</span></a></li>               
-                    <li><a class="fas fa-user"  href="http://localhost/softca/login-php/"><span class="label"></span></a></li>               
+                   -->
+                    <li><a class="fas fa-user"  href="http://localhost/wordpress/login/"><span class="label"></span></a></li>               
                 </ul>
              </div>    
                 </nav>  
-                
+
                 <!-- Logo -->
                 <!-- codigo para poner dinamico la puesta de una imagen en el encabezado -->
                <div class="header-background" >
@@ -104,89 +109,49 @@
 
         <div class="slick" >
     
-            <!-- pilar Talento humano -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
+            <?php query_posts(array(
+                "showposts" => 4,//cantidad de entradas en portafolio para mostrar
+                "cat"       => 4,//id del canal donde se va mostrar portafolio
+            ));
+                ?>
 
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Talento Humano.png" alt=""  class="img-pilar2" />
-                    </div>
+            <?php if (have_posts() ) : while(have_posts() ) :the_post(); ?>  
+
+                <div class="card-items" style="margin-left:0.5em; margin-right:0.5em;">
+                    <section class="medium">
+                
+                        <div class="contenedor">
+                            <div id="icono">
+                                    <?php
+                                        // check if the post has a Post Thumbnail assigned to it.
+                                        if (has_post_thumbnail()) {
+                                        the_post_thumbnail('post-thumbnail',array('class'=>'img-items'));
+                                        }
+                                        ?>
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <header class="titulo-items" >
+                                <h3><?php the_title();?></h3>
+                            </header>
+                        </div>   
+                    </section>
+            
+                    <ul class="actions">
+                        <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
+                    </ul>
                 </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Talento Humano</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href=" http://localhost/softca/talento-humano/" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin pilar -->
-
-            <!-- pilar Mejora Continua -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                        
-                    <img src="<?php bloginfo('template_directory') ?>/images/mejora continua.png" alt=""  class="img-pilar2" />
-         
-                        
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Mejora Continua</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin pilar -->
-
-            <!-- pilar Gestion Del Riesgo -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Gestion del riesgo.png" alt=""  class="img-pilar2" />
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Gestion Del Riesgo</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-             <!-- Fin pilar -->
-
-             <!-- pilar Aporte Social -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin pilar -->
-        </div>   
+       
+                <?php endwhile;?>
+                <!-- post navigation -->
+                <?php else: ?>
+                <!-- no posts found -->
+                <h3>No hay nada</h3>
+                <?php endif;?>
+                <!-- revisar  -->
+ 
+    </div>   
 </section>
 
 
