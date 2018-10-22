@@ -5,9 +5,9 @@
 <!-- Main -->
 <section id="main">
     <div class="container">
-    <!-- mi portafolio -->
+    <!-- Mi Servicio -->
         <div class="major">
-            <h2>Nuestros Servicios</h2>
+            <h1>Nuestros Servicios</h1>
         </div>
 
         <div class="slick2">
@@ -18,11 +18,11 @@
             <section class="medium">
                 <div class="contenedor">
                     <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Talento Humano.png" alt=""  class="img-pilar2" />
+                    <img src="<?php bloginfo('template_directory') ?>/images/desarrollo de soluciones.png" alt=""  class="img-pilar2" />
                     </div>
                 </div>
                 <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Talento Humano</a></h3>
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Diseño y desarrollo de aplicaciones (Móviles, Web y Escritorio) (imagen desarrollo de soluciones)</a></h3>
                 </header>
     
                 <ul class="actions">
@@ -39,13 +39,13 @@
                 <div class="contenedor">
                     <div id="icono">
                         
-                    <img src="<?php bloginfo('template_directory') ?>/images/mejora continua.png" alt=""  class="img-pilar2" />
+                    <img src="<?php bloginfo('template_directory') ?>/images/consultoria.png" alt=""  class="img-pilar2" />
          
                         
                     </div>
                 </div>
                 <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Mejora Continua</a></h3>
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano"></a>Asesoría técnica y acompañamiento metodológico en proyectos de TI  (imagen consultoria)</h3>
                 </header>
     
                 <ul class="actions">
@@ -61,11 +61,11 @@
             <section class="medium">
                 <div class="contenedor">
                     <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Gestion del riesgo.png" alt=""  class="img-pilar2" />
+                    <img src="<?php bloginfo('template_directory') ?>/images/personal especializado.png" alt=""  class="img-pilar2" />
                     </div>
                 </div>
                 <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Gestion Del Riesgo</a></h3>
+                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano"></a>Personal especializado (en sitio y virtual) (imagen personal especializado)</h3>
                 </header>
     
                 <ul class="actions">
@@ -75,66 +75,7 @@
             </div>
              <!-- Fin Servicio -->
 
-             <!-- Nuestro Servicio 4 -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin Servicio -->
-
-             <!-- Nuestro Servicio 5 -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin Servicio -->
-            
-             <!-- Nuestro Servicio 6 -->
-            <div class="card-portafolio" style="margin-left:0.5em; margin-right:0.5em;">
-
-            <section class="medium">
-                <div class="contenedor">
-                    <div id="icono">
-                    <img src="<?php bloginfo('template_directory') ?>/images/Aporte Social.png" alt=""  class="img-pilar2" />
-                    </div>
-                </div>
-                <header >
-                    <h3 style="margin-top:10px;" ><a href="<?php the_permalink(); ?>" title="Talento Humano">Aporte Social</a></h3>
-                </header>
-    
-                <ul class="actions">
-                <li><a href="<?php the_permalink(); ?>" class="button icon fa-file-text">+Información</a></li>
-                </ul>
-            </section>
-            </div>
-            <!-- Fin Servicio -->
-
+             
         </div>
        
     </div>
@@ -235,37 +176,37 @@
     });
 </script>
 
-                 <script>
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
-                    var f=0;
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    var f=0;
 
-                    for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("mouseover", mostrarPanel);
-                        acc[i].addEventListener("mouseout", ocultarPanel);
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("mouseover", mostrarPanel);
+        acc[i].addEventListener("mouseout", ocultarPanel);
 
-                    }
-                    function mostrarPanel(){
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.display === ""||panel.style.display === "none") panel.style.display = "block";
-                            
-                    }
-                    function ocultarPanel(){
-                        this.classList.remove("active");
-                        var panel = this.nextElementSibling;                            
-                        if (panel.style.display === "block") panel.style.display = "none";
-                    }
-                </script>
-
-                <script>
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        document.getElementById("icono").className = "slideUp";
     }
-}
+    function mostrarPanel(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === ""||panel.style.display === "none") panel.style.display = "block";
+            
+    }
+    function ocultarPanel(){
+        this.classList.remove("active");
+        var panel = this.nextElementSibling;                            
+        if (panel.style.display === "block") panel.style.display = "none";
+    }
+</script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+            document.getElementById("icono").className = "slideUp";
+        }
+    }
 </script>
  
  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/assets/js/index.js"></script>
